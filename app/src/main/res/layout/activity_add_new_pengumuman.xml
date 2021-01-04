@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSurface"
+    tools:context=".Admin.AddNewPengumumanActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/add_new_pengumuman_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/add_new_pengumuman_container">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/general_back_button"
+            app:tint="@color/colorPrimaryIcon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/add_new_pengumuman_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_new_pengumuman_appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1000dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pengumuman_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Pengumuman"
+                app:startIconDrawable="@drawable/field_full_name_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/colorOnPrimaryText"
+                app:hintTextColor="@color/colorOnPrimaryText"
+                android:textColorHint="@color/colorOnPrimaryText"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorOnPrimaryText"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/colorOnPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorOnPrimaryText"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <DatePicker
+                android:id="@+id/age_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarTextColor="@color/colorOnPrimaryText"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pengumuman_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/colorOnPrimaryText"
+                android:textColorHint="@color/colorOnPrimaryText"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/colorOnPrimaryText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="20"
+                    android:maxLines="100"
+                    android:maxLength="2000"
+                    android:singleLine="false"
+                    android:gravity="top|left"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@color/colorOnPrimaryText" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

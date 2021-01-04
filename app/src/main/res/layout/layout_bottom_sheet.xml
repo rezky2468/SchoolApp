@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSurface"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="Data Guru"
+        android:textColor="@color/colorOnPrimaryText"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--    <view-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:background="@color/lightWhite"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/data_guru_foto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1"
+            app:riv_corner_radius="10dp" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:src="@drawable/img1"-->
+        <!--            android:scaleType="centerCrop"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/data_guru_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textColor="@color/colorOnPrimaryText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/data_guru_jabatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOnSecondaryText"
+                android:text="Jabatan"/>
+
+            <TextView
+                android:id="@+id/data_guru_tanggal_lahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOnSecondaryText"
+                android:text="Tanggal Lahir"/>
+
+            <TextView
+                android:id="@+id/data_guru_pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOnSecondaryText"
+                android:text="Pendidikan"/>
+
+            <TextView
+                android:id="@+id/data_guru_mapel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOnSecondaryText"
+                android:text="Mapel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    <view-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:background="@color/black"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/icon_email_guru"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_centerVertical="true"
+            android:src="@drawable/email_icon"
+            app:tint="@color/colorSecondaryIcon" />
+
+        <TextView
+            android:id="@+id/data_guru_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_email_guru"
+            android:text="admin123@gmail.com"
+            android:textColor="@color/colorOnPrimaryText"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_email_guru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notlpguru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/icontlpguru"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/field_phone__number_icon"
+            app:tint="@color/colorSecondaryIcon" />
+
+        <TextView
+            android:id="@+id/data_guru_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:text="+62 895 9345 9556"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icontlpguru"
+            android:textColor="@color/colorOnPrimaryText"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btntelpguru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"/>
+
+
+
+    </RelativeLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonShare"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/background_button"-->
+<!--        android:text="Jadwal Mengajar"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/colorPrimary"/>-->
+
+</LinearLayout>

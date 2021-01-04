@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "28693327388",
+    "firebase_url": "https://project-pkk.firebaseio.com",
+    "project_id": "project-pkk",
+    "storage_bucket": "project-pkk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28693327388:android:5804c470dfd80a066e39d9",
+        "android_client_info": {
+          "package_name": "com.example.projectpkk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28693327388-86i5mcl2uq10a78oacmjcb9ka88e51gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectpkk",
+            "certificate_hash": "3486ef7411431758d6ae9c55731d946ca3e74174"
+          }
+        },
+        {
+          "client_id": "28693327388-771h3nandd28ohg4r2dc1g3vfop4p39a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN-sl-5A5E7kWGOAaaTZ2xLjX3vCWynJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28693327388-771h3nandd28ohg4r2dc1g3vfop4p39a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

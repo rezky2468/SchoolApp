@@ -1,0 +1,417 @@
+{
+  "guru": [
+    {
+      "nama": "Anton Jaenudin, Sp.D",
+      "jabatan": "Kepala Sekolah",
+      "ttl": "Bandung, 5 Agustus 1963",
+      "pendidikan": "S1 Geografi",
+      "mapel": "Fisika",
+      "email": "AntonJaenudin5@gmail.com",
+      "telp": "+6288801855938",
+      "foto": "guru_anton"
+    },
+    {
+      "nama": "Asep Dimyati Yusup, St",
+      "jabatan": "Wakasek Kurikulum, Kaprodi RPL",
+      "ttl": "Bandung, 5 September 1985",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif RPL",
+      "email": "asepdy@gmail.com",
+      "telp": "+6285294416324",
+      "foto":"guru_asep_d_y"
+    },
+    {
+      "nama": "Wahyu Taufix, S.Pd",
+      "jabatan": "Wakasek Kesiswaan",
+      "ttl": "Bandung, 18 Januari 1986",
+      "pendidikan": "S1 Pendidikan Matematika",
+      "mapel": "Matematika",
+      "email": "wahyutaufix17@gmail.com",
+      "telp": "+6285721288814",
+      "foto": "guru_wahyu"
+    },
+    {
+      "nama": "Teli Mardiani, S.Pd",
+      "jabatan": "Wakasek Sarana Prasarana",
+      "ttl": "Bandung, 31 Mei 1985",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "mapel": "Bahasa Inggris",
+      "email": "telimardiani5@gmail.com",
+      "telp": "+6281320027536",
+      "foto":"guru_teli"
+    },
+    {
+      "nama": "Sigid Purwanto, S.Pd",
+      "jabatan": "Wakasek HUBIN, Staf BKK",
+      "ttl": "Karanganyar, 5 Desember 1970",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TIK",
+      "email": "sigidpurwanto33@gmail.com",
+      "telp": "+6285317122050",
+      "foto":"guru_sigid"
+    },
+    {
+      "nama": "Indra Setia Nugraha, St",
+      "jabatan": "Kaprodi TKJ, Staf Kurikulum",
+      "ttl": "Purwakarta, 30 Juni 1988",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "indra.sn300688@gmail.com",
+      "telp": "+6282126360972",
+      "foto":"guru_indra"
+    },
+    {
+      "nama": "Devi Adriani, S.Pd",
+      "jabatan": "Kaprodi Perbankan",
+      "ttl": "Bandung, 22 September 1991",
+      "pendidikan": "S1 Pendidikan Ekonomi Akuntansi",
+      "mapel": "Produktif Perbankan",
+      "email": "adrianidevi64@gmail.com",
+      "telp": "+6285220302463",
+      "foto":"guru_devi"
+    },
+    {
+      "nama": "Drs. Abin Saepudin",
+      "jabatan": "-",
+      "ttl": "Bandung, 5 September 1958",
+      "pendidikan": "S1 Pendidikan Kewarganegaraan",
+      "mapel": "PKN",
+      "email": "-",
+      "telp": "+6285223194218",
+      "foto":"guru_abin"
+    },
+    {
+      "nama": "Iis Robiah, S.Ag",
+      "jabatan": "-",
+      "ttl": "Jakarta, 1 September 1971",
+      "pendidikan": "S1 Pendidikan Agama Islam",
+      "mapel": "PABP",
+      "email": "robiahiis@gmail.com",
+      "telp": "+6285314081815",
+      "foto":"guru_iis"
+    },
+    {
+      "nama": "Asep Yusup Hambara Sukendar, S.Sn",
+      "jabatan": "Pembina Ekskul Seni",
+      "ttl": "Tasikmalaya, 13 September 1972",
+      "pendidikan": "S1 Pendidikan Seni Tari",
+      "mapel": "Seni Budaya",
+      "email": "asepyusufbppi@gmail.com",
+      "telp": "+6281320519794",
+      "foto":"guru_asep_y"
+    },
+    {
+      "nama": "Egi Dodi Gunadi, St",
+      "jabatan": "Kepala Lab TKJ, Pembina Ekskul",
+      "ttl": "Bandung, 16 Februari 1981",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "egidodig@gmail.com",
+      "telp": "+6285797984342",
+      "foto":"guru_egi"
+    },
+    {
+      "nama": "Ence Kamil, S.Si",
+      "jabatan": "-",
+      "ttl": "Ciamis, 4 Juli 1984",
+      "pendidikan": "S1 Ilmu Keolahragaan",
+      "mapel": "PJOK",
+      "email": "encekamil94@gmail.com",
+      "telp": "+6281312668020",
+      "foto":"img1"
+    },
+    {
+      "nama": "Mega Merliana, S.Ds, S.Kom",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 26 Maret 1989",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TIK",
+      "email": "merlianamega89@gmail.com",
+      "telp": "+6285294785608",
+      "foto":"guru_mega"
+    },
+    {
+      "nama": "Nurwita, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 5 Juli 1987",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "mapel": "Bahasa Inggris",
+      "email": "nurwita4@gmail.com",
+      "telp": "+6285846877764",
+      "foto":"guru_nurwita"
+    },
+    {
+      "nama": "Iwan Setiawan, S.Sos.i, S.Kom",
+      "jabatan": "-",
+      "ttl": "Bandung, 22 Maret 1980",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "iwansetia234@gmail.com",
+      "telp": "+6285320246003",
+      "foto":"img1"
+    },
+    {
+      "nama": "Rina Erwina, St",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "ttl": "Bandung, 29 November 1990",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif RPL",
+      "email": "rina.erwina29@gmail.com",
+      "telp": "+6283829744455",
+      "foto":"guru_rina"
+    },
+    {
+      "nama": "Wahyudi, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 2 April 1976",
+      "pendidikan": "S1 Pendidikan Matematika",
+      "mapel": "Matematika",
+      "email": "wahyudiwahyudi005@gmail.com",
+      "telp": "+6285795521252",
+      "foto":"guru_wahyudi"
+    },
+    {
+      "nama": "Liku Vici Indriani, Se",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 31 Juli 1982",
+      "pendidikan": "S1 Ekonomi Manajemen",
+      "mapel": "Produktif Perbankan",
+      "email": "likuapple92@gmail.com",
+      "telp": "+6282121434343",
+      "foto":"guru_liku"
+    },
+    {
+      "nama": "Indira Soviaty Ganiwa Putri, S.Si",
+      "jabatan": "Pembina Ekskul",
+      "ttl": "Bandung, 12 Januari 1991",
+      "pendidikan": "S1 Biologi",
+      "mapel": "Ilmu Pengetahuan Alam",
+      "email": "soviatyindira@gmail.com",
+      "telp": "+6283156685741",
+      "foto":"guru_indira"
+    },
+    {
+      "nama": "Fitria Yuliana Damayanti, S.Pd",
+      "jabatan": "Staf Kesiswaan, Wali Kelas",
+      "ttl": "Bandung, 14 Januari 1992",
+      "pendidikan": "S1 Pendidikan Bahasa Indonesia",
+      "mapel": "Bahasa Indonesia",
+      "email": "fitriayulianadamayanti@gmail.com",
+      "telp": "+6282214004313",
+      "foto":"guru_fitria"
+    },
+    {
+      "nama": "Irpan Nurapandi, S.Kom",
+      "jabatan": "Operator Sekolah",
+      "ttl": "Tasikmalaya, 17 Juli 1988",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TIK",
+      "email": "irfannurafandi@gmail.com",
+      "telp": "+6282315970813",
+      "foto":"img1"
+    },
+    {
+      "nama": "Pravita Devi Amalia, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 20 Maret 1985",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "mapel": "Bahasa Inggris",
+      "email": "pravitaamallia@gmail.com",
+      "telp": "+6289610103011",
+      "foto":"guru_pravita"
+    },
+    {
+      "nama": "Eka Mardiana, S.Pd",
+      "jabatan": "-",
+      "ttl": "Purbalingga, 14 Maret 1992",
+      "pendidikan": "Pendidikan Matematika",
+      "mapel": "Matematika",
+      "email": "eka.mardiana 99@gmail.com",
+      "telp": "+6282126288778",
+      "foto":"guru_eka"
+    },
+    {
+      "nama": "Irma Sumarni, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 23 November 1984",
+      "pendidikan": "S1 Pendidikan PKN",
+      "mapel": "PKN",
+      "email": "irmasumarni24@gmail.com",
+      "telp": "+6285862244451",
+      "foto":"guru_irma"
+    },
+    {
+      "nama": "Rini Shoffa Aulia, S.Pd",
+      "jabatan": "Pembina Ekskul",
+      "ttl": "Bandung, 19 September 1994",
+      "pendidikan": "Pendidikan Fisika",
+      "mapel": "Fisika",
+      "email": "rinishoffaaulia@gmail.com",
+      "telp": "+628996831063",
+      "foto":"guru_rini"
+    },
+    {
+      "nama": "Isma Purnamasari, S.Pd",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "ttl": "Bandung, 7 Agustus 1994",
+      "pendidikan": "S1 PJOK",
+      "mapel": "PJOK",
+      "email": "ismap002@gmail.com",
+      "telp": "+6283822118049",
+      "foto":"guru_isma"
+    },
+    {
+      "nama": "Ai Rodiah, S.Pd.i",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "ttl": "Bandung, 2 Agustus 1977",
+      "pendidikan": "S1 Pendidikan Agama Islam",
+      "mapel": "PABP",
+      "email": "19airodiah@gmail.com",
+      "telp": "+6285220302463",
+      "foto":"guru_ai"
+    },
+    {
+      "nama": "Yogie Prandi Wargina, S.Tr.Kom",
+      "jabatan": "-",
+      "ttl": "Bandung, 12 Juli 1994",
+      "pendidikan": "S1 Manajemen Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "yogieprandywargina@gmail.com",
+      "telp": "+6285759059443",
+      "foto":"guru_yogie"
+    },
+    {
+      "nama": "Odih Syarifudin, S.Ps.I",
+      "jabatan": "Koordinator BK",
+      "ttl": "Bandung, 2 Agustus 1992",
+      "pendidikan": "S1 Psikologi",
+      "mapel": "BP/BK",
+      "email": "Odihs0208@gmail.com",
+      "telp": "+628814557368",
+      "foto":"guru_odih"
+    },
+    {
+      "nama": "Fajar Oktavian Nugraha, S.Pd",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "ttl": "Bandung, 5 Oktober 1996",
+      "pendidikan": "S1 Ilmu Komputer",
+      "mapel": "Produktif TIK",
+      "email": "Fajaroktavian58@gmail.com",
+      "telp": "+6285722584681",
+      "foto":"guru_fajar"
+    },
+    {
+      "nama": "Nirwan Setia Dharmadi, S.Pd, M.M.Pd",
+      "jabatan": "-",
+      "ttl": "Bandung, 9 Juli 1987",
+      "pendidikan": "S1 Manajemen Pendidikan",
+      "mapel": "Sejarah Indonesia",
+      "email": "nirwan.setia87@gmail.com",
+      "telp": "'082127431945",
+      "foto":"guru_nirwan"
+    },
+    {
+      "nama": "Neni Rosmayani, S.S",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 23 Agustus 1982",
+      "pendidikan": "S1 Bahasa Jepang",
+      "mapel": "Bahasa Jepang",
+      "email": "rahmanaira2010@gmail.com",
+      "telp": "+628817899711",
+      "foto":"guru_neni"
+    },
+    {
+      "nama": "Kiki Padila, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 13 Oktober 1993",
+      "pendidikan": "S1 Pendidikan Bahasa Daerah",
+      "mapel": "Bahasa Sunda",
+      "email": "kikipadila7@gmail.com",
+      "telp": "+6289657235698",
+      "foto":"guru_kiki"
+    },
+    {
+      "nama": "Lisda Nurhayati, S.Pd",
+      "jabatan": "",
+      "ttl": "Ciamis, 28 Mei 1996",
+      "pendidikan": "S1 Pendidikan Bahasa Indonesia",
+      "mapel": "Bahasa Indonesia",
+      "email": "lisda.nurhayti28@gmail.com",
+      "telp": "+6283820561075",
+      "foto":"guru_lisda"
+    },
+    {
+      "nama": "Hani Kusyanti Kusnadi, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 8 Juli 1996",
+      "pendidikan": "S1 Pendidikan Ekonomi",
+      "mapel": "Produktif Perbankan",
+      "email": "hani.kustyanti1996@gmail.com",
+      "telp": "+6288809405477",
+      "foto":"guru_hani"
+    },
+    {
+      "nama": "M. Sobar, St",
+      "jabatan": "-",
+      "ttl": "Bandung, 24 Juni 1982",
+      "pendidikan": "S1 Pendidikan Teknik Elektro",
+      "mapel": "Produktif TKJ",
+      "email": "sobar.bubat@gmail.com",
+      "telp": "+6282116188931",
+      "foto":"guru_m_sobar"
+    },
+    {
+      "nama": "Sinta Hodliah, S.Pd",
+      "jabatan": "Wali Kelas",
+      "ttl": "Bandung, 8 Februari 1996",
+      "pendidikan": "S1 Pendidikan Kimia",
+      "mapel": "Kimia",
+      "email": "shintakhodijah8@gmail.com",
+      "telp": "+6282215780234",
+      "foto":"guru_sinta"
+    },
+    {
+      "nama": "Andiyanto, S.Kom",
+      "jabatan": "-",
+      "ttl": "26 Juni 1997",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "firmana37@gmail.com",
+      "telp": "+6288801855938",
+      "foto":"guru_andiyanto"
+    },
+    {
+      "nama": "Guruh Panji Alam, S.Kom",
+      "jabatan": "-",
+      "ttl": "Bandung, 25 Juni 1997",
+      "pendidikan": "S1 Teknik Informatika",
+      "mapel": "Produktif TKJ",
+      "email": "pnjalam@gmail.com",
+      "telp": "+62895333861499",
+      "foto":"guru_guruh"
+    },
+    {
+      "nama": "Handi Mulyadi, S.Pd",
+      "jabatan": "-",
+      "ttl": "Bandung, 17 September 1996",
+      "pendidikan": "S1 Bimbingan Konseling",
+      "mapel": "BP/BK",
+      "email": "handimulyadi5@gmail.com",
+      "telp": "+62895346085313",
+      "foto":"guru_handi"
+    },
+    {
+      "nama": "Uman Priatna, S.Pd.I",
+      "jabatan": "DKM, Pembina Ekskul",
+      "ttl": "Bandung, 30 Juni 1962",
+      "pendidikan": "S1 Ilmu Tarbiyah",
+      "mapel": "Murotal Alquran",
+      "email": "-",
+      "telp": "-",
+      "foto":"guru_uman"
+    }
+  ]
+}
+
+
+

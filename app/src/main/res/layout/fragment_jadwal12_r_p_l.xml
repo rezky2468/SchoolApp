@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorSurface"
+    android:layout_height="match_parent"
+    tools:context=".User.BottomNavigationView.Menu3Jadwal.Tabs.Jadwal12RPLFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 RPL 1"
+                android:fontFamily="@font/muli_black"
+                android:textColor="@color/colorOnPrimaryText"
+                android:textSize="40sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_12_rpl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 RPL 2"
+                android:fontFamily="@font/muli_black"
+                android:textColor="@color/colorOnPrimaryText"
+                android:textSize="40sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_12_rpl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

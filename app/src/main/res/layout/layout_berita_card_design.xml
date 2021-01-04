@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="260dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_border">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/mv_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:riv_corner_radius_top_left="7dp"
+            app:riv_corner_radius_top_right="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1" />
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/mv_image">
+
+            <TextView
+                android:id="@+id/mv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mv_image"
+                android:fontFamily="@font/baloo"
+                android:text="Sekolah dan pandemi"
+                android:textColor="@color/colorOnPrimaryText"
+                android:textSize="20sp" />
+
+<!--            <RatingBar-->
+<!--                android:id="@+id/mv_rating"-->
+<!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/mv_title"-->
+<!--                android:layout_toRightOf="@id/mv_image"-->
+<!--                android:rating="3.5" />-->
+
+            <TextView
+                android:id="@+id/mv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv_title"
+                android:layout_toRightOf="@id/mv_image"
+                android:textColor="@color/colorOnSecondaryText"
+                android:textSize="12sp"
+                android:text="Pemda diizinkan buka sekolah pada Januari, peta zonasi 'tidak lagi menentukan'" />
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="?attr/selectableItemBackground"-->
+<!--            android:clickable="true" />-->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

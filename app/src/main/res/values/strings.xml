@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMK BPPI</string>
+    <string name="logo_name">SMK BPPI</string>
+    <string name="slogan_name">Bersih Hijau Berkarakter</string>
+    <string name="powered_by">Powered By 12 RPL 1 2019–2020</string>
+
+    <!-- TODO: Strings for On Boarding Screen -->
+
+    <!-- Titles -->
+    <string name="first_slide_title">Selamat Datang</string>
+    <string name="second_slide_title">Informasi</string>
+    <string name="third_slide_title">Jenjang</string>
+    <string name="fourth_slide_name">For Your Information</string>
+
+    <!-- Descriptions -->
+    <string name="first_slide_desc">Hallo! Selamat bergabung di SMK BPPI. Sekolah swasta yang mampu bersaing dengan sekolah negeri dan mampu membuat anak pintar</string>
+    <string name="second_slide_desc">Kamu bisa cari informasi seputar SMK BPPI Baleendah di aplikasi ini</string>
+    <string name="third_slide_desc">Di SMK BPPI ini ada 3 jurusan nih, yaitu: RPL, TKJ, dan PKM</string>
+    <string name="fourth_slide_desc">Aplikasi ini dikembangkan oleh Dypta, Naufal, Rezky, Wahyu dari kelas 12 RPL 1. Have Fun :D</string>
+
+    <!-- Buttons -->
+    <string name="skip_btn">Lewati</string>
+    <string name="next_btn">Lanjut</string>
+    <string name="let_get_started">Mulai!</string>
+
+
+    <!-- TODO: Strings for User Dashboard Screen -->
+
+    <!-- Categories -->
+    <string name="absen">Guru</string>
+    <string name="ekskul">Ekskul</string>
+    <string name="event">Event</string>
+    <string name="administrasi">Denah</string>
+    <string name="car_rent">Car Rent</string>
+    <string name="hospitals">Hospital</string>
+
+    <!-- Titles and Descriptions -->
+    <string name="featured_locations">Jurusan SMK BPPI</string>
+    <string name="featured_locations_descriptions">Terdapat 3 jurusan yang diminati banyak orang dan memiliki beragam prospek kerja</string>
+    <string name="most_viewed_locations">Berita Terbaru</string>
+    <string name="categories">Kategori</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Cari</string>
+
+    <!-- General Menu names -->
+    <string name="nav_home">BERANDA</string>
+    <string name="nav_search">CARI</string>
+    <string name="nav_all_categories">KATEGORI</string>
+    <string name="nav_add_missing_place">ADD MISSING PLACE</string>
+    <string name="nav_login">Masuk</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_logout">Keluar</string>
+    <string name="nav_share">Bagikan</string>
+    <string name="nav_rate_us">Beri ulasan</string>
+
+    <!-- All Categories Menu names -->
+    <string name="expand_all">Tampilkan Semua</string>
+
+
+    <!-- TODO: Strings for Retailer Screen -->
+
+    <!-- General Strings -->
+    <string name="retailer_heading">Grow\nYour Skill</string>
+    <string name="retailer_tag_line">Kita bakal bantu kalian buat ngembangin skill kalian!</string>
+    <string name="login">Masuk</string>
+    <string name="sign_up">Daftar</string>
+    <string name="how_we_work">Mari Bergabung</string>
+    <string name="remember_me">Ingat Saya?</string>
+    <string name="forget_password">Lupa Password</string>
+    <string name="forget_password_detail">Provide your accounts email for which you want to reset your password!</string>
+    <string name="create_account">Buat Akun</string>
+    <string name="create_account_heading">Buat\nAkun</string>
+    <string name="ok">OK</string>
+
+    <!-- Field Strings -->
+    <string name="enter_full_name">Nama Lengkap</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone_number">Nomor Telepon</string>
+    <string name="enter_password">Kata Sandi</string>
+
+    <!-- Create Account String -->
+    <string name="choose_gender">Pilih jenis kelamin</string>
+    <string name="male">Laki-Laki</string>
+    <string name="female">Perempuan</string>
+    <string name="other">Lainnya</string>
+    <string name="select_your_age">Pilih umur kamu</string>
+
+
+    <!-- OTP Screen -->
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on</string>
+
+    <string name="make_selection">Make Selection</string>
+    <string name="make_selection_detail">Select which contact detail should we use to reset your password</string>
+
+    <string name="new_credentials">New Credentials</string>
+    <string name="new_credentials_details">Your identity has been verified! Set your new password!</string>
+
+    <string name="password_updated">Password\nUpdated</string>
+    <string name="password_updated_success_message">Your password has been updated!</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="verify_code">Verify Code</string>
+
+    <!-- TODO: Strings for Bottom Navigation Bar -->
+    <string name="label_beranda">Beranda</string>
+    <string name="label_pengumuman">Pengumuman</string>
+    <string name="label_jadwal">Jadwal</string>
+    <string name="label_profile">Profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string-array name="images">
+        <item>image1</item>
+        <item>image1</item>
+        <item>image1</item>
+    </string-array>
+
+    <string-array name="names">
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Desc1</item>
+        <item>Desc1</item>
+        <item>Desc1</item>
+    </string-array>
+
+    <string name="title_activity_contoh">Contoh</string>
+    <string name="tab_text_1">RPL</string>
+    <string name="tab_text_2">TKJ</string>
+    <string name="tab_text_3">PKM</string>
+    <string name="title_activity_tabbed_example">TabbedExample</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <string name="dataGuruAntonJ">Anton Jaenudin, Sp.D</string>
+    <string name="dataGuruAsepDY">Asep Dimyati Yusup, St</string>
+
+    <string name="senin">Senin</string>
+    <string name="selasa">Selasa</string>
+    <string name="rabu">Rabu</string>
+    <string name="kamis">Kamis</string>
+    <string name="jumat">Jumat</string>
+    <string name="sabtu">Sabtu</string>
+    <string name="minggu">Minggu</string>
+
+    <string name="jurusanRPL">
+        Rekayasa Perangkat Lunak atau RPL merupakan salah satu jurusan yang banyak ditemui di berbagai jurusan SMK.
+        Berikut 10 peluang atau prospek kerja RPL untuk menjadi referensi bagi Kamu.\n\n
+
+        1. Developer IT\nPekerjaan Developer IT adalah untuk mengembangkan software-software sesuai dengan kebutuhan dan keinginan dari klien yang memintanya.
+        Software-software tersebut misalnya software game atau software untuk bisnis. Kisaran gaji seorang developer IT adalah Rp.5.000.000.\n\n
+
+        2. Programmer\nProgrammer adalah orang yang bekerja untuk membuat sebuah program atau software komputer tertentu untuk memudahkan suatu pekerjaan.
+        Programmer merupakan pekerjaan yang pasti dibutuhkan di hampir seluruh perusahaan. Kisaran gaji seorang programmer adalah Rp.6.000.000.\n\n
+
+        3. IT Konsultan\nSalah satu bidang pekerjaan yang banyak dibutuhkan saat ini adalah IT konsultan.
+        Sebagai IT konsultan, Kamu akan berperan mulai dari proses perancangan hingga evaluasi suatu penerapan IT pada sebuah perusahaan.
+        Kisaran gaji seorang IT konsultan adalah Rp.9.000.000.\n\n
+
+        4. System Analyst\nSystem analyst adalah orang yang bidang pekerjaannya yaitu berbagai hal yang berkaitan dengan analisa suatu sistem.
+        Hasil analisa sistem ini nantinya akan digunakan oleh seorang programmer.
+        System analyst juga harus bisa membandingkan kelebihan dan kekurangan dari sebuah sistem yang hendak dirancang.
+        Kisaran gaji seorang system analyst adalah Rp.5.000.000.\n\n
+
+        5. Database Engineer\nPeluang atau prospek kerja RPL yang saat ini juga terbuka lebar adalah menjadi database engineer.
+        Ia adalah orang yang bertugas untuk membuat desain serta memonitor suatu database yang cukup kompleks.
+        Kisaran gaji seorang database engineer adalah Rp.5.000.000.\n\n
+
+        6. Web engineer\nWeb engineer adalah orang yang bertugas untuk merancang serta membangun sebuah website.
+        Ia juga bertanggung jawab atas layanan dan kemudahan dari website tersebut.
+        Kisaran gaji seorang web engineer adalah Rp.5.000.000.\n\n
+
+        7. Game Developer\nGame developer merupakan bidang pekerjaan yang mengkhususkan orang tersebut untuk merancang dan membuat sebuah software khusus game atau permainan.
+        Kisaran gaji seorang game developer adalah Rp.6.000.000.\n\n
+
+        8. Data Communication Engineer\nData communication engineer atau sering juga disebut computer network adalah pekerjaan untuk merancang jaringan komputer hingga perawatan dan pengelolaan jaringan tersebut untuk suatu instansi atau perusahaan.
+        Kisaran gaji seorang data communication engineer adalah Rp.8.000.000.\n\n
+
+        9. Intelligent System Developer\nSoftware-software yang harus dirancang dan dikembangkan oleh seorang intelligent system developer adalah software-software yang khusus berkaitan dengan intelijen, misalnya image recognizer.
+        Gaji seorang intelligent system developer adalah Rp.6.000.000.\n\n
+
+        10. Software Tester\nSoftware tester merupakan bidang pekerjaan dimana Kamu akan memiliki peran khusus untuk menguji sebuah software atau perangkat lunak.
+        Kisaran gaji seorang software tester adalah Rp.5.000.000 hingga Rp.10.000.000.\n\n
+
+        Itulah 10 peluang atau prospek kerja RPL untuk menjadi referensi Kamu. Semoga ulasannya bermanfaat ya!\n\n
+
+    </string>
+
+    <string name="jurusanTKJ">
+        Jurusan yang memiliki peluang kerja lebih besar ketika lulus nantinya selalu menjadi jurusan yang banyak diminati.
+        Salah satu jurusan yang memiliki banyak peminat di SMK adalah Teknik Komputer Jaringan atau TKJ. Lalu, apa saja peluang kerja bagi para lulusan TKJ?
+        Berikut beberapa pekerjaan yang menjadi peluang atau prospek kerja TKJ beserta kisaran gajinya.\n\n
+
+        1. Teknisi Komputer\nTeknisi komputer adalah profesi yang sangat dibutuhkan mengingat saat ini hampir seluruh sektor pekerjaan menggunakan komputer dan komputer-komputer tersebut membutuhkan para teknisi untuk perawatan dan perbaikannya.
+        Kisaran gaji seorang teknisi komputer adalah Rp.2.500.000-Rp.3.500.000.\n\n
+
+        2. Desainer Grafis\nSeorang lulusan TKJ juga bisa bekerja sebagai desainer grafis.
+        Bidang kerjanya adalah membuat visual yang menarik dari sebuah konten.
+        Kisaran kerja seorang desainer grafis adalah Rp.3.500.000-Rp.5.000.000.\n\n
+
+        3. Teknisi Jaringan\nPekerjaan seorang teknisi jaringan adalah untuk mengelola segala hal yang berkaitan dengan jaringan atau network, seperti WiFi, kabel telepon, atau instalasi jaringan lain.
+        Kisaran gaji seorang teknisi jaringan adalah Rp.3.500.000.\n\n
+
+        4. Administrasi Server\nPekerjaan administrasi server atau admin server adalah untuk mengawasi, mengelola, serta mengamankan suatu komputer server.
+        Prosedur penggunaan komputer server sendiri tentunya berbeda dengan komputer biasa. Kisaran gaji seorang admin server adalah Rp.3.000.000.\n\n
+
+        5. Customer Service\nPeluang atau prospek kerja TKJ selanjutnya adalah customer service.
+        Saat ini customer service juga banyak bekerja dengan menggunakan layanan digital seperti e-mail dan internet, sehingga banyak membutuhkan lulusan TKJ.
+        Kisaran gaji seorang customer service adalah Rp.2.800.000.\n\n
+
+        6. Programmer\nProgrammer adalah orang yang bekerja untuk berbagai hal yang berhubungan dengan bahasa pemrograman dalam komputer.
+        Dengan menguasai bahasa pemrograman, programmer juga bisa membuat software atau website.
+        Kisaran gaji seorang programmer adalah Rp.3.000.000-Rp.6.000.000.\n\n
+
+        7. System Analyst\nSystem analyst adalah orang yang bidang pekerjaannya yaitu berbagai hal yang berkaitan dengan analisa suatu sistem.
+        Hasil analisa sistem ini nantinya akan digunakan oleh seorang programmer.
+        System analyst juga harus bisa membandingkan kelebihan dan kekurangan dari sebuah sistem yang hendak dirancang.
+        Kisaran gaji seorang system analyst adalah Rp.5.000.000.\n\n
+
+        8. Web Designer\nSeorang web designer bertugas untuk merancang sebuah web dengan tampilan dan konten yang menarik dan dikirimkan ke pengguna akhir melalui World Wide Web.
+        Kisaran gaji untuk seorang web designer adalah Rp.3.500.000-7.500.000.\n\n
+
+        9. Data Entry\nPekerjaan seorang operator data entry adalah mengurus hal-hal yang berkaitan dengan sistem operasional, misalnya input dan output sebuah sistem.
+        Kisaran gaji seorang data entry adalah Rp.3.000.000-Rp.5.000.000.\n\n
+
+        10. Pengusaha Warung Internet\nMeskipun tampak seperti usaha kecil, namun pendapatan yang Kamu dapatkan bisa cukup besar dengan membuka usaha ini.
+        Dengan estimasi biaya per jam Rp.3000, maka dengan 10 komputer yang beroperasi 16 am per hari Kamu bisa mendapat penghasilan kotor Rp.14.400.000.\n\n
+
+        Itulah beberapa peluang atau prospek kerja TKJ beserta kisaran gajinya untuk menjadi referensi Kamu. Semoga ulasannya bermanfaat ya!
+    </string>
+
+    <string name="jurusanPBK">
+        Apakah Kamu salah satu siswa SMK jurusan perbankan?
+        Jika iya, apakah Kamu sudah tahu peluang atau prospek kerja perbankan? Setelah lulus nanti, apakah Kamu sudah menentukan pilihan karir yang ingin Kamu jalani?
+        Jika belum, Kamu bisa memikirkannya dari sekarang. Sembari berpikir, Kamu bisa mencari tahu peluang atau prospek kerja dari lulusan perbankan.
+        Berikut ini ada 10 prospek kerja perbankan untuk Kamu para siswa SMK jurusan perbankan.\n\n
+
+        1. Teller\nKarena Kamu berasal dari jurusan perbankan, Kamu bisa berkarir menjadi seorang teller bank atau lembaga keuangan lainnya.
+        Kamu yang sudah biasa pergi ke bank, tentu tidak asing lagi dengan profesi yang satu ini. Gaji : Rp3juta\n\n
+
+        2. Customer Service\nTugas seorang customer service bank adalah mengatasi masalah yang dialami oleh nasabah, misalnya lupa PIN, ATM hilang atau tertelan, hingga pembukaan buku rekening.
+        Gaji : Rp3juta\n\n
+
+        3. Surveyor\nPeluang atau prospek kerja perbankan selanjutnya adalah surveyor.
+        Tugasnya adalah mengumpulkan informasi dan melakukan verifikasi data terhadap calon nasabah, terutama dalam hal pengajuan kredit.
+        Gaji rata-rata : Rp3.2juta\n\n
+
+        4. Collector\nSesuai dengan namanya, Kamu yang berkarir sebagai collector akan melakukan penagihan terhadap nasabah yang menunggak angsuran.
+        Gaji rata-rata : Rp3.3juta\n\n
+
+        5. Marketing\nKamu mungkin sudah punya gambaran terkait profesi ini.
+        Yap, tugas marketing tidak jauh-jauh dari mempromosikan produk keuangan dari perusahaan tempat Kamu bekerja.
+        Gaji : Rp2.5juta\n\n
+
+        6. Admin Keuangan\nTugas seorang admin keuangan adalah membuat perencanaan dan juga laporan keuangan.
+        Segala tagihan keuangan juga Kamu yang mengurusnya.
+        Gaji rata-rata : Rp4juta\n\n
+
+        7. Customer Relationship Officer\nSelanjutnya adalah customer relationship officer.
+        Tugasnya tidak jauh berbeda dengan customer service, seperti memberi informasi kepada konsumen dan menyelesaikan masalah yang dihadapi oleh nasabah.
+        Gaji : Rp3juta\n\n
+
+        8. Account Officer\nPeluang atau prospek kerja perbankan yang berikutnya adalah account officer atau biasa disingkat dengan AO.
+        Tugas besar seorang AO adalah melakukan pemasaran produk keuangan berupa kredit hingga mendapatkan nasabah.
+        Gaji : Rp2.2juta\n\n
+
+        9. Desk Collection\nSecara sederhana, desk collection merupakan sebutan untuk mereka yang bekerja di balik meja untuk mengingatkan nasabah yang memiliki utang.
+        Kamu akan menagih nasabah yang telat membayar utang yang telah jatuh tempo dengan menggunakan sambungan telepon.
+        Gaji : Rp3.5juta\n\n
+
+        10. Staf Keuangan\nTugas seorang staf keuangan adalah membantu tugas-tugas koordinator keuangan.
+        Segala hal yang berhubungan dengan arus kas, pembayaran, tagihan, setoran, dan lainnya harus bisa Kamu kelola dengan baik.
+        Gaji : Rp4juta\n\n
+
+        Nah, itulah 10 peluang atau prospek kerja perbankan.
+        Sekarang, Kamu sudah tahu prospek kerja yang linier dengan jurusan perbankan.
+        Dengan memilih karir yang linier, ilmu yang Kamu dapatkan selama menjalani pendidikan di SMK akan berguna secara maksimal.
+        Semoga ulasan di atas bisa lebih meyakinkan Kamu untuk memilih jurusan perbankan di perkuliahan nanti ya dan juga bermanfaat sebagai referensi ya.\n\n
+    </string>
+
+    <string name="judulBerita1">Sekolah dan pandemi</string>
+    <string name="judulBerita2">Pembukaan Sekolah</string>
+    <string name="judulBerita3">SNMPTN 2021</string>
+
+    <string name="tanggalBerita1">20 November 2020</string>
+    <string name="tanggalBerita2">21 Desember 2020</string>
+    <string name="tanggalBerita3">21 November 2020</string>
+
+    <string name="descBerita1">Pemda diizinkan buka sekolah pada Januari, peta zonasi tidak lagi menentukan</string>
+    <string name="descBerita2">Mendikbud Nadiem Makarim: Sekolah Tatap Muka Dimulai Januari 2021</string>
+    <string name="descBerita3">Hanya Siswa Eligible yang Bisa Mendaftar SNMPTN 2021, Apa Itu Eligible?</string>
+
+    <string name="artikelBerita1">
+        Pemerintah pusat memberikan kewenangan penuh kepada pemerintah daerah untuk kembali membuka sekolah dan melakukan proses pembelajaran tatap muka pada semester genap tahun ajaran 2020/2021.\n\n
+
+        "Pemerintah hari ini menyesuaikan kebijakan untuk memberikan kewenangan pada pemerintah daerah, kantor wilayah, kantor kemenag, untuk menentukan pemberian izin tatap muka di sekolah yang berada di bawah kewenangannya," kata Menteri Pendidikan dan Kebudayaan, Nadiem Makarim, dalam sesi jumpa pers virtual, Jumat (20/11).\n\n
+
+        "Pemberian izin bisa serentak atau bertahap, tergantung kesiapan masing-masing daerah sesuai diskresi kepala daerah, berdasarkan evaluasi daerah mana yang siap, mana yang tidak, dan setiap kemampuan sekolah untuk memenuhi check list dan melakukan protokol kesehatan sangat sehat," ujarnya.\n\n
+
+        Menurut Nadiem, perbedaan besar dari kebijakan pada Agustus lalu, pembukaan sekolah per Januari mendatang tidak lagi didasarkan pada zonasi yang disusun Satgas Covid-19.\n\n
+
+        "Peta zonasi risiko dari Satgas Covid-19 tidak lagi menentukan pemberian izin pembelajaran tatap muka tapi pemda, sehingga mereka bisa memilah daerah-daerah yang lebih mendetil," papar Nadiem.\n\n
+
+        Sebagian kalangan tidak setuju jika sekolah dibuka kembali, sementara sebagian orang tua mengaku sepakat dengan kebijakan pemerintah lantaran kesulitan mendampingi anaknya selama pembelajaran daring.\n\n
+
+        Komisi Perlindungan Anak Indonesia (KPAI), yang dikutip sejumlah media nasional, mengatakan sebagian besar sekolah belum siap menyelenggarakan belajar tatap muka.\n\n
+
+        Merujuk kajian terbaru yang dibuat lembaganya, Nadiem berkata bahwa baru 13% sekolah yang telah melakukan pembelajaran tatap muka. Di wilayah yang masuk zona hijau dan kuning kasus Covid-19 pun, kata dia, banyak sekolah yang belum beroperasi.\n\n
+
+        Pemberian kewenangan kepada pemerintah daerah untuk menggelar pembelajaran tatap muka di sekolah dituangkan dalam keputusan bersama empat menteri di bidang pendidikan, agama, kesehatan, dan urusan dalam negeri.\n\n
+
+        Harus disetujui pemda, kepala sekolah, dan komite sekolah\n
+        Walau kewenangan kini berada di tangan pemerintah daerah, Nadiem menyebut pembukaan sebuah sekolah juga harus disetujui kepala sekolah dan perwakilan orang tua murid.\n\n
+
+        "Kalau tiga pihak ini tidak mengizinkan, maka sekolah tidak diperkenankan dibuka," kata Nadiem.\n\n
+
+        Kalaupun sekolah nantinya kembali dibuka, Nadiem menyebut orang tua tetap berhak menentukan apakah anak mereka akan mengikuti proses pembelajaran tatap muka di sekolah atau tidak.\n\n
+
+        "Orang tua masih bisa tidak memperkenankan anaknya untuk datang ke sekolah untuk melakukan tatap muka. Hak terakhir dari siswa individu, walau sekolahnya sudah tatap muka, masih ada di orang tua," kata Nadiem.\n\n
+
+        Nadiem menyatakan, terdapat sejumlah persyaratan terkait dengan protokol kesehatan yang harus diterapkan sebuah sekolah sebelum proses belajar-mengajar tatap muka kembali dapat digelar.\n\n
+
+        Keputusan pemerintah ini ditanggapi beragam.\n\n
+
+        Rima Suliastini, orangtua siswa di Yogyakarta, mengatakan tidak setuju jika sekolah dibuka kembali sebelum vaksin Covid-19 diberikan kepada masyarakat.\n\n
+
+        "Pengumuman terlalu tergesa-gesa, kecuali setiap anak sudah mendapatkan vaksin dari pemerintah kemudian tatap muka. Itu mungkin lebih tepat. Pertanggung jawaban bagaimana kalau ada anak yang tertular, kemudian terjadi klaster? Tatap muka sebelum vaksin, aku nggak setuju," ujarnya kepada Furqon Ulya Himawan, wartawan di Yogyakarta yang melaporkan untuk BBC News Indonesia.\n\n
+
+        Di Kabupaten Pekalongan, Jawa Tengah, Sutrisno mengaku akan membolehkan anaknya yang siswa kelas 6 untuk kembali bersekolah.\n\n
+
+        "Kalau bisa memilih sih, inginnya tatap muka karena memang lebih dominan sekali perubahannya. Yang penting ada protokol dari pemerintah yang menjamin keamanan siswa," ujarnya kepada wartawan Noni Arnee yang melaporkan untuk BBC News Indonesia.\n\n
+
+        Ada pula yang ragu-ragu, seperti Popon Siti Latipah, ibu penyandang disabilitas netra yang selama ini mendampingi anaknya yang kondisi matanya sehat dan bersekolah di sekolah umum di Bandung, jawa Barat.\n\n
+
+        "Bingung kalau misalnya dibuka, tapi masih dalam masa begini, masih setengah hati menyuruh anak sekolah, meskipun sekolah di rumah juga kesulitannya banyak, tapi kan kita bisa tenang karena anak kita nggak ada interaksi dengan orang lain," ujar Popon kepada Yuli Saputra, wartawan di Bandung yang melaporkan untuk BBC News Indonesia.\n\n
+
+        Jikalau sekolah anaknya dibuka, Popon ingin memastikan dulu bagaimana kondisi sekolahnya, apakah sudah lengkap fasilitas protokol kesehatannya.\n\n
+
+        "Dilihat dulu situasinya, kondisi di kelas, apa memang sekolah menerapkan apa yang diperintahkan pemerintah, misalnya jaga jarak."\n\n
+
+        Sebelumnya, pada Agustus lalu, pemerintah memutuskan untuk memperbolehkan sekolah melakukan kegiatan belajar-mengajar secara tatap muka di daerah zona hijau dan kuning, atau daerah yang memiliki risiko rendah penyebaran virus corona, secara bertahap.\n\n
+
+        Keputusan itu dituangkan dalam revisi Surat Keputusan Bersama (SKB) Empat Menteri tentang panduan penyelenggaraan pembelajaran tahun ajaran baru di masa pandemi.\n\n
+
+        "Kita memperbolehkan, dan bukan memaksakan, pembelajaran tatap muka [di zona kuning] dengan mengikuti protokol kesehatan yang ketat," kata Menteri Pendidikan dan Kebudayaan (Mendikbud), Nadiem Makarim, Jumat (07/08).\n\n
+
+        Nadiem menjelaskan apabila pemerintah daerah atau kepala dinasnya "merasa belum siap" atas keputusan pemerintah pusat ini, maka mereka "tidak harus melaksanakannya".\n\n
+
+        Dan apabila masing-masing kepala sekolah dan komite sekolah menyatakan belum siap, maka mereka dibolehkan tidak menggelar pembelajaran tatap muka.\n\n
+
+        "Dan kalau sekolah mulai melakukannya, kalau orang tua murid tidak memperkenankan anaknya untuk pergi ke sekolah, itu prerogatif dan hak orang tua," ungkap Nadiem.\n\n
+
+    </string>
+    <string name="artikelBerita2">
+
+        Mungkin Anda salah satu orang tua yang khawatir akan rencana pembelajaran tatap muka dari Kemendikbud RI. Membayangkan anak kembali bersekolah di masa pandemi, di saat vaksin belum tersedia, dan segala risiko penularan virus corona yang bisa terjadi di sekolah, mungkin adalah beberapa hal yang ada di benak Anda ketika mendengar kabar tersebut. Tenang dulu, parents! Ternyata, rencana pembukaan sekolah tersebut memiliki banyak ketentuan dan aturan.\n\n
+
+        “Pesan yang terpenting di sini adalah, pembelajaran tatap muka artinya bukan kembali ke sekolah seperti normal. Ini sangat di luar yang normal, karena kapasitasnya hanya setengahnya dan tanpa ada aktivitas yang berkerumun lainnya. Dan yang ini makanya monitoring dari dinas (pendidikan), dari Pemda, dari Gugus Tugas (Covid-19) di setiap daerah ini luar biasa pentingnya untuk memastikan protokol ini terjaga,” jelas Menteri Pendidikan dan Kebudayaan (Mendikbud) Nadiem Makarim melalui kanal Youtube Kemendikbud pada Jumat (20/11/2020) lalu.\n\n
+
+        Pada tayangan langsung di Youtube Kemendikbud RI tersebut, Pemerintah menyusun Surat Keputusan Bersama (SKB) Menteri Pendidikan dan Kebudayaan, Menteri Agama, Menteri Kesehatan, dan Menteri Dalam Negeri Republik Indonesia tentang Panduan Penyelenggaraan Pembelajaran pada Tahun Ajaran 2020/2021 dan Tahun Akademik 2020/2021 di Masa Pandemi Coronavirus Disease 2019 (Covid-19).\n\n
+
+        Mulai semester genap tahun ajaran 2020/2021 (Januari 2021), kebijakan pembelajaran tatap muka dimulai dari pemberian izin oleh pemerintah daerah/kanwil/kantor Kemenag, serta tetap dilanjutkan dengan izin berjenjang dari satuan pendidikan dan orang tua. Pemberian izin pembelajaran tatap muka dapat dilakukan secara serentak dalam satu wilayah kabupaten/kota atau bertahap per wilayah kecamatan dan/atau desa/kelurahan. Berikut ini adalah beberapa fakta seputar rencana pembelajaran tatap muka di bulan Januari 2021.\n\n
+
+        <b>1. Pertimbangan Holistik Pemda dalam Membuka Sekolah</b>\n
+        Faktor-faktor yang perlu menjadi pertimbangan Pemda (Pemerintah Daerah) dalam pemberian izin pembelajaran tatap muka antara lain:\n
+        - Tingkat risiko penyebaran Covid-19 di wilayahnya.\n
+        - Kesiapan fasilitas pelayanan kesehatan.\n
+        - Kesiapan satuan pendidikan dalam melaksanakan pembelajaran tatap muka sesuai daftar periksa.\n
+        - Akses terhadap sumber belajar/kemudahan Belajar Dari Rumah (BDR). “Banyak sekali teman-teman dari daerah atau desa yang sangat sulit melakukan PJJ. Jadi mohon itu menjadi konsiderasi juga,” tutur Menteri Pendidikan dan Kebudayaan (Mendikbud) Nadiem Makarim.\n
+        - Kondisi psikososial peserta didik.\n
+        - Kebutuhan layanan pendidikan bagi anak yang orang tua atau walinya bekerja di luar rumah, yang tidak bisa membimbing anaknya.\n
+        - Ketersediaan akses transportasi yang aman dari dan ke satuan pendidikan.\n
+        - Tempat tinggal warga satuan pendidikan.\n
+        - Mobilitas warga antar-kabupaten/kota, kecamatan, dan kelurahan/desa.\n
+        - Kondisi geografis daerah.\n
+        “Ini harus menjadi pertimbangan yang holistik. Dan, Pemda harus mengambil keputusan itu berdasarkan faktor-faktor ini. Bagaimana yang mau tatap muka, dan bagaimana yang mau dilanjutkan belajar dari rumah,” jelas Mendikbud.
+
+        2. Sekolah Harus Memenuhi Daftar Periksa Ini
+        Pembelajaran tatap muka di satuan pendidikan tetap hanya diperbolehkan untuk satuan pendidikan yang telah memenuhi daftar periksa berikut ini:
+
+        Ketersediaan sarana sanitasi dan kebersihan, seperti toilet bersih dan layak, sarana cuci tangan menggunakan sabun dengan air mengalir atau hand sanitizer, serta disinfektan.
+        Mampu mengakses fasilitas pelayanan kesehatan.
+        Kesiapan menerapkan wajib masker.
+        Memiliki alat pengukur suhu badan (thermogun).
+        Memiliki pemetaan warga satuan pendidikan yang memiliki komorbid tidak terkontrol, tak memiliki akses transportasi yang aman, serta memiliki riwayat perjalanan dari daerah dengan tingkat risiko Covid-19 dan belum menyelesaikan isolasi mandiri.
+        Mendapatkan persetujuan komite sekolah atau perwakilan orang tua/wali.
+        “Pembelajaran tatap muka di semua sekolah boleh dilakukan pada saat kita sudah memenuhi check list ini. Satuan pendidikan harus mengetahui mana yang memiliki komorbiditas dari guru-gurunya, murid-muridnya, dan yang tidak memiliki akses transportasi yang aman. Terakhir, tanpa persetujuan perwakilan orang tua, sekolah itu tidak diperkenankan untuk dibuka.”
+
+        3. Memenuhi Protokol Kesehatan Ketat
+        “Kalau misalnya daftar periksa tersebut sudah dipenuhi, baru kita masuk ke dalam protokol yang baru. Ini adalah salah satu poin yang terpenting, dan banyak sekali salah persepsi, bahwa bila kita melakukan pembelajaran tatap muka, itu seperti sekolah biasa. Ini tidak benar dan mohon juga dibantu disosialisasikan di masing-masing daerah, bahwa kalaupun sekolah itu sudah memenuhi kriteria dan check list untuk melaksanakan pembelajaran tatap muka, protokol kesehatan yang ketat masih harus dilaksanakan,” tegas Mendikbud. Protokol kesehatan yang ketat tersebut, terdiri dari:
+
+        Kondisi Kelas. “Yang pertama dan terpenting adalah, kapasitas maksimal itu sekitar 50% dari rata-rata. Jadinya, mau tidak mau, semua sekolah harus melakukan rotasi atau shifting. Tidak boleh kapasitas full. Di satu saat, hanya mungkin setengah dari anak-anak ada di sekolah, di satu tempat,” tegas Mendikbud. Jumlah maksimal peserta didik per ruang kelas adalah, 5 orang untuk tingkat PAUD (pendidikan anak usia dini), 18 orang untuk pendidikan dasar dan menengah, dan 5 orang untuk SLB (Sekolah Luar Biasa). Selain itu, jaga jarak minimal 1,5 meter di dalam kelas.
+        Jadwal Pembelajaran. Sistem rombongan belajar secara bergiliran (shifting) yang ditentukan oleh masing-masing satuan pendidikan.
+        Perilaku Wajib yang Harus Diterapkan oleh Semua Guru, Murid, dan Staf. Yaitu, menggunakan masker kain 3 lapis atau masker sekali pakai (masker bedah), cuci tangan pakai sabun dengan air mengalir atau menggunakan hand sanitizer, menjaga jarak minimal 1,5 meter dan tidak boleh melakukan kontak fisik, serta menerapkan etika batuk atau bersin.
+        Kondisi Medis Warga Satuan Pendidikan. Tidak memiliki gejala Covid-19, termasuk pada orang yang serumah dengan warga sekolah, dan harus dalam kondisi sehat. Jika mengidap komorbid, harus dalam kondisi terkontrol. “Tidak boleh datang ke sekolah jika memiliki komorbid, karena risiko mereka kalau terkena Covid-19 jauh lebih tinggi,” tutur Mendikbud.
+        Kantin Ditutup. Mendikbud mengatakan, “Ini satu lagi poin yang sangat penting, tidak diperkenankan kegiatan-kegiatan yang berkerumun. Artinya, kantin tidak diperbolehkan beroperasi.”
+        Tidak Ada Kegiatan Lain Selain Pembelajaran. Tidak diperbolehkan ada kegiatan selain KBM (kegiatan belajar mengajar). Contohnya, kegiatan olahraga, ekstrakulikuler (ekskul), orang tua menunggui anaknya di sekolah, istirahat di luar kelas, pertemuan orang tua murid, dan sebagainya. Semua murid hanya boleh masuk ke sekolah untuk belajar, lalu pulang.
+        Pembelajaran di Luar Lingkungan Satuan Pendidikan. Boleh dilakukan dengan tetap menjaga protokol kesehatan.
+        4. Seluruh Pemangku Kepentingan Harus Bekerjasama
+        Mendikbud berharap seluruh pemangku kepentingan dapat mendukung Pemda dalam mempersiapkan transisi pembelajaran tatap muka. Pemerintah pusat melalui berbagai kementerian atau lembaga menetapkan kebijakan yang berfokus pada daerah. Kemudian, Satgas Penanganan Covid-19 di daerah memastikan risiko penyebaran Covid-19 terkendali, dan masyarakat sipil dapat bersama-sama mendukung pemerintah daerah, satuan pendidikan, dan peserta didik.
+
+        Pemerintah daerah perlu menentukan kebijakan pembelajaran sesuai kondisi, kebutuhan, dan kapasitas daerah, kemudian mempersiapkan transisi pembelajaran tatap muka. Dinas Pendidikan juga harus memastikan pemenuhan daftar periksa dan protokol kesehatan di satuan pendidikan. Selain itu, Dinas Kesehatan diharapkan dapat memastikan kesiapan fasilitas pelayanan kesehatan daerah, serta Dinas Perhubungan dapat memastikan ketersediaan akses transportasi yang aman dari dan ke satuan pendidikan.
+
+        Sementara itu, satuan pendidikan mempersiapkan kebutuhan protokol kesehatan dan memfasilitasi pembelajaran, dan guru dapat terus meningkatkan kapasitas untuk melakukan pembelajaran interaktif, serta orang tua/wali diharapkan aktif berpartisipasi dalam kegiatan proses belajar mengajar. “Mari kita bekerja sama untuk memastikan anak dapat terus belajar dengan sehat dan selamat,” tutup Mendikbud pada acara tersebut.
+
+        Temukan pilihan aktivitas, kelas, dan kegiatan edukatif untuk anak dan orang tua, serta beragam artikel menarik seputar kesehatan, parenting, dan gaya hidup keluarga modern. Download aplikasi Parentstory sekarang di App Store dan Google Play Store.
+
+    </string>
+    <string name="artikelBerita3">Apa itu SNMPTN?
+        SNMPTN merupakan adalah seleksi nasional masuk PTN menggunakan nilai rapor dan prestasi/portofolio yang dimiliki siswa, tanpa ujian atau seleksi tertulis.
+
+        SNMPTN adalah salah satu jalur masuk PTN, selain SBMPTN dan Seleksi Mandiri.
+
+        Jalur Masuk PTN
+        Jika diterima di jalur ini, maka kamu udah tinggal daftar ulang untuk menjadi mahasiswa, ga perlu pusing mikirin ujian lagi.
+
+        Enak banget, kan?
+
+
+        Persyaratan Mengikuti SNMPTN
+        Berdasarkan peraturan SNMPTN 2021, mereka yang berhak mendaftarkan diri sebagai peserta SNMPTN adalah:
+
+        Siswa SMA/MA/SMK kelas terakhir (kelas 12) pada tahun 2021 yang memiliki prestasi unggul
+        Memiliki NISN yang terdaftar di PDSS. Untuk cek NISN bisa di cek di Website NISN. Bila nomor NISN di web NISN berbeda, kamu perlu segera konsultasi sama BK masing-masing sekolah.
+        Memiliki nilai rapor semester 1 sampai semester 5 (bagi siswa SMA/MA, SMK/MAK Tiga Tahun) atau nilai rapor semester 1 sampai semester 7 (bagi SMK/MAK Empat Tahun) yang telah diisikan pada PDSS.
+        Memiliki prestasi akademik dan memenuhi persyaratan yang ditentukan oleh masing-masing PTN.
+        Namun, ga semua siswa bisa ikut SNMPTN.
+
+        Jumlah siswa yang bisa mendaftar SNMPTN dibatasi tiap sekolah berdasarkan akreditasinya. Berdasarkan aturan tahun 2020 kemarin:
+
+        Sekolah akreditasi A maksimal bisa mendaftarkan 40% siswanya
+        Sekolah akreditasi B maksimal bisa mendaftarkan 25% siswanya
+        Sekolah akreditasi C dan lainnya maksimal bisa mendaftarkan 5% siswanya
+        Pemeringkatan Sekolah SNMPTN
+        Menentukan siswa yang bisa ikut SNMPTN
+        Sekolah berwenang untuk menentukan siapa aja yang bisa ikut SNMPTN berdasarkan pemeringkatan. Pemeringkatan dilakukan berdasarkan nilai mata pelajaran berikut:
+
+        Jurusan IPA: Matematika, Bahasa Indonesia, Bahasa Inggris, Kimia, Fisika, dan Biologi.
+        Jurusan IPS: Matematika, Bahasa Indonesia, Bahasa Inggris, Sosiologi, Ekonomi, dan Geografi.
+        Jurusan Bahasa: Matematika, Bahasa Indonesia, Bahasa Inggris, Sastra Indonesia, Antropologi, dan salah satu Bahasa Asing.
+        SMK: Matematika, Bahasa Indonesia, Bahasa Inggris, dan Kompetensi Keahlian (Teori Kejuruan dan Praktik Kejuruan)
+        Selain peringkat, sekolah dapat menambahkan kriteria lain berupa prestasi akademik dalam menentukan peringkat siswa bila ada nilai yang sama.
+
+        Jumlah siswa yang masuk dalam pemeringkatan sesuai dengan ketentuan kuota akreditasi sekolah. Jadi, apabila ada siswa rangking atas yang tidak ikut SNMPTN, bisa digantikan oleh siswa lainnya asalkan masih memenuhi kuota sekolah.
+
+        Buat yang ga kepilih, otomatis kamu ga bisa daftar SNMPTN ini dan harus berjuang di jalur SBMPTN atau seleksi mandiri.
+
+        Pelaksanaan SNMPTN
+        Tata cara pendaftaran SNMPTN
+        Apabila kamu termasuk siswa yang terpilih mendaftar SNMPTN dari sekolah, maka kamu bisa mendaftarkan diri secara online di website SNMPTN.
+
+        Tata cara pendaftaran SNMPTN secara umum berdasarkan ketentuan tahun lalu:
+
+        Tahapan Pendaftaran SNMPTN
+        Login ke laman SNMPTN untuk melakukan pendaftaran menggunakan NISN dan password yang diberikan pada waktu verifikasi data di PDSS.
+        Mengisi data diri dan orang tua/wali.
+        Mengisi pilihan PTN dan pilihan program studi.
+        Mengunggah (upload) pas foto resmi terbaru dan dokumen prestasi tambahan (jika ada).
+        Siswa yang mendaftar pada program studi keolahragaan dan seni, wajib mengunggah portofolio dan dokumen bukti keterampilan yang telah disahkan oleh Kepala Sekolah. Pedoman portofolio bisa kamu lihat di sini ya >> pedoman portofolio SNMPTN.
+        Finalisasi dan cetak kartu bukti pendaftaran.
+        Setelah finalisasi, semua data sudah ga bisa diganti. Baik itu data diri, pilihan PTN dan jurusan, prestasi/piagam atau portofolio.
+
+        Jadi sebelum finalisasi, pastikan semua datamu sudah benar dan lengkap serta kamu udah mantep dengan pilihan jurusan dan PTNnya.
+
+        Abis itu tinggal berharap atau berdoa sambil nunggu pengumuman hasilnya.
+
+
+        Aturan Pemilihan Jurusan
+        1. Siswa pendaftar dapat memilih paling banyak dua program studi dalam satu PTN atau dua PTN.
+
+        Dari aturan tersebut, ada 3 kemungkinan pilihan yang bisa kamu ambil:
+
+        Kemungkinan Pilihan Jurusan SNMPTN
+        2. Aturan wilayah pemilihan program studi.
+
+        Tahun 2021, jika memilih 2 prodi, maka salah satu pilihannya harus berada di PTN pada provinsi yang sama dengan SMA/MA/SMK asalnya. Jika memilih satu program studi, dapat memilih PTN yang berada di provinsi mana pun.
+
+        Jadi misal Andi bersekolah di Jawa Timur, maka apabila memilih 2 prodi, minimal salah satunya harus di PTN asal Jawa Timur juga.
+
+        Namun, apabila Andi hanya memilih 1 prodi, ia bisa memilih di PTN mana saja.
+
+        Tahun 2020 lalu tidak ada aturan tersebut.
+
+        3. Urutan pilihan PTN dan program studi menyatakan prioritas pilihan.
+
+        PTN akan menyeleksi lebih dulu pilihan pertamamu. Baru apabila ga lolos, PTN akan menyeleksi pilihan berikutnya.
+
+        Apabila kamu udah diterima di pilihan pertamamu, maka pilihan berikutnya udah ga diikutkan seleksi lagi.
+
+        4. Siswa SMK hanya diizinkan memilih program studi yang relevan sesuai ketentuan oleh masing-masing PTN.
+
+        Ketika pendaftaran nanti, akan ada keterangan jurusan SMA/MA/SMK yang bisa mendaftar di jurusan tersebut.
+
+        Misalnya, jurusan Akuntansi di PTN A hanya boleh didaftari oleh SMA/MA IPA, IPS, SMK Akuntansi, SMK Jurusan Bisnis Manajemen.
+
+        Jadi, buat kamu yang SMK, kamu wajib mengecek detail persyaratan jurusannya.
+
+        5. Daftar program studi dan daya tampung SNMPTN tahun 2020 dapat dilihat pada laman https://www.ltmpt.ac.id selama periode pendaftaran.
+
+        Selain itu, bisa jadi terdapat aturan tambahan masing-masing PTN, seperti aturan tentang buta warna dan jurusan sekolah. Jadi kamu mesti cek keterangan persyaratan di website SNMPTN.
+
+        Jadwal Pelaksanaan SNMPTN 2021
+        Proses kegiatan SNMPTN sudah dimulai sejak bulan Januari berupa pendaftaran akun LTMPT. Akun LTMPT ini akan digunakan dalam mendaftar SNMPTN, UTBK dan SBMPTN.
+
+        Jadi ini wajib dilakukan oleh semua siswa.
+
+        Setelah itu ada proses pengisian Data PDSS, pemeringkatan, dan pengumuman siswa yang bisa mendaftar SNMPTN. Semua proses itu dilakukan oleh pihak sekolah.
+
+        Pendaftarannya sendiri dilakukan pada bulan Februari.
+
+        Jadwal resmi SNMPTN tahun 2021:
+
+        Kegiatan
+
+        Tanggal
+
+        Registrasi Akun LTMPT
+
+        4 Januari – 1 Februari 2021
+
+        Pengumuman Siswa yang Eligible mendaftar SNMPTN
+
+        4 Januari – 8 Januari 2021
+
+        Pengisian PDSS
+
+        11 Januari – 8 Januari 2021
+
+        Pendaftaran SNMPTN
+
+        15 - 24 Februari 2021
+
+        Pengumuman Hasil SNMPTN
+
+        22 Maret 2021
+
+        Daftar ulang bagi yang diterima
+
+        Lihat di laman PTN penerima
+
+        Kegiatan 1-3 dilakukan oleh sekolah, 4-6 dilakukan oleh siswa
+
+        Indikator Penilaian SNMPTN
+        Selama ini banyak yang menganggap kalo SNMPTN itu ya cuma bagus-bagusan nilai raport. Jadinya, banyak sekolah yang naikin nilai KKMnya atau “meninggi-ninggikan” nilai siswanya.
+
+        Banyak anak yang nilai Fisika atau Ekonominya 95 atau mendekati 100. Sementara di sisi lain, anak-anak dari sekolah tertentu yang cenderung disiplin pada sistem penilaian pada ngeluh karena dapet nilai 85 di sekolahnya saja susahnya minta ampun.
+
+        Padahal, SNMPTN ga sesederhana tinggi-tinggian nilai rapor.
+
+        Nah kalo bukan nilai rapor apa dong yang jadi penilaian SNMPTN?
+        Setiap sekolah mempunyai standar berbeda-beda mengenai nilai.
+
+        Ada yang standar nilainya rendah.
+
+        Ada yang standar nilainya tinggi.
+
+        Ada yang dulunya pelit ngasih nilai, tapi berhubung SNMPTN memakai nilai raport, maka nilai-nilainya pada diobral.
+
+        Berdasarkan hal tersebut, kalo PTN cuma melihat mentah-mentah nilai raport, tentu siswa yang lolos belum diseleksi secara fair.
+
+        Maka dari itu, selain nilai rapor dilihat juga faktor lain, yaitu: faktor sekolah.
+
+        Bisa dibilang, selain melihat nilai yang ada di raport, PTN juga akan melihat sekolah yang mengeluarkan rapornya.
+
+        Okay, kalo sekarang kita bicara soal penilaian SNMPTN, sebenernya dilakukan secara tertutup, jadi indikator penilaian tidak akan dipublikasikan secara rinci. Tapi ada juga beberapa PTN yang mempublikasikan kriteria penilaian mereka, itupun kriteria yang umum.
+
+        Berikut ini beberapa indikator penilaian dari beberapa PTN yang pernah dipublikasikan:
+
+        Indikator seleksi dari Universitas Indonesia
+        Indikator seleksi dari Universitas Gajah Mada
+        Indikator seleksi dari Universitas Andalas
+        Indikator seleksi dari Universitas Negeri Surabaya
+        Nah, dari beberapa informasi kriteria penilaian di atas, aku udah nyoba ngerangkum semua hal yang bisa jadi kriteria penilaian.
+
+        Secara umum PTN lain akan menggunakan cara yang kurang lebih sama dalam menilai berkas-berkas pendaftaran kalian, meskipun tiap PTN bakal punya kebijakan tersendiri.
+
+        Berikut ini beberapa hal yang menjadi kriteria penilaian SNMPTN berdasarkan publikasi di atas:
+
+        Faktor Penilaian SNMPTN
+        1. Faktor Siswa
+        merupakan capaian siswa selama sekolah, dengan beberapa poin yang bisa menjadi penilaian antara lain:
+
+        a. Nilai Rapor
+
+        Jika perangkingan hanya melihat 6 mapel utama, maka pada proses seleksi ini PTN punya akses untuk melihat semua nilai rapor yang diupload di PDSS. Untuk perbandingan dua siswa secara umum, si A dan si B misalnya, maka PTN bisa melihat nilai total rapornya.
+
+        b. Nilai per mata pelajaran
+
+        Misalnya si A dan si B mengambil jurusan Kimia pada suatu universitas yang sama. Secara nilai total, si A kalah, namun nilai Kimianya lebih baik dari si B, dalam kasus seperti ini maka si A tetap masih bisa bersaing dengan si B.
+
+        c. Konsistensi
+
+        Konsisten yang dimaksudkan di sini ialah nilai siswa menunjukkan kemajuan yang positif. Namun, bukan berarti jika ada nilaimu yang pernah turun, maka otomatis ga lulus ya. Banyak juga kok yang nilainya naik turun tapi bisa lolos.
+
+        d. Prestasi di luar kelas
+
+        Sebagai pertimbangan tambahan buat PTN, kamu bisa melampirkan maksimal 3 prestasi/sertifikat terbaikmu. Piagam atau sertifikat bukti prestasi tersebut harus discan, lalu diunggah saat pendaftaran.
+
+        Namun, kalau emang kamu ga punya prestasi di luar kelas, jangan maksain atau asal unggah sertifikat ya.
+
+        2. Faktor Sekolah
+        Seperti yang udah sempet disinggung di atas, dalam melakukan seleksi, PTN ga akan hanya melihat nilai rapor calon mahasiswa, tapi juga asal sekolahnya.
+
+        Beberapa hal yang bisa menjadi penilaian, diantaranya:
+
+        a. Akreditasi dan Prestasi Sekolah.
+
+        Peringkat akreditasi sekolah dan prestasi sekolah di ajang-ajang kompetisi.
+
+        Apabila sekolah punya reputasi baik di ajang-ajang kompetisi atau dikenal berprestasi, maka itu bisa jadi tambahan pertimbangan positif dalam penilaian universitas itu terhadap sekolah tersebut.
+
+        b. Track record alumni sekolah
+
+        Jumlah alumni SMA/SMK/MA yang kuliah di PTN tempat siswa akan mendaftar juga menjadi pertimbangan dalam SNMPTN ini.
+
+        Semakin banyak alumni yang ada di PTN tersebut maka makin bagus penilaian universitas itu terhadap sekolah tersebut.
+
+        Selain itu, apabila alumni sekolahmu berprestasi (misalnya IPK tinggi), maka reputasi sekolahmu di mata PTN tersebut bisa naik.
+
+        Namun, reputasi sekolahmu juga bisa turun, misalnya karena banyak kakak kelas yang diterima SNMPTN, tapi ga jadi ambil (ga daftar ulang).
+
+        3. Faktor Lainnya
+        a. Pengembangan SDM Daerah.
+
+        Beberapa PTN memberi jatah kepada daerah-daerah tertentu yang kekurangan SDM, terutama jurusan-jurusan yang menyangkut kesejahteraan masyarakat, seperti dokter dan guru.
+
+        Hal ini diadakan agar setelah lulus nanti diharapkan mahasiswa tersebut dapat kembali ke daerahnya untuk meningkatkan taraf kesejahteraan, kesehatan, dan pendidikan di daerah asalnya.
+
+        b. Prioritas Pemilihan Jurusan.
+
+        Penentuan prioritas juga akan mempengaruhi peluang atau kesempatan siswa diterima atau tidak di jurusan tertentu yang telah ia tentukan melalui tingkat prioritas.
+
+        Berdasarkan survei yang pernah Halo Kampus adakan tahun 2015 lalu kepada >1900 siswa yang diterima SNMPTN, sebanyak 88% siswa diterima di pilihan pertama.
+
+        Artinya, apabila pilihan pertamamu ga lolos, maka kemungkinan untuk diterima pilihan kedua relatif lebih kecil.
+
+        c. Aturan Khusus Tiap PTN.
+
+        Selain aturan umum dari panitia SNMPTN, bisa jadi terdapat aturan tiap PTN yang perlu diperhatikan yang bisa jadi mempengaruhi penilaian, misalnya terkait dengan surat pernyataan kesediaan membayar.
+
+        Strategi Lolos SNMPTN
+        Peluang lolos di SNMPTN
+        Dari tahun ke tahun, angka kelulusan SNMPTN berada di kisaran 15-20%.
+
+        Tahun
+
+        Jumlah Peserta
+
+        Diterima
+
+        Persentase
+
+        2020
+
+        489.601
+
+        96.496
+
+        19,7%
+
+        2019
+
+        478.608
+
+        92.331
+
+        19,29%
+
+        2018
+
+        586.155
+
+        101.946
+
+        18,93%
+
+        2017
+
+        517.166
+
+        101.906
+
+        19,70%
+
+        2016
+
+        645.202
+
+        115.178
+
+        17,85%
+
+        2015
+
+        852.093
+
+        137.005
+
+        16,07%
+
+        Tahun 2020 lalu, jumlah peserta SNMPTN sebanyak sebanyak 489.601 siswa pada 86 PTN se Indonesia.
+
+        Jumlah peserta yang dinyatakan lulus seleksi  sebanyak 96.496 siswa.
+
+        Jadi persentase kelulusan total adalah 19,7%.
+
+        Peluang Lolos SNMPTN
+        Angka 15-20% tersebut merupakan peluang diterima secara keseluruhan SNMPTN. Pada kenyataannya, di jurusan-jurusan tertentu, persentase penerimaan bisa kurang dari itu.
+
+        Ada jurusan yang persentase peluang diterima tahun sekitar 1%. Artinya dari 100 pendaftar, yang diterima cuma 1 anak. Semakin kecil persentase diterima, maka semakin ketat persaingan untuk masuk jurusan tersebut (secara kuantitas)
+
+        Sebaliknya, ada jurusan yang peluang diterima di SNMPTN di atas 20%.
+
+        Jadi jangan terkecoh dengan angka 15-20%.
+
+        Pelajari peluang jurusan yang kamu inginkan di berbagai PTN yang menyediakan jurusan tersebut dan maksimalkan strategi biar peluangmu semakin gede.
+
+        Berikut ini beberapa strategi SNMPTN untuk memperbesar peluang lolos:
+
+        Untuk siswa kelas 10 dan 11
+        Buat kamu yang masih kelas 10, 11, atau kelas 12 semester ganjil, aku saranin buat fokus nyari nilai setinggi-tingginya sambil eksplorasi banyak hal untuk menentukan jurusan kuliahmu nanti.
+
+        Karena, selain buat penilaian SNMPTN itu sendiri, hanya sekian persen siswa ranking terbaiklah yang bisa daftar SNMPTN.
+
+        Trus, kalau kamu punya prestasi di luar sekolah, itu akan menjadi nilai tambah dalam penilaian SNMPTN. Jadi, jangan mager buat ikutan kompetisi selama itu menarik bagimu dan bisa bikin kamu lebih terpacu buat berkembang.
+
+        Untuk siswa kelas 12
+        Nah, kalau kamu sudah kelas 12 semester genap, dalam artian tinggal daftar SNMPTN aja, yang bisa kamu lakukan adalah tinggal memaksimalkan strategi dalam memilih jurusan dan PTN.
+
+        1. Mulai cari-cari persebaran alumni yang diterima di SNMPTN tahun lalu ataupun jalur lain.
+
+        Cari tau mana PTN yang paling banyak menerima siswa dari sekolahmu. Biasanya guru BK punya persebaran datanya.
+
+        Gimana kalau ga ada alumni sekolah sama sekali? Ya gpp sih. Namun, kamu jadi ga punya patokan dari alumni untuk menentukan peluang diterimamu secara lebih akurat.
+
+        "Pilih yang bener bener diinginkan, jangan asal nyabut kalo misal ketrima karna itu bisa berimbas sama angkatan selanjutnya (re: blacklist)
+
+        Cari tahu info dari bk, kalo perlu liat daftar nilai kakak kelas yang ketrima snmptn, hubungan sekolah sama universitas baik atau engga, alumninya menjaga nama sekolah atau engga".
+
+
+        ISMA
+
+        SMAN 1 Salatiga – Diterima SNMPTN di FTSL ITB 2017
+
+        2. Bandingkan nilai rapormu dengan alumni yang telah diterima, untuk menilai apakah pilihanmu cukup realistis atau ga.
+
+        Nilai rapor dari alumni yang terbukti diterima bisa berguna sebagai patokan, dengan asumsi tingkat persaingannya ga jauh beda.
+
+        Misal, rata-rata nilai alumni sekolahmu yang tahun lalu diterima jurusan Akuntansi UGM 90, trus rata-rata nilaimu sekitar segitu juga atau lebih tinggi, maka kasarnya, peluangmu cukup terbuka.⠀
+
+        Namun, apabila rata-rata nilai alumni sekolahmu yang tahun lalu diterima jurusan Akuntansi UGM 90, trus nilaimu jauh lebih rendah, maka kasarnya, peluangmu relatif berat.
+
+        "Liat nilai kaka kelas yang diterima di ptn dan jurusan yang kamu pengen. Jadiin acuan/perbandingan. Semisal pengen lintas, liat temen yang dari IPS nilainya dibawah/diatas kamu, terus ada yang pengen lintas di jurusan dan ptn yang sama atau ngga, kalau ada dan kamu masih lebih tinggi nilainya, lanjut terus.
+
+
+
+        Pengalaman pribadi, aku IPA, temenku ada yang mau masuk Akun Ugm juga dan dia paralel 1 IPS, sedangkan kalau dr IPA, aku plg tinggi nilainya, jadi bismillah, lanjut aja. Kalau misal udah bulet keputusan pengennya disitu aja, Ga usah peduliin lawan, kalau misal itu milik kalian, pasti bakalan dimudahin".
+
+
+        ARINA GALIH
+
+        SMAN 1 Purwokerto – Diterima SNMPTN di Akuntansi UGM 2016
+
+        3. Analisis data penerimaan masing-masing PTN yang resmi dikeluarkan oleh panitia.
+
+        Tiap tahun panitia SNMPTN mengeluarkan data statistik SNMPTN untuk tiap jurusan
+
+        Dari data tersebut, bisa kamu lihat persentase keketatan tiap tahun, persebaran diterima berdasarkan jurusan SMA, persebaran berdasarkan asal provinsi, dll.
+
+        Kamu bisa dapet banyak insights dari data-data tersebut untuk memaksimalkan peluang diterima.
+
+
+        Data statistik SNMPTN di akuntansi UI
+
+        4. Jika memungkinkan, lakukan juga pemetaan peringkat sekolah dan jurusan yang akan diambil.
+
+        Selain bersaing dengan siswa sekolah lain, kamu juga bersaing dengan siswa dari sekolahmu sendiri. Jadi, kalau memungkinkan, cari tau juga pilihan temen-temenmu khususnya yang memilih jurusan dan PTN yang sama.
+
+        "Lihat pesaing kalian dari tingkat sekolah. Disekolahku dulu semua nilai ( tapi gak ada peringkatnya ) sama prodi dan PTN tujuan semua anak kelas 12 dipasang dideket bk. Nah, karena dulu gak ada peringkatnya, aku sama temen2 sekelas insiatif buat peringkat paralelnya anak satu sekolah. Dari data itu nanti kalian bisa tau kalian ada di urutan keberapa di prodi yang kalian pingin".
+
+
+        MICHELE
+
+        SMAN 4 Malang – Diterima SNMPTN di Kedokteran UB 2017
+
+        5. Terakhir, buat keputusan.
+
+        Apakah pilihanmu kira-kira cukup realistis?
+
+        Kalau memang iya, yaudah lanjut aja.
+
+        Apabila kayaknya ga realistis, tapi kamu pengen banget kuliah di situ, ga ada salahnya tetap perjuangin. Atau kamu bisa juga ganti pilihan dengan yang lebih realistis. Entah ganti PTN, memilih PTN yang persaingannya lebih ga ketat atau ganti jurusan.
+
+        Tapi yang wajib diperhatikan adalah, pilih jurusan yang kalau diterima, pasti kamu ambil. Jangan sampai apabila diterima, kamu menyesal trus akhirnya ga jadi daftar. Karena di tahun ini, yang sudah diterima SNMPTN otomatis ga bisa ikut SBMPTN.</string>
+
+    <!-- TODO: Jurusan Detail -->
+
+    <!-- Judul Artikel -->
+    <string name="jurusanRPLJudulDetail1">10 Alasan Memilih Jurusan RPL Bagi Yang Bingung Mau Pilih Apa</string>
+    <string name="jurusanRPLJudulDetail2">Kelebihan Dan Kekurangan Jurusan RPL (Rekayasa Perangkat Lunak) Di SMK</string>
+    <string name="jurusanRPLJudulDetail3">Mengenal Mata Pelajaran RPL (Rekayasa Perangkat Lunak) Di SMK</string>
+    <string name="jurusanRPLJudulDetail4">10 Jurusan Kuliah Untuk Lulusan SMK RPL Yang Perlu Kamu Tau</string>
+    <string name="jurusanRPLJudulDetail5">10 Peluang Atau Prospek Kerja RPL (Rekayasa Perangkat Lunak) Dan Gajinya</string>
+
+    <string name="jurusanTKJJudulDetail1">10 Alasan Memilih Jurusan TKJ Bagi Yang Bingung Mau Pilih Apa</string>
+    <string name="jurusanTKJJudulDetail2">Kelebihan Dan Kekurangan Jurusan TKJ (Teknik Komputer dan Jaringan) Di SMK</string>
+    <string name="jurusanTKJJudulDetail3">Mengenal Mata Pelajaran TKJ (Teknik Komputer dan Jaringan) Di SMK</string>
+    <string name="jurusanTKJJudulDetail4">10 Jurusan Kuliah Untuk Lulusan SMK TKJ Yang Perlu Kamu Tau</string>
+    <string name="jurusanTKJJudulDetail5">10 Peluang Atau Prospek Kerja TKJ (Teknik Komputer dan Jaringan) Dan Gajinya</string>
+
+    <string name="jurusanPKMJudulDetail1">10 Alasan Memilih Jurusan PKM Bagi Yang Bingung Mau Pilih Apa</string>
+    <string name="jurusanPKMJudulDetail2">Kelebihan Dan Kekurangan Jurusan PKM (Perbankan Keuangan Mikro) Di SMK</string>
+    <string name="jurusanPKMJudulDetail3">Mengenal Mata Pelajaran PKM (Perbankan Keuangan Mikro) Di SMK</string>
+    <string name="jurusanPKMJudulDetail4">10 Jurusan Kuliah Untuk Lulusan SMK PKM Yang Perlu Kamu Tau</string>
+    <string name="jurusanPKMJudulDetail5">10 Peluang Atau Prospek Kerja PKM (Perbankan Keuangan Mikro) Dan Gajinya</string>
+
+    <!-- Isi Artikel -->
+    <string name="jurusanRPLArtikelDetail1">
+        Ketika memutuskan untuk masuk ke Sekolah Menengah Kejuruan, Kamu bisa memilih berbagai jurusan yang ada. Salah satu jurusan yang cukup diminati di SMK adalah jurusan Rekayasa Perangkat Lunak atau RPL. Berikut 10 alasan memilih jurusan RPL untuk menjadi pertimbangan Kamu.\n\n
+
+        1. Peluang Kerja Sangat Banyak\nSalah satu alasan utama sebuah jurusan diminati adalah dari peluang kerjanya. RPL termasuk jurusan dengan peluang kerja cukup banyak. Kamu bisa menjadi programmer, software engineer, dan banyak posisi pekerjaan lain.\n\n
+
+        2. Dibutuhkan Di Hampir Semua Perusahaan\nHampir setiap industri atau perusahaan pasti membutuhkan seorang yang ahli dalam bidang IT atau komputer. Para lulusan RPL merupakan ahlinya untuk posisi-posisi pekerjaan ini.\n\n
+
+        3. Bisa Bekerja Sendiri\nPeluang kerja lulusan RPL bukan hanya di perusahaan saja. Kamu juga bisa membuka lapangan kerja sendiri, misalnya dengan mengembangkan website atau program komputer dan menjualnya.\n\n
+
+        4. Masa Depan Karir Masih Panjang\nSaat ini perkembangan teknologi masih terus berkembang dengan sangat pesat. Ini merupakan salah satu bukti bahwa lulusan RPL masih akan terus dibutuhkan hingga bertahun-tahun mendatang.\n\n
+
+        5. Pekerjaan Lebih Santai\nBidang-bidang pekerjaan bagi para lulusan RPL merupakan bidang pekerjaan yang tidak perlu mengeluarkan banyak tenaga. Kamu bisa bekerja hanya dengan duduk dari balik meja dan didepan komputer dalam ruangan ber-AC.\n\n
+
+        6. Menjadi Orang Yang Paham Teknologi\nAlasan memilih jurusan RPL selanjutnya adalah karena dari jurusan ini Kamu akan banyak belajar mengenai teknologi. Orang yang lebih paham seputar teknologi tentu akan lebih mudah dalam menjalani hidup yang saat ini serba menggunakan teknologi.\n\n
+
+        7. Bisa Bekerja Dari Rumah\nPekerjaan-pekerjaan yang menjadi bidang dari lulusan RPL adalah pekerjaan yang memungkinkan Kamu untuk mengerjakannya dari rumah, terlebih saat ini sudah banyak perusahaan yang menerapkan remote working.\n\n
+
+        8. Bisa Memberi Kemudahan Untuk Banyak Orang\nSalah satu tugas dari para lulusan RPL adalah merancang dan mengembangkan berbagai software. Software yang Kamu buat ini bisa memudahkan pekerjaan banyak orang nantinya, sehingga secara tidak langsung Kamu telah membantu banyak orang melalui program komputer yang Kamu kembangkan.\n\n
+
+        9. Gaji Yang Cukup Besar\nBerbagai bidang pekerjaan yang berkaitan di bidang IT saat ini banyak dibutuhkan. Perusahaan-perusahaan tersebut juga menetapkan gaji yang cukup besar untuk berbagai posisi pekerjaan yang berkaitan dengan bidang IT.\n\n
+
+        10. Mengasah Kemampuan Berpikir\nBerbagai materi pelajaran di jurusan ini serta bahasa pemrograman merupakan hal-hal yang membutuhkan kecerdasan matematis. Ini secara tidak langsung akan mengasah kemampuan berpikir Kamu dan meningkatkan kemampuan matematis.\n\n
+
+        Itulah 10 alasan memilih jurusan RPL atau Rekayasa Perangkat Lunak yang bisa menjadi pertimbangan Kamu untuk memasuki jurusan ini di Sekolah Menengah Kejuruan. Semoga artikel ini bermanfaat buat Kamu ya.
+
+    </string>
+    <string name="jurusanRPLArtikelDetail2">
+        Rekayasa Perangkat Lunak atau yang biasa disebut RPL adalah jurusan yang banyak ditemui di berbagai Sekolah Menengah Kejuruan atau SMK. Di jurusan ini, Kamu akan mempelajari ilmu-ilmu yang berkaitan dengan sistem komputer. Bagi Kamu yang sedang mempertimbangkan untuk masuk jurusan ini, berikut beberapa kelebihan dan kekurangan jurusan RPL untuk menjadi pertimbangan Kamu.\n\n
+
+        Kelebihan Jurusan RPL\n\n
+
+        Jurusan RPL saat ini sedang banyak diminati seiring dengan teknologi digital dan internet yang terus berkembang. Rasanya hampir semua aspek kehidupan saat ini menggunakan sistem aplikasi atau komputerisasi.\n\n
+
+        Oleh karena itu, ketika Kamu lulus dari jurusan RPL nantinya, Kamu akan memiliki peluang kerja yang cukup banyak. Bahkan setiap perusahaan apapun pasti membutuhkan ahli IT atau ahli komputer untuk menangani sistem komputer di perusahaan mereka.\n\n
+
+        Bidang kerja yang bisa Kamu coba ketika sudah lulus nanti juga cukup banyak. Kamu bisa berkarir sebagai programmer, web designer, IT consultant, dan berbagai pekerjaan lain yang berkaitan dalam bidang ini. Pekerjaan-pekerjaan semacam ini juga sedang banyak dibutuhkan dan diprediksi masih memiliki prospek karir yang cukup panjang mengingat dunia digital dan komputer yang selalu mengalami perkembangan.\n\n
+
+        Kelebihan dan kekurangan jurusan RPL lainnya adalah berbagai praktek dan pekerjaan Kamu nantinya. Bagi Kamu yang lebih menyukai pekerjaan yang berada dalam ruangan, hal ini menjadi kelebihan. Sebagai seorang ahli komputer, Kamu akan bekerja dengan nyaman dalam ruangan dan di depan layar komputer Kamu. Begitu pula praktek-praktek yang Kamu lakukan selama di sekolah akan lebih banyak Kamu habiskan di depan layar komputer.\n\n
+
+        Kekurangan Jurusan RPL\n\n
+
+        Meskipun peluang kerja jurusan RPL cukup banyak, namun sekolah yang membuka jurusan ini juga terbilang banyak. Ini membuat Kamu akan memiliki cukup banyak saingan ketika memasuki dunia kerja nantinya.\n\n
+
+        Berbagai praktek yang dilakukan selama proses belajar mengajar di jurusan RPL akan membutuhkan laptop atau komputer. Maka, Kamu harus mempersiapkan anggaran untuk mempersiapkan fasilitas tersebut agar proses pembelajaran Kamu di jurusan ini bisa berjalan lancar dan Kamu tidak akan kesulitan untuk menyelesaikan tugas-tugas yang diberikan.\n\n
+
+        Materi-materi yang diberikan di jurusan RPL juga merupakan materi-materi yang menuntut Kamu untuk berpikir dan memiliki fokus serta konsentrasi tinggi. Banyak yang menganggap materi-materi semacam pemrograman komputer yang diberikan di jurusan RPL juga merupakan pelajaran yang cukup rumit, terlebih jika Kamu tidak menyukai materi-materi yang berkaitan dengan logika.\n\n
+
+        Kamu juga akan mendapat berbagai tugas dan praktek yang cukup memakan waktu lama, sehingga dibutuhkan kesabaran, ketelitian, serta fokus yang baik jika Kamu ingin masuk jurusan ini.\n\n
+
+        Itulah beberapa kelebihan dan kekurangan jurusan RPL untuk referensi bagi Kamu yang ingin masuk jurusan ini.
+</string>
+    <string name="jurusanRPLArtikelDetail3">
+        Di setiap jurusan yang Kamu masuki pada sebuah Sekolah Menengah Kejuruan, Kamu akan mendapat berbagai mata pelajaran yang berhubungan dengan jurusan tersebut untuk menambah keahlian Kamu. Salah satu jurusan yang ada di SMK adalah Rekayasa Perangkat Lunak atau RPL. Berikut beberapa mata pelajaran RPL untuk referensi Kamu yang ingin masuk jurusan ini.\n\n
+
+        1. Web Dinamis\nMata pelajaran ini akan mengajarkan Kamu untuk mempelajari cara pembuatan sebuah website. Kamu akan belajar tehnik membuat website melalui berbagai aplikasi dan juga belajar mengenai bahasa pemrograman.\n\n
+
+        2. Pemrograman Berorientasi Objek\nMata pelajaran ini sering disingkat PBO. Pada mata pelajaran PBO, Kamu akan belajar mengenai penulisan coding atau paradigma yang berorientasi pada objek serta berbagai konsep seperti objek, enkapsulasi, abstraksi, dan konsep-konsep lain.\n\n
+
+        3. Pemrograman Desktop\nPemrograman desktop adalah pemrograman dengan cara memanipulasi elemen visual dan dilakukan dengan satu komputer tunggal. Pengoperasian pemrograman ini tidak bergantung pada komputer lain yang ada pada jaringan atau web.\n\n
+
+        4. Basis Data\nBasis data atau database merupakan elemen dasar dari semua pembuatan aplikasi yang berfungsi untuk menyimpan seluruh data yang masuk ke dalam aplikasi tersebut. Dalam pelajaran ini, Kamu akan belajar mengenai elemen dasar aplikasi tersebut.\n\n
+
+        5. Pemrograman Dasar\nSeperti namanya, pelajaran ini akan mengajarkan Kamu mengenai dasar-dasar pemrograman dengan program yang cukup sederhana. Aplikasi yang dipakai biasanya menggunakan Borland.\n\n
+
+        6. Pemodelan Perangkat Lunak\nMata pelajaran RPL selanjutnya adalah pemodelan perangkat lunak. Dalam pelajaran ini Kamu akan diajarkan untuk membuat design aplikasi sebelum mengerjakan aplikasi tersebut.\n\n
+
+        7. Coding\nDalam pelajaran coding, Kamu akan belajar berbagai macam bahasa pemrograman. Bahasa-bahasa pemrograman yang akan Kamu pelajari misalnya pemrograman bahasa pascal, pemrograman bahasa java, pemrograman bahasa delphi, pemrograman web server, pemrograman bahasa C, pemrograman PHP dan MySQL, dan bahasa-bahasa pemrograman lain.\n\n
+
+        8. Desain\nDi pelajaran desain, Kamu akan belajar teknik desain visual dengan menggunakan berbagai software desain, seperti photoshop, corel draw, atau web design. Selain itu, pada pelajaran ini Kamu juga akan belajar ilmu mengenai video editing.\n\n
+
+        9. Algoritma\nDalam pelajaran ini, Kamu akan belajar mengenai segala hal yang berkaitan dengan algoritma. Materi-materi dalam pelajaran algoritma diantaranya algoritma dasar, algoritma tingkat lanjut, Microsoft access, gerbang logika, DFD, dan masih banyak lagi.\n\n
+
+        10. Teknik Elektronika\nDalam pelajaran ini, Kamu akan belajar mengenai segala hal yang berhubungan dengan tehnik elektronika serta cara penerapannya, baik itu secara analog maupun secara digital.\n\n
+
+        Itulah beberapa mata pelajaran RPL yang akan Kamu pelajari jika memasuki jurusan ini di berbagai Sekolah Menengah Kejuruan. Uraian tadi bisa menjadi referensi Kamu yang ingin masuk jurusan ini. Semoga ulasannya bermanfaat ya!
+
+    </string>
+    <string name="jurusanRPLArtikelDetail4">
+        RPL atau Rekayasa Perangkat Lunak merupakan salah satu jurusan di SMK yang banyak sekali disukai oleh pelajar. Selain mempelajari tentang perangkat lunak, jurusan ini juga akan membantumu memiliki wawasan seputar dunia komputer dan teknologi yang ada saat ini. Nah, bagi Kamu yang dari jurusan RPL, berikut ini ada 10 jurusan kuliah untuk lulusan SMK RPL yang harus Kamu ketahui.\n\n
+
+        1. Jurusan Ilmu Komputer\nBelajar di jurusan Ilmu Komputer memang menjadi hal yang tepat diambil oleh para lulusan SMK RPL. Pasalnya, di jurusan ini Kamu akan diajari berbagai sistem komputer, aplikasinya, jaringannya, hingga hal-hal lainnya yang berkaitan dengan dunia pemrograman.\n\n
+
+        2. Jurusan Teknik Komputer\nJika di Ilmu Komputer Kamu belajar tentang ilmu dan seluk beluk dunia komputer, maka di jurusan Teknik Komputer, Kamu akan belajar soal ilmu dan juga teknologi di dalam industri komputer.\n\n
+
+        3. Jurusan Rekayasa Perangkat Lunak\nTentunya, lulusan SMK RPL paling pas juga mengambil jurusan Rekayasa Perangkat Lunak atau Software Engineering di bangku kuliah nanti. Selain ilmunya bisa dibahas lebih mendalam, anak-anak SMK RPL tidak perlu mengulang belajar dari nol.\n\n
+
+        4. Jurusan Teknik Informatika\nJika ada jurusan Teknik Komputer, maka ada lagi jurusan Teknik Informatika. Bedanya, jurusan ini merupakan disiplin ilmu yang berbasis komputer dengan pengembangan teknologi seperti Artificial Intelligence, programming, hingga jaringannya.\n\n
+
+        5. Jurusan Sistem Informasi\nSalah satu jurusan kuliah untuk lulusan SMK RPL adalah Sistem Informasi. Di jurusan ini, Kamu bisa menggabungkan prinsip bisnis dan prinsip komputer sehingga akan sangat berguna dalam membangun usaha nantinya.\n\n
+
+        6. Jurusan Bioinformatika\nJurusan ini membuatmu belajar tentang penerapan teknologi dengan layanannya yang berbasis komputer yang digunakan dalam dunia kesehatan. Mulai dari bidang biomedis, biologi, hingga segala hal tentang life science dipelajari di jurusan ini.\n\n
+
+        7. Jurusan Teknologi Pendidikan\nBelajar soal pendidikan dan teknologinya juga bisa banget Kamu para anak lulusan SMK RPL pilih di bangku kuliah. Selain berguna dalam kurikulum pendidikan Indonesia, jurusan ini juga berfungsi untuk membantumu mengikuti perkembangan tren teknologi dunia.\n\n
+
+        8. Jurusan Industrial Robotics Design\nJurusan ini mengajarimu tentang cara keberlanjutan industri yang mana menggunakan bantuan sistem produksi berbasis robot. Keren, bukan? Inilah mengapa jurusan Industrial Robotics Design banyak dicari belakangan ini.\n\n
+
+        9. Jurusan Pendidikan Komputer\nDi jurusan ini, anak-anak lulusan RPL bisa belajar menjadi guru komputer dan siapa tahu nanti juga bisa menjadi guru RPL di SMK.\n\n
+
+        10. Jurusan Mobile Application &amp; Technology\nTerakhir, di jurusan ini Kamu akan diajari soal teknik-teknik dan cara penciptaan aplikasi serta teknologi mobile yang ada di banyak platform.\n\n
+
+        Demikian ulasan mengenai 10 jurusan kuliah untuk lulusan SMK RPL. Semoga bermanfaat.
+
+
+    </string>
+    <string name="jurusanRPLArtikelDetail5">Rekayasa Perangkat Lunak atau RPL merupakan salah satu jurusan yang banyak ditemui di berbagai jurusan SMK.
+        Berikut 10 peluang atau prospek kerja RPL untuk menjadi referensi bagi Kamu.\n\n
+
+        1. Developer IT\nPekerjaan Developer IT adalah untuk mengembangkan software-software sesuai dengan kebutuhan dan keinginan dari klien yang memintanya.
+        Software-software tersebut misalnya software game atau software untuk bisnis. Kisaran gaji seorang developer IT adalah Rp.5.000.000.\n\n
+
+        2. Programmer\nProgrammer adalah orang yang bekerja untuk membuat sebuah program atau software komputer tertentu untuk memudahkan suatu pekerjaan.
+        Programmer merupakan pekerjaan yang pasti dibutuhkan di hampir seluruh perusahaan. Kisaran gaji seorang programmer adalah Rp.6.000.000.\n\n
+
+        3. IT Konsultan\nSalah satu bidang pekerjaan yang banyak dibutuhkan saat ini adalah IT konsultan.
+        Sebagai IT konsultan, Kamu akan berperan mulai dari proses perancangan hingga evaluasi suatu penerapan IT pada sebuah perusahaan.
+        Kisaran gaji seorang IT konsultan adalah Rp.9.000.000.\n\n
+
+        4. System Analyst\nSystem analyst adalah orang yang bidang pekerjaannya yaitu berbagai hal yang berkaitan dengan analisa suatu sistem.
+        Hasil analisa sistem ini nantinya akan digunakan oleh seorang programmer.
+        System analyst juga harus bisa membandingkan kelebihan dan kekurangan dari sebuah sistem yang hendak dirancang.
+        Kisaran gaji seorang system analyst adalah Rp.5.000.000.\n\n
+
+        5. Database Engineer\nPeluang atau prospek kerja RPL yang saat ini juga terbuka lebar adalah menjadi database engineer.
+        Ia adalah orang yang bertugas untuk membuat desain serta memonitor suatu database yang cukup kompleks.
+        Kisaran gaji seorang database engineer adalah Rp.5.000.000.\n\n
+
+        6. Web engineer\nWeb engineer adalah orang yang bertugas untuk merancang serta membangun sebuah website.
+        Ia juga bertanggung jawab atas layanan dan kemudahan dari website tersebut.
+        Kisaran gaji seorang web engineer adalah Rp.5.000.000.\n\n
+
+        7. Game Developer\nGame developer merupakan bidang pekerjaan yang mengkhususkan orang tersebut untuk merancang dan membuat sebuah software khusus game atau permainan.
+        Kisaran gaji seorang game developer adalah Rp.6.000.000.\n\n
+
+        8. Data Communication Engineer\nData communication engineer atau sering juga disebut computer network adalah pekerjaan untuk merancang jaringan komputer hingga perawatan dan pengelolaan jaringan tersebut untuk suatu instansi atau perusahaan.
+        Kisaran gaji seorang data communication engineer adalah Rp.8.000.000.\n\n
+
+        9. Intelligent System Developer\nSoftware-software yang harus dirancang dan dikembangkan oleh seorang intelligent system developer adalah software-software yang khusus berkaitan dengan intelijen, misalnya image recognizer.
+        Gaji seorang intelligent system developer adalah Rp.6.000.000.\n\n
+
+        10. Software Tester\nSoftware tester merupakan bidang pekerjaan dimana Kamu akan memiliki peran khusus untuk menguji sebuah software atau perangkat lunak.
+        Kisaran gaji seorang software tester adalah Rp.5.000.000 hingga Rp.10.000.000.\n\n
+
+        Itulah 10 peluang atau prospek kerja RPL untuk menjadi referensi Kamu. Semoga ulasannya bermanfaat ya!\n\n</string>
+
+    <string name="jurusanTKJArtikelDetail1">
+        Salah satu jurusan di SMK yang menjadi primadona dan kerap menjadi rebutan para calon murid adalah TKJ atau Teknik Komputer dan Jaringan. Jurusan yang mengajarimu tentang komputer beserta jaringannya ini memang memiliki prospek kerja yang luas dan gaji yang menggiurkan. Nah selain alasan tersebut, kira-kira apalagi ya alasan memilih jurusan TKJ? Yuk, simak informasi lengkapnya di ulasan berikut ini.\n\n
+
+        1. Belajar Tentang Teknik Komputer\nDi jurusan ini, Kamu harus belajar tentang teknik komputer yang mana tidak hanya perakitan PC saja, melainkan juga konfigurasi jaringan perangkatnya. Sebut saja Switch, Router, hub, dan lain-lainnya.\n\n
+
+        2. Kerja Ada Di Luar Dan Di Dalam Ruangan\nSalah satu alasan mengapa banyak siswa, khususnya murid perempuan, memilih TKJ sebagai jurusan mereka yakni karena kerjanya yang tidak hanya di luar, melainkan juga di dalam ruangan. Memang di jurusan ini Kamu akan belajar mengenai maintenance kabel yang mana mengharuskanmu di tower jaringan, namun porsinya sebanding dengan banyak pekerjaan di dalam lapangan.\n\n
+
+        3. Siswa Laki-Laki Dan Perempuan Seimbang\nSalah satu alasan menarik mengapa TKJ banyak dipilih adalah karena jumlah muridnya yang kebanyakan seimbang antara laki dan perempuan. Tidak seperti kelas lainnya di jurusan SMK, kelas di TKJ cenderung seimbang dengan tugas kerja yang ringan.\n\n
+
+        4. Prestasi Belajar Sukses Besar\nBelajar di TKJ akan membuatmu sukses besar. Pasalnya, jurusan ini tidak sulit untuk dipelajari dan dijamin tidak akan menyulitkanmu selama masa penilaian, entah itu UAS, ujian praktek, atau tugas presentasi.\n\n
+
+        5. Melek Teknologi\nBelajar di jurusan ini tentu membuatmu semakin melek teknologi. Seperti yang Kamu tahu, banyak masyarakat di zaman serba digital ini masih belum bisa menguasai teknologi. Nah untuk Kamu anak jurusan ini, Kamu bisa paham teknologi dan bukan tidak mungkin untuk mengajarkannya ke orang-orang di sekeliling.\n\n
+
+        6. Saingannya RPL (Rekayasa Perangkat Lunak)\nAlasan memilih jurusan TKJ yang paling mainstream adalah karena jurusan ini bisa dibilang ‘rival’ RPL. Hal ini terjadi karena TKJ dan RPL sama-sama membuat Kamu paham akan arus perkembangan teknologi yang terjadi di dunia ini.\n\n
+
+        7. Bisa Jadi Network Engineer\nMenjadi seorang ahli TKJ tentu membuka kesempatan kerjamu di banyak tempat. Salah satu jabatan yang bisa Kamu incar adalah network engineer dimana Kamu bisa belajar tentang hardware beserta seluk-beluknya.\n\n
+
+        8. Belajar Programming\nDi TKJ, Kamu juga akan belajar programming. Selain pandai mengutak-atik software, Kamu juga harus mampu membuat program-program di komputer hingga bisa disebut programmer.\n\n
+
+        9. Banyak Peluang Kerja\nSeperti yang sudah dicontohkan, ada banyak prospek kerja yang bagus untuk jurusan satu ini. Jadi Kamu tidak perlu khawatir dan susah dengan nasib bangsa ini.\n\n
+
+        10. Bisa Berwirausaha\nTerakhir, Kamu bisa menjadi seorang wirausaha meski mengambil jurusan ini. pasalnya, TKJ akan membekali dirimu dengan banyak skill yang berguna untuk kehidupan sehari-hari.\n\n
+
+        Demikian ulasan tentang 10 alasan memilih jurusan TKJ. Semoga informasi di atas bermanfaat ya!
+
+
+    </string>
+    <string name="jurusanTKJArtikelDetail2">
+        Jika membicarakan tentang TKJ atau Teknik Komputer Jaringan, jurusan yang populer di SMK ini sebenarnya cukup rumit. Pasalnya tidak hanya membahas tentang Sistem Operasi dan Perakitan Komputer saja, TKJ nyatanya juga membahas tentang troubleshooting jaringan hingga komponen hardware dan software. Nah, tidak ada salahnya kita saat ini membahas tentang kelebihan dan kekurangan jurusan TKJ berikut ini.\n\n
+
+        Kelebihan Jurusan TKJ\n\n
+
+        Ada beberapa kelebihan dari jurusan TKJ yang perlu Kamu ketahui, antara lain :\n\n
+
+        1. Mempelajari Sistem Operasi\nDi dalam mata pelajaran TKJ, Kamu akan mengenal apa itu Sistem Operasi. Jadi setelah Kamu merakit komputer, Kamu tidak berhenti disitu saja melainkan lanjut dengan instalasi OS dan juga pelajaran tentang Sistem Kerja User hingga Partisi Hardisk dan Konstruksi.\n\n
+
+        2. Tidak Hanya Belajar Komputer Saja, Namun Jaringan Juga\nSeperti yang sudah dijelaskan di atas, TKJ lebih kompleks dan lebih rumit dari yang Kamu bayangkan. Namun justru inilah kelebihannya. Jurusan ini sangat sulit sehingga tidak sembarang anak bisa diterima. Pasalnya, disana Kamu akan diajari membuat jaringan komputer dengan macam-macam tipologinya. Sebut saja setting IP address, server, hingga jaringan lokal.\n\n
+
+        3. Siswa Dibekali Keahlian Troubleshooting\nSelain beberapa pelajaran di poin 1 dan 2, pelajaran terkait troubleshooting juga harus Kamu kuasai dan inilah yang menjadikan lulusan SMK jurusan TKJ lebih unggul dari lulusan anak SMA. Pasalnya, troubleshooting berguna untuk menyelidiki dan menyelesaikan permasalahan yang ada di RAM, Hardisk, hingga CPU.\n\n
+
+        4. Ada Praktek Kerja Untuk Tambah Pengalaman\nLayaknya jurusan di SMK lainnya, TKJ pun diwajibkan untuk magang alias Praktek Kerja Lapangan. Hal ini bertujuan menambah wawasanmu tentang dunia kerja dan juga membantumu merasakan segala permasalahan nyata di kehidupan sehari-hari terkait TKJ. Jadi tidak hanya kaya ilmu dan keahlian, jurusan TKJ juga akan kaya pengalaman.\n\n
+
+        5. Ada Peluang Kerja Besar Selepas SMK\nBiasanya, magang akan memiliki sertifikat dimana bisa digunakan sebagai referensi seperti surat keterangan kerja. Oleh sebab itu, anak lulusan SMK akan lebih mudah mencari kerja daripada anak lulusan SMA. Pasalnya selain memang sekolah mereka disiapkan untuk dapat terjun langsung di dunia kerja begitu lulus, mereka pun telah mengantongi pengalaman dan sertifikat.\n\n
+
+        Kekurangan Jurusan TKJ\n\n
+
+        Tentunya, semua aspek di dunia ini seimbang sehingga jika ada kelebihan, maka ada kekurangan. Untuk itu, kita sudah membahas kelebihan dan kekurangan TKJ yang akan diuraikan seperti berikut ini, yaitu :\n\n
+
+        1. Harus Benar-Benar Dikuasai\nTKJ bukan jurusan yang mudah jadi Kamu harus benar-benar suka dan menguasainya. Kamu tidak boleh asal karena jika salah pasang komponen, maka semua akan rusak dan berantakan.\n\n
+
+        2. Biaya Praktek\nBanyak sekali praktek di TKJ yang membutuhkan komputer dan berbagai macam komponennya. Untuk itu, dana yang harus Kamu keluarkan juga tidak sedikit.\n\n
+
+        3. Harus Selalu Update\nTerakhir, teknologi selalu berkembang sehingga Kamu harus rajin mengikuti info terbaru dan juga mengupgrade ilmu setiap saat hingga tua nantinya.\n\n
+
+        Demikian ulasan tentang kelebihan dan kekurangan jurusan TKJ. Semoga informasi di atas bermanfaat ya!
+
+    </string>
+    <string name="jurusanTKJArtikelDetail3">
+        Ada banyak hal yang bisa Kamu pelajari jika Kamu mengambil jurusan TKJ alias Teknik Komputer dan Jaringan di SMK. Tidak hanya perihal komputer dan komponennya saja, Kamu juga akan diajari berbagai macam jaringan yang bisa membuka matamu akan perkembangan ilmu teknologi di dunia. Maka dari itu bagi Kamu yang saat ini sedang akan masuk SMK, yuk simak 10 mata pelajaran TKJ yang wajib Kamu kenali di ulasan berikut ini.\n\n
+
+        1. Komputer Dan Jaringan Dasar\nSesuai dengan nama jurusannya, maka Kamu pun akan diajari tentang perihal komputer dan jaringan dasarnya. Mulai dari materi hardware, perkembangan jaringan, hingga bagian-bagian lainnya.\n\n
+
+        2. Pemrograman Dasar\nBagi Kamu yang mengenyam pendidikan di TKJ, maka Kamu juga harus memahami apa itu pemrograman. Ilmu yang berisi coding untuk sebuah operasi komputer ini memungkinkanmu mempelajari banyak hal.\n\n
+
+        3. Teknologi Jaringan Berbasis Luas\nSalah satu mata pelajaran TKJ yang wajib Kamu ketahui dan wajib Kamu kuasai adalah Teknologi Jaringan Berbasis Luas. Mata pelajaran ini bisa dibilang cukup sulit bahkan untuk mereka yang menguasainya. Pasalnya di Teknologi Jaringan Berbasis Luas, Kamu akan belajar soal diagnosa kerusakan komputer, perbaikannya, hingga pembuatan jaringan seperti LAN, WAN, atau internet.\n\n
+
+        4. Administrasi Infrastruktur Jaringan\nDi mata pelajaran ini, Kamu juga akan digembleng dengan banyak macam konfigurasi jaringan, sebut saja Cisco, Mikrotik, dan jaringan-jaringan lainnya. Selain itu, Kamu juga akan belajar tentang konfigurasi server dimana Kamu dipersiapkan menjadi seorang administrator jaringan entah itu di perusahaan besar atau kecil.\n\n
+
+        5. Simulasi Dan Komunikasi Digital\nProses meniru bentuk visual yang dideskripsi dalam model gambar, grafis, atau kata ini juga akan Kamu pelajari di TKJ. Oleh sebab itu, Kamu harus benar-benar mahir dalam bidang analitik agar Kamu dapat memahami perilaku dari suatu sistem itu sendiri.\n\n
+
+        6. Desain Grafis\nDi mata pelajaran ini, Kamu akan belajar cara mendesain dalam bentuk grafis. Ilmu ini sangat penting dan berguna bahkan ketika Kamu lulus nanti.\n\n
+
+        7. Administrasi Sistem Jaringan\nDisini, Kamu akan belajar soal Sistem Operasi beserta proses instalasinya. Biasanya, OS ini memungkinkan untuk melayani banyak service, mulai dari pinter, HTTP, hingga DNS Service.\n\n
+
+        8. Teknologi Layanan Jaringan\nTentunya, mengambil jurusan TKJ membuatmu harus juga belajar Teknologi Layanan Jaringan. Disini, Kamu akan belajar mengenai apa saja layanan yang dirancang dan dibangun dengan tujuan untuk melayani pengguna meski dari banyak perangkat yang berbeda.\n\n
+
+        9. Produk Kreatif Dan Kewirausahaan\nBelajar di jurusan TKJ bukan berarti Kamu tidak bisa berwirausaha. Pasalnya di mata pelajaran ini, Kamu akan diajari soal kreativitas dan wirausaha sehingga bisa Kamu jadikan modal untuk kedepannya.\n\n
+
+        10. Pengetahuan Dasar\nTerakhir, Kamu pun akan belajar mengenai berbagai mata pelajaran dasar layaknya di SMA. Contohnya saja Matematika, Bahasa Indonesia, hingga Bahasa Inggris dan Agama.\n\n
+
+        Demikian ulasan mengenai 10 mata pelajaran TKJ. Semoga informasi di atas bermanfaat ya!
+
+    </string>
+    <string name="jurusanTKJArtikelDetail4">
+        Sekolah Menengah Kejuruan (SMK) pada dasarnya diperuntukkan bagi kaum muda yang ingin segera bekerja setelah lulus sekolah. Namun, tak jarang juga lulusan SMK yang ingin melanjutkan kuliah untuk memperdalam keilmuannya, tak terkecuali bagi lulusan Teknik Komputer dan Jaringan (TKJ). Jurusan kuliah untuk lulusan SMK TKJ tentu yang masih berhubungan dengan dunia komputer dan jaringan, berikut diantaranya akan diuraikan di bawah ini.\n\n
+
+        1. Teknik Komputer\nJurusan teknik komputer dikenal juga dengan sebutan jurusan sistem komputer. Teknik komputer merupakan program studi yang mengintegrasikan teknik elektro dan ilmu komputer dalam mengembangkan sistem perangkat keras, perangkat lunak, dan jaringan komputer.\n\n
+
+        2. Teknik Informatika\nKuliah jurusan ilmu informatika secara spesifik akan mempelajari teknik pemrograman. Tetapi ada juga jurusan teknik informatika yang mempelajari jaringan komputer, tergantung dengan mata kuliah yang disediakan prodi tersebut.\n\n
+
+        3. Manajemen Informatika\nManajemen informatika dan sistem informasi merupakan program studi yang sama. Program studi ini mempelajari bagaimana mendesain sistem yang tepat berdasarkan tujuan organisasi atau perusahaan sesuai dengan kebutuhan dan proses bisnis.\n\n
+
+        4. Ilmu Telekomunikasi\nDalam program studi telekomunikasi Kamu akan mendalami ilmu jaringan komputer, sistem perangkat keras, dan pemrograman. Sistem perangkat keras dan pemrograman erat kaitannya dengan jaringan yang jika disatukan akan menjadi sebuah ilmu IT yang luar biasa.\n\n
+
+        5. Multimedia\nJurusan multimedia mempelajari berbagai hal yang berkaitan dengan pengembangan web, multimedia, permainan/game, hingga produksi sinema dan industri media. Jurusan multimedia merupakan salah satu jurusan kuliah untuk lulusan SMK TKJ yang sangat banyak dicari di era serba digital ini.\n\n
+
+        6. Teknik Elektronika\nJurusan teknik elektronika berkaitan dengan hal-hal yang berbau fisika seperti tenaga listrik dan elektromagnetik. Untuk saat ini, kebutuhan akan teknisi elektronika semakin luas, mulai dari teknisi telekomunikasi, teknisi radar, sonar dan navigasi, teknisi frekuensi radio dan microwave, teknisi selular, teknisi sistem jaringan, dan lain sebagainya.\n\n
+
+        7. Animasi\nJurusan animasi merupakan bagian dari film dan TV production yang mempelajari bagaimana cara membuat animasi. Mulai dari dasar hingga pembuatan animasi dengan peralatan teknologi yang canggih.\n\n
+
+        8. Jurnalistik\nLulusan TKJ yang menyukai dunia jurnalistik dapat melanjutkan kuliah jurusan jurnalistik. Ilmu komputerisasi Kamu akan terpakai dalam hal publikasi stasiun tv, menyusun tampilan naskah, memilih atau mengambil foto, dan menulis.\n\n
+
+        9. Marketing/Pemasaran\nDiera digital seperti sekarang ini, jurusan TKJ dibutuhkan dalam dunia marketing/pemasaran. Kamu dapat mengkombinasikan keahlian komputerisasi dengan marketing dalam memasarkan produk dan jasa dalam dunia digital.\n\n
+
+        10. Akuntansi\nMeski terdengar lintas jurusan, namun jurusan akuntansi berkaitan erat dengan penggunaan komputer dalam menghitung untung dan rugi perusahaan. Keahlian komputerisasi akan tetap bermanfaat dengan memilih jurusan akuntansi meski lulusan SMK TKJ.\n\n
+
+        Nah, demikianlah beberapa jurusan kuliah untuk lulusan SMK TKJ yang masih berkaitan dengan dunia komputer dan teknologi. Lulusan jurusan-jurusan di atas tentu akan mudah mendapat pekerjaan, karena di era yang serba digital ini hampir semua pekerjaan membutuhkan lulusan yang ahli dalam bidang teknik komputer dan jaringan.
+
+    </string>
+    <string name="jurusanTKJArtikelDetail5">Jurusan yang memiliki peluang kerja lebih besar ketika lulus nantinya selalu menjadi jurusan yang banyak diminati.
+        Salah satu jurusan yang memiliki banyak peminat di SMK adalah Teknik Komputer Jaringan atau TKJ. Lalu, apa saja peluang kerja bagi para lulusan TKJ?
+        Berikut beberapa pekerjaan yang menjadi peluang atau prospek kerja TKJ beserta kisaran gajinya.\n\n
+
+        1. Teknisi Komputer\nTeknisi komputer adalah profesi yang sangat dibutuhkan mengingat saat ini hampir seluruh sektor pekerjaan menggunakan komputer dan komputer-komputer tersebut membutuhkan para teknisi untuk perawatan dan perbaikannya.
+        Kisaran gaji seorang teknisi komputer adalah Rp.2.500.000-Rp.3.500.000.\n\n
+
+        2. Desainer Grafis\nSeorang lulusan TKJ juga bisa bekerja sebagai desainer grafis.
+        Bidang kerjanya adalah membuat visual yang menarik dari sebuah konten.
+        Kisaran kerja seorang desainer grafis adalah Rp.3.500.000-Rp.5.000.000.\n\n
+
+        3. Teknisi Jaringan\nPekerjaan seorang teknisi jaringan adalah untuk mengelola segala hal yang berkaitan dengan jaringan atau network, seperti WiFi, kabel telepon, atau instalasi jaringan lain.
+        Kisaran gaji seorang teknisi jaringan adalah Rp.3.500.000.\n\n
+
+        4. Administrasi Server\nPekerjaan administrasi server atau admin server adalah untuk mengawasi, mengelola, serta mengamankan suatu komputer server.
+        Prosedur penggunaan komputer server sendiri tentunya berbeda dengan komputer biasa. Kisaran gaji seorang admin server adalah Rp.3.000.000.\n\n
+
+        5. Customer Service\nPeluang atau prospek kerja TKJ selanjutnya adalah customer service.
+        Saat ini customer service juga banyak bekerja dengan menggunakan layanan digital seperti e-mail dan internet, sehingga banyak membutuhkan lulusan TKJ.
+        Kisaran gaji seorang customer service adalah Rp.2.800.000.\n\n
+
+        6. Programmer\nProgrammer adalah orang yang bekerja untuk berbagai hal yang berhubungan dengan bahasa pemrograman dalam komputer.
+        Dengan menguasai bahasa pemrograman, programmer juga bisa membuat software atau website.
+        Kisaran gaji seorang programmer adalah Rp.3.000.000-Rp.6.000.000.\n\n
+
+        7. System Analyst\nSystem analyst adalah orang yang bidang pekerjaannya yaitu berbagai hal yang berkaitan dengan analisa suatu sistem.
+        Hasil analisa sistem ini nantinya akan digunakan oleh seorang programmer.
+        System analyst juga harus bisa membandingkan kelebihan dan kekurangan dari sebuah sistem yang hendak dirancang.
+        Kisaran gaji seorang system analyst adalah Rp.5.000.000.\n\n
+
+        8. Web Designer\nSeorang web designer bertugas untuk merancang sebuah web dengan tampilan dan konten yang menarik dan dikirimkan ke pengguna akhir melalui World Wide Web.
+        Kisaran gaji untuk seorang web designer adalah Rp.3.500.000-7.500.000.\n\n
+
+        9. Data Entry\nPekerjaan seorang operator data entry adalah mengurus hal-hal yang berkaitan dengan sistem operasional, misalnya input dan output sebuah sistem.
+        Kisaran gaji seorang data entry adalah Rp.3.000.000-Rp.5.000.000.\n\n
+
+        10. Pengusaha Warung Internet\nMeskipun tampak seperti usaha kecil, namun pendapatan yang Kamu dapatkan bisa cukup besar dengan membuka usaha ini.
+        Dengan estimasi biaya per jam Rp.3000, maka dengan 10 komputer yang beroperasi 16 am per hari Kamu bisa mendapat penghasilan kotor Rp.14.400.000.\n\n
+
+        Itulah beberapa peluang atau prospek kerja TKJ beserta kisaran gajinya untuk menjadi referensi Kamu. Semoga ulasannya bermanfaat ya!</string>
+
+    <string name="jurusanPKMArtikelDetail1">
+        Tidak hanya perguruan tinggi yang memiliki jurusan perbankan, jenjang SMK juga memilikinya. Jika Kamu tertarik dengan dunia perbankan, Kamu bisa langsung masuk ke SMK jurusan perbankan. Jurusan ini memiliki materi yang hampir sama dengan jurusan akuntansi. Bedanya, jurusan perbankan lebih terfokus pada dunia perbankan sesuai namanya. Lalu, adakah alasan memilih jurusan perbankan selain karena tidak punya pilihan? Berikut ini ada 10 alasan memilih jurusan perbankan untuk Kamu yang bingung mau masuk jurusan apa di SMK.\n\n
+
+        1. Jurusan Favorit\nPertama, perbankan menjadi salah satu jurusan favorit di jenjang SMK. Hal ini berkaitan dengan karir setelah lulus nanti. Jadi, kalau Kamu berhasil masuk ke jurusan ini, Kamu boleh berbangga hati.\n\n
+
+        2. Prospek Kerja Yang Luas\nYang kedua, prospek kerja jurusan perbankan sangat luas. Kamu bisa berkarir di bagian front office atau di bagian back office. Ada posisi teller dan customer service di bagian front office sedangkan di bagian back office ada posisi admin dan jabatan lainnya.\n\n
+
+        3. Gaji Yang Menjanjikan\nAlasan memilih jurusan perbankan yang berikutnya adalah gaji lulusan dari jurusan ini cukup menjanjikan. Kamu akan mendapatkan gaji sedikit lebih banyak dari gaji UMR kota.\n\n
+
+        4. Bekerja Di Lembaga Keuangan Lainnya\nTidak hanya bekerja di perbankan, Kamu juga bisa berkarir di lembaga keuangan lainnya, seperti leasing, koperasi, dan financial technology.\n\n
+
+        5. Industri Perbankan Tidak Ada Matinya\nSeiring berkembangnya teknologi, ada beberapa industri yang ikut tumbang. Namun tidak dengan perbankan. Lembaga keuangan ini akan terus ada dan menyesuaikan dengan perkembangan zaman.\n\n
+
+        6. Belajar Akuntansi\nSeperti yang sudah disebutkan sebelumnya, mata pelajaran jurusan perbankan hampir sama dengan jurusan akuntansi. Kamu tidak hanya belajar akuntansi dasar di jurusan ini, namun juga akuntansi perbankan.\n\n
+
+        7. Belajar Pajak\nTidak hanya belajar laporan keuangan, Kamu juga akan belajar pajak. Jika Kamu tertarik dengan materi ini, Kamu bisa mempelajarinya lebih dalam.\n\n
+
+        8. Ada Lembaga Keuangan Syariah\nAlasan memilih jurusan perbankan berikutnya adalah Kamu punya pilihan untuk berkarir di lembaga keuangan syariah.\n\n
+
+        9. Jurusan Kuliah Yang Relevan\nJika Kamu ingin melanjutkan ke perguruan tinggi, ada banyak jurusan kuliah yang relevan dengan jurusan perbankan yang sudah Kamu pilih, misalnya akuntansi.\n\n
+
+        10. Industri Keuangan Indonesia Sedang Naik\nAlasan yang terakhir karena industri keuangan di Indonesia sedang naik. Hal ini juga berarti industri ini bisa menyerap tenaga kerja lebih banyak.\n\n
+
+        Itulah 10 alasan memilih jurusan perbankan. Terlepas dari segala alasan tersebut, Kamu sebaiknya memilih jurusan yang paling Kamu minati. Ketika memilihnya, pastikan Kamu tidak terpengaruh oleh pilihan teman-temanmu ataupun mendapatkan paksaan dari orang terdekatmu, termasuk keluarga Kamu sendiri.\n\n
+
+        Semoga ulasan di atas semakin menyakinkanmu untuk memilih jurusan perbankan, ya.
+
+    </string>
+    <string name="jurusanPKMArtikelDetail2">
+        Setiap jurusan di SMK memiliki kelebihan dan kekurangannya masing-masing. Begitu juga dengan jurusan perbankan. Di jurusan ini, Kamu akan belajar mengenai segala hal tentang dunia perbankan, mulai dari pengelolaan keuangan di bank hingga sistem pelayanannya. Lalu, apa saja kelebihan dan kekurangan jurusan perbankan di jenjang SMK yang perlu Kamu ketahui? Berikut ini ada masing-masing ada 5 kelebihan dan kekurangan jurusan perbankan di jenjang SMK.\n\n
+
+        Kelebihan Jurusan Perbankan\n\n
+
+        1. Jurusan Populer\nJurusan perbankan merupakan salah satu jurusan yang populer dan favorit. Kamu jangan kaget jika Kamu harus bersaing dengan banyak orang untuk bisa masuk ke jurusan ini. Jadi, persiapkan diri Kamu dengan baik.\n\n
+
+        2. Prospek Kerja Yang Luas\nKelebihan dari jurusan perbankan adalah prospek kerjanya cukup luas. Tidak hanya di bank, Kamu juga bisa berkarir di lembaga keuangan lainnya, seperti leasing dan fintech.\n\n
+
+        3. Materi Yang Hampir Sama Dengan Jurusan Akuntansi\nMateri yang diajarkan di jurusan ini hampir sama dengan jurusan akuntansi. Kalau Kamu punya mimpi masuk jurusan akuntansi namun tidak kesampaian, Kamu bisa memilih jurusan ini sebagai alternatif.\n\n
+
+        4. Bisa Melanjutkan Ke Perguruan Tinggi Dengan Jurusan Yang Linier\nJika Kamu tertarik melanjutkan ke jenjang perguruan tinggi, Kamu bisa mengambil jurusan kuliah yang linier dengan jurusan perbankan, seperti ekonomi, akuntansi, atau perpajakan.\n\n
+
+        5. Berbasis Syariah\nTidak hanya lembaga keuangan konvensional, Kamu juga bisa berkarir di lembaga keuangan syariah. Jadi, untuk Kamu yang takut riba dan sejenisnya, Kamu bisa memilih lembaga keuangan yang berbasis syariat islam.\n\n
+
+        Kekurangan Jurusan Perbankan\n\n
+
+        1. Lulusan SMK Hanya Menempati Posisi Staf\nMeskipun prospek kerjanya cukup luas, lulusan SMK biasanya hanya menempati posisi staf. Posisi manager dan posisi strategis lainnya biasanya diisi oleh mereka yang lulusan sarjana.\n\n
+
+        2. Kerja Dengan Sistem Kontrak\nTidak sedikit pula yang sistem kerjanya masih kontrak, terutama di bank. Ada yang kontrak satu tahun, ada juga yang dua tahun. Jika kontrak habis, ada kemungkinan diperpanjang, ada juga yang tidak.\n\n
+
+        3. Harus Bisa Berhitung\nJurusan perbankan mewajibkan Kamu bisa berhitung. Kalau Kamu tidak suka matematika atau tidak pandai berhitung, Kamu sebaiknya berpikir ulang untuk masuk jurusan ini.\n\n
+
+        4. Bank Mulai Beralih Ke Digital\nSeiring perkembangan zaman, bank mulai beralih ke digital. Contohnya adalah pembukaan rekening kini tidak perlu datang langsung ke kantor cabang terdekat. Lambat laun, bank akan mengurangi jumlah pegawainya.\n\n
+
+        5. Banyak Saingan\nYang terakhir adalah Kamu akan berhadapan dengan banyak pesaing. Tidak hanya dari SMK perbankan, namun juga dari jurusan lainnya, baik di SMK maupun di tingkat sarjana.\n\n
+
+        Nah, itulah 10 kelebihan dan kekurangan jurusan perbankan. Sekarang Kamu sudah tahu kelebihan dan kekurangan dari jurusan ini. Semoga ini bisa menjadi bahan pertimbangan Kamu dalam memutuskan.
+
+    </string>
+    <string name="jurusanPKMArtikelDetail3">
+        Jika Kamu ingin masuk ke SMK jurusan perbankan, Kamu juga perlu tahu mata pelajaran perbankan yang akan Kamu dapatkan. Kamu sebaiknya tidak hanya mencari tahu reputasi atau prestasi dari sekolah yang Kamu pilih. Kamu juga perlu tahu materi apa saja yang akan Kamu pelajari.\n\n
+
+        Materi di jurusan perbankan bisa dikatakan hampir mirip dengan jurusan akuntansi. Bedanya, jurusan perbankan memiliki fokus keilmuan di bidang perbankan, sedangkan akuntansi memiliki cakupan ilmu yang lebih luas. Berikut ini adalah 10 mata pelajaran perbankan yang akan Kamu pelajari di jurusan ini.\n\n
+
+        1. Ekonomi Bisnis\nYang pertama, Kamu akan belajar bisnis dalam teori ekonomi. Kamu akan belajar mengenai permintaan, penawaran, hingga menghitung harga pokok penjualan.\n\n
+
+        2. Etika Profesi\nYang kedua, Kamu akan belajar etika profesi. Dalam hal ini, Kamu akan belajar etika profesi perbankan. Dengan belajar materi ini, Kamu akan tahu kode etik di dunia perbankan sehingga Kamu akan bekerja sesuai dengan kode etik yang berlaku.\n\n
+
+        3. Aplikasi Pengolah Angka\nYang ketiga, Kamu akan belajar aplikasi pengolah angka, seperti Microsoft Excel dan Spreadsheet. Kamu akan belajar rumus-rumus yang berlaku di aplikasi pengolah angka yang akan Kamu gunakan.\n\n
+
+        4. Akuntansi Dasar\nMata pelajaran perbankan yang keempat adalah akuntansi dasar. Kamu akan belajar debit, kredit, utang, piutang, dan istilah-istilah lainnya yang ada di akuntansi.\n\n
+
+        5. Perbankan Dasar\nYang kelima, Kamu akan belajar perbankan dasar terlebih dahulu sebelum masuk ke materi inti perbankan. Kamu akan belajar mengenal istilah-istilah di dunia perbankan dan teori-teorinya.\n\n
+
+        6. Pengelolaan Kas\nYang keenam, Kamu akan belajar materi pengelolaan kas. Materi pengelolaan kas ini seperti arus keluar masuknya uang, cara mengelola transaksi kas kecil, hingga mencatat laporan penerimaan.\n\n
+
+        7. Layanan Lembaga Perbankan Dan Keuangan Mikro\nYang ketujuh adalah mata pelajaran layanan lembaga perbankan dan keuangan mikro. Perbankan tidak terlepas dari proses layanannya. Untuk itu, Kamu akan belajar materi ini.\n\n
+
+        8. Akuntansi Perbankan Dan Keuangan Mikro\nMata pelajaran perbankan berikutnya adalah akuntansi perbankan dan keuangan mikro. Bukan hanya pelayanannya saja yang akan Kamu pelajari, namun Kamu juga akan belajar materi akuntansinya.\n\n
+
+        9. Komputer Akuntansi\nSelanjutnya adalah komputer akuntansi. Anak perbankan juga perlu menguasai dan mampu mengoperasikan software akuntansi.\n\n
+
+        10. Administrasi Pajak\nYang terakhir adalah administrasi pajak. Bukan hanya perbankan dan akuntansi yang akan Kamu pelajari, namun juga materi tentang pajak. Meskipun terkesan tidak relevan, pajak masih berhubungan erat dengan dunia perbankan.\n\n
+
+        Nah, itulah 10 mata pelajaran perbankan yang perlu Kamu ketahui sebagai referensi. Setelah mengetahui mata pelajaran yang akan Kamu dapatkan, semoga Kamu bisa lebih siap untuk masuk ke jurusan ini dan menerima semua ilmu yang akan Kamu dapatkan.
+
+    </string>
+    <string name="jurusanPKMArtikelDetail4">
+        Siswa SMK kini memiliki kesempatan yang sama dengan siswa SMA dalam hal melanjutkan ke jenjang perguruan tinggi. Kalau Kamu anak SMK dan merasa belum puas dengan ilmu yang Kamu dapatkan, Kamu bisa mengikuti seleksi untuk masuk ke perguruan tinggi. Kamu bisa memilih jurusan kuliah untuk lulusan SMK perbankan yang linier dengan bidang ilmu yang Kamu miliki.\n\n
+
+        Untuk Kamu anak SMK jurusan perbankan yang ingin melanjutkan ke jenjang perguruan tinggi, berikut ini ada 10 jurusan kuliah yang cocok untuk lulusan jurusan perbankan.\n\n
+
+        1. Manajemen \nYang pertama, manajemen perbankan. Materi yang akan Kamu dapatkan tidak jauh berbeda dengan materi perbankan saat sekolah. Salah satunya adalah cara mengelola uang dari para nasabah bank.\n\n
+
+        2. Ilmu Ekonomi\nYang kedua, ilmu ekonomi. Kalau Kamu ingin mempelajari ilmu ekonomi secara teori, Kamu bisa memilih jurusan ini. Kamu akan belajar segala hal di bidang ekonomi, termasuk perbankan.\n\n
+
+        3. Ekonomi Syariah\nJurusan kuliah berikutnya adalah ekonomi syariah. Kamu akan belajar ekonomi berdasarkan hukum syariah Islam yang berlaku.\n\n
+
+        4. Akuntansi\nYang keempat, akuntansi. Materi perbankan dan materi akuntansi sebenarnya tidak jauh berbeda. Hanya saja, di jurusan akuntansi Kamu lebih banyak belajar laporan keuangan dan segala macam tabel akuntansi.\n\n
+
+        5. Perpajakan\nYang kelima, perpajakan. Kalau Kamu tertarik mendalami materi pajak, Kamu bisa masuk ke jurusan kuliah perpajakan. Setelah lulus nanti, Kamu bisa menjadi staf pajak di suatu perusahaan.\n\n
+
+        6. Aktuaria\nYang keenam, aktuaria. Aktuaria adalah ilmu yang mempelajari manajemen risiko keuangan dalam suatu bidang usaha. Meskipun terdengar asing, karir sebagai aktuaris memiliki prospek yang bagus.\n\n
+
+        7. Pendidikan Ekonomi\nYang ketujuh, pendidikan ekonomi. Jurusan ini bisa Kamu pilih jika Kamu ingin menjadi seorang guru karena jurusan ini bertujuan menghasilkan guru mata pelajaran ekonomi. Tidak perlu ragu memilih jurusan pendidikan karena kesejahteraan guru sekarang ini sudah mulai diperhatikan.\n\n
+
+        8. Pendidikan Akuntansi\nYang kedelapan, pendidikan akuntansi. Jurusan ini akan menghasilkan seorang tenaga pendidik untuk mata pelajaran akuntansi. Nantinya, Kamu bisa berkarir di SMA atau SMK di jurusan yang relevan.\n\n
+
+        9. Administrasi Negara\nJurusan kuliah untuk lulusan SMK perbankan yang berikutnya adalah administrasi negara. Kamu akan lebih banyak belajar mengelola proses kebijakan di suatu lembaga negara.\n\n
+
+        10. Administrasi Perkantoran\nYang terakhir, administrasi perkantoran. Bedanya dengan administrasi negara adalah administrasi perkantoran memiliki lingkup yang lebih luas karena belajar di ranah swasta dan juga negeri.\n\n
+
+        Nah, itulah 10 jurusan kuliah untuk lulusan SMK perbankan. Untuk Kamu yang ingin melanjutkan ke jenjang perguruan tinggi dengan jurusan yang linier, Kamu bisa memilih salah satu dari 10 jurusan tersebut. Semoga ulasan di atas bermanfaat ya buat Kamu yang mau kuliah setelah lulus jurusan yang satu ini.
+
+    </string>
+    <string name="jurusanPKMArtikelDetail5">Apakah Kamu salah satu siswa SMK jurusan perbankan?
+        Jika iya, apakah Kamu sudah tahu peluang atau prospek kerja perbankan? Setelah lulus nanti, apakah Kamu sudah menentukan pilihan karir yang ingin Kamu jalani?
+        Jika belum, Kamu bisa memikirkannya dari sekarang. Sembari berpikir, Kamu bisa mencari tahu peluang atau prospek kerja dari lulusan perbankan.
+        Berikut ini ada 10 prospek kerja perbankan untuk Kamu para siswa SMK jurusan perbankan.\n\n
+
+        1. Teller\nKarena Kamu berasal dari jurusan perbankan, Kamu bisa berkarir menjadi seorang teller bank atau lembaga keuangan lainnya.
+        Kamu yang sudah biasa pergi ke bank, tentu tidak asing lagi dengan profesi yang satu ini. Gaji : Rp3juta\n\n
+
+        2. Customer Service\nTugas seorang customer service bank adalah mengatasi masalah yang dialami oleh nasabah, misalnya lupa PIN, ATM hilang atau tertelan, hingga pembukaan buku rekening.
+        Gaji : Rp3juta\n\n
+
+        3. Surveyor\nPeluang atau prospek kerja perbankan selanjutnya adalah surveyor.
+        Tugasnya adalah mengumpulkan informasi dan melakukan verifikasi data terhadap calon nasabah, terutama dalam hal pengajuan kredit.
+        Gaji rata-rata : Rp3.2juta\n\n
+
+        4. Collector\nSesuai dengan namanya, Kamu yang berkarir sebagai collector akan melakukan penagihan terhadap nasabah yang menunggak angsuran.
+        Gaji rata-rata : Rp3.3juta\n\n
+
+        5. Marketing\nKamu mungkin sudah punya gambaran terkait profesi ini.
+        Yap, tugas marketing tidak jauh-jauh dari mempromosikan produk keuangan dari perusahaan tempat Kamu bekerja.
+        Gaji : Rp2.5juta\n\n
+
+        6. Admin Keuangan\nTugas seorang admin keuangan adalah membuat perencanaan dan juga laporan keuangan.
+        Segala tagihan keuangan juga Kamu yang mengurusnya.
+        Gaji rata-rata : Rp4juta\n\n
+
+        7. Customer Relationship Officer\nSelanjutnya adalah customer relationship officer.
+        Tugasnya tidak jauh berbeda dengan customer service, seperti memberi informasi kepada konsumen dan menyelesaikan masalah yang dihadapi oleh nasabah.
+        Gaji : Rp3juta\n\n
+
+        8. Account Officer\nPeluang atau prospek kerja perbankan yang berikutnya adalah account officer atau biasa disingkat dengan AO.
+        Tugas besar seorang AO adalah melakukan pemasaran produk keuangan berupa kredit hingga mendapatkan nasabah.
+        Gaji : Rp2.2juta\n\n
+
+        9. Desk Collection\nSecara sederhana, desk collection merupakan sebutan untuk mereka yang bekerja di balik meja untuk mengingatkan nasabah yang memiliki utang.
+        Kamu akan menagih nasabah yang telat membayar utang yang telah jatuh tempo dengan menggunakan sambungan telepon.
+        Gaji : Rp3.5juta\n\n
+
+        10. Staf Keuangan\nTugas seorang staf keuangan adalah membantu tugas-tugas koordinator keuangan.
+        Segala hal yang berhubungan dengan arus kas, pembayaran, tagihan, setoran, dan lainnya harus bisa Kamu kelola dengan baik.
+        Gaji : Rp4juta\n\n
+
+        Nah, itulah 10 peluang atau prospek kerja perbankan.
+        Sekarang, Kamu sudah tahu prospek kerja yang linier dengan jurusan perbankan.
+        Dengan memilih karir yang linier, ilmu yang Kamu dapatkan selama menjalani pendidikan di SMK akan berguna secara maksimal.
+        Semoga ulasan di atas bisa lebih meyakinkan Kamu untuk memilih jurusan perbankan di perkuliahan nanti ya dan juga bermanfaat sebagai referensi ya.\n\n</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".User.BottomNavigationView.Menu3Jadwal.Tabs.Jadwal10PKMFragment"
+    android:orientation="vertical"
+    android:background="@color/colorSurface"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 PKM"
+        android:fontFamily="@font/muli_black"
+        android:textColor="@color/colorOnPrimaryText"
+        android:textSize="40sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_jadwal_10_p_k_m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

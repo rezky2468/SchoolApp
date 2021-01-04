@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#15bdd8</color>-->
+    <!--    <color name="colorPrimaryDark">#03A9F4</color>-->
+<!--        <color name="colorAccent">#655C55</color>-->
+
+<!--    <color name="colorPrimary">#0336ff</color>-->
+
+<!--    <color name="colorSecondary">#ffde03</color>-->
+<!--    <color name="colorPrimaryVariant">#0035c9</color>-->
+<!--    <color name="colorSecondaryVariant">#ffc000</color>-->
+<!--    <color name="colorError">#b00020</color>-->
+<!--    <color name="colorAccent">#655C55</color>-->
+
+    <color name="colorSurface">#111111</color>
+    <color name="colorPrimary">#1b1b1b</color>
+    <color name="colorSecondaryOne">#3a3a3a</color>
+    <color name="colorSecondaryTwo">#dadada</color>
+
+    <color name="colorPrimaryIcon">#fefeff</color>
+    <color name="colorSecondaryIcon">#a7a8a8</color>
+
+    <color name="colorPrimaryText">#fefeff</color>
+    <color name="colorSecondaryText">#a7a8a8</color>
+
+    <color name="colorOnPrimaryIcon">#fefeff</color>
+    <color name="colorOnPrimaryText">#fefeff</color>
+    <color name="colorOnSecondaryText">#a7a8a8</color>
+
+    <color name="colorCard">#3a3a3a</color>
+
+
+    <color name="colorPrimaryDark">#fff</color>
+<!--    <color name="colorPrimaryDark2">#8ebbf2</color>-->
+<!--    <color name="colorSecondaryOneText">#35b7ff</color>-->
+<!--    <color name="colorSecondaryTwo">#fcbad5</color>-->
+    <color name="colorGrey">#d9dde9</color>
+
+
+    <!--    <color name="colorAccent">#feeaa3</color>-->
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="tabsScrollColor">#8a140e</color>
+
+    <!-- TODO: Common Color -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="lightWhite">#f5f5f5</color>
+    <color name="lightBlack">#272727</color>
+
+
+    <color name="c1">#2a4043</color>
+    <color name="c2">#afb7c2</color>
+    <color name="c3">#f38b46</color>
+
+
+    .
+
+    <!--Dashboard Colors-->
+
+    <!--Body And Background Colors-->
+    <color name="home_background">#1b1b1b</color>
+    <color name="banner_background">#f1e9ce</color>
+    <color name="banner_background_light">#56f1e9ce</color>
+
+    <!--Card Colors-->
+    <color name="card1">#2ac6dc</color>
+    <color name="card2">#f68e4f</color>
+    <color name="card3">#33c4b3</color>
+    <color name="card4">#afb7c2</color>
+
+
+    <color name="bg">#2962ff</color>
+
+
+</resources>
