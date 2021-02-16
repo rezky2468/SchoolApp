@@ -1,104 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--    <group android:checkableBehavior="single">-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_home"-->
-    <!--            android:icon="@drawable/ic_menu_beranda_24"-->
-    <!--            android:title="@string/nav_home" />-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_search"-->
-    <!--            android:icon="@drawable/menu_search_icon"-->
-    <!--            android:title="@string/nav_search" />-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_all_categories"-->
-    <!--            android:icon="@drawable/menu_all_categories_icon"-->
-    <!--            android:title="@string/nav_all_categories" />-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_add_location"-->
-    <!--            android:icon="@drawable/menu_add_location_icon"-->
-    <!--            android:title="@string/nav_add_missing_place" />-->
-    <!--    </group>-->
-
-    <!--    <item android:title="@string/nav_profile">-->
-
-    <!--        <menu>-->
-    <!--    <group android:checkableBehavior="single">-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_login"-->
-    <!--            android:icon="@drawable/menu_login_icon"-->
-    <!--            android:title="@string/nav_login" />-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_profile"-->
-    <!--            android:icon="@drawable/ic_menu_profile_24"-->
-    <!--            android:title="@string/nav_profile" />-->
-    <!--        <item-->
-    <!--            android:id="@+id/nav_logout"-->
-    <!--            android:icon="@drawable/menu_logout_icon"-->
-    <!--            android:title="@string/nav_logout" />-->
-    <!--    </group>-->
-    <!--        </menu>-->
-
-    <!--    </item>-->
-
-    <!--    <item android:title="@string/categories">-->
-
-    <!--        <menu>-->
-    <!--            <group android:checkableBehavior="single">-->
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_absen"-->
-    <!--                    android:icon="@drawable/categories_absen_icon"-->
-    <!--                    android:title="@string/absen" />-->
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_ekskul"-->
-    <!--                    android:icon="@drawable/categories_ekskul_icon"-->
-    <!--                    android:title="@string/ekskul" />-->
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_event"-->
-    <!--                    android:icon="@drawable/categories_event_icon"-->
-    <!--                    android:title="@string/event" />-->
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_administrasi"-->
-    <!--                    android:icon="@drawable/categories_administrasi_icon"-->
-    <!--                    android:title="@string/administrasi" />-->
-    <!--            </group>-->
-    <!--        </menu>-->
-
-
-    <!--    </item>-->
-
-    <!--    <item android:title="@string/nav_share">-->
-
-    <!--        <menu>-->
     <group android:checkableBehavior="none">
-        <item
-            android:id="@+id/nav_login"
-            android:icon="@drawable/menu_login_icon"
-            android:title="@string/nav_login" />
-        <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_menu_profile_24"
-            android:title="@string/nav_profile" />
-        <item
-            android:id="@+id/nav_logout"
-            android:icon="@drawable/menu_logout_icon"
-            android:title="@string/nav_logout" />
+
         <item
             android:id="@+id/nav_tentang"
             android:icon="@drawable/menu_about_icon"
-            android:title="Tentang Aplikasi" />
+            android:title="@string/nav_tentang" />
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/menu_share_icon"
-            android:title="@string/nav_share" />
-        <!--                <item-->
-        <!--                    android:id="@+id/nav_rate_us"-->
-        <!--                    android:icon="@drawable/menu_rate_us_icon"-->
-        <!--                    android:title="@string/nav_rate_us" />-->
+            android:title="@string/nav_bagikan" />
+<!--        <item-->
+<!--            android:id="@+id/nav_theme"-->
+<!--            android:icon="@drawable/nav_theme"-->
+<!--            android:title="@string/nav_theme" />-->
+
     </group>
-    <!--        </menu>-->
-
-
-    <!--    </item>-->
 
 </menu>

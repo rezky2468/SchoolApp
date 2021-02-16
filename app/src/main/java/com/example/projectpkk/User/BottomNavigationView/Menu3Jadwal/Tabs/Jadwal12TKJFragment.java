@@ -22,38 +22,21 @@ public class Jadwal12TKJFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_jadwal12_t_k_j, container, false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.rv_12_tkj1);
-        RecyclerView recyclerView2 = view.findViewById(R.id.rv_12_tkj2);
+        RecyclerView recyclerView = view.findViewById(R.id.rv_12_tkj);
 
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        recyclerView.setHasFixedSize(true);
-        recyclerView2.setHasFixedSize(true);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
-        recyclerView2.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.VERTICAL, false));
 
         final ArrayList<JadwalHelperClass> arrayList = new ArrayList<>();
-        arrayList.add(new JadwalHelperClass("Senin", "ASJ", "Matematika", "B. Indonesia", "", "07:00 - 08:00", "08:00 - 09:00", "09:00 - 10:00", ""));
-        arrayList.add(new JadwalHelperClass("Selasa", "B. Jepang", "", "", "", "08:00 - 09:00", "", "", ""));
-        arrayList.add(new JadwalHelperClass("Rabu", "PKN", "B. Inggris", "BK", "", "07:00 - 08:00", "09:00 - 10:00", "10:00 - 11:00", ""));
-        arrayList.add(new JadwalHelperClass("Kamis", "PAI", "", "", "", "10:00 - 11:00", "", "", ""));
-        arrayList.add(new JadwalHelperClass("Jumat", "", "", "", "", "", "", "", ""));
-        arrayList.add(new JadwalHelperClass("Sabtu", "AD", "", "", "", "09:00 - 10:00", "", "", ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.senin), getString(R.string.pai), getString(R.string.aij), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.selasa), getString(R.string.b_indonesia), getString(R.string.b_jepang), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.rabu), getString(R.string.pkn), getString(R.string.asj), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.kamis), getString(R.string.matematika), getString(R.string.tlj), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.jumat), getString(R.string.b_inggris), "", "", getString(R.string.jam_ke1), "", ""));
+        arrayList.add(new JadwalHelperClass(getString(R.string.sabtu), getString(R.string.pkk), getString(R.string.bk),"", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
 
-        final ArrayList<JadwalHelperClass> arrayList2 = new ArrayList<>();
-        arrayList2.add(new JadwalHelperClass("Senin", "ASJ", "Matematika", "B. Indonesia", "", "07:00 - 08:00", "08:00 - 09:00", "09:00 - 10:00", ""));
-        arrayList2.add(new JadwalHelperClass("Selasa", "PKN", "B. Jepang", "", "", "07:00 - 08:00","08:00 - 09:00",  "", ""));
-        arrayList2.add(new JadwalHelperClass("Rabu", "BK","", "", "", "10:00 - 11:00","", "", ""));
-        arrayList2.add(new JadwalHelperClass("Kamis", "PAI", "", "", "", "10:00 - 11:00", "", "", ""));
-        arrayList2.add(new JadwalHelperClass("Jumat", "B. Inggris", "", "", "", "10:00 - 11:00", "", "", ""));
-        arrayList2.add(new JadwalHelperClass("Sabtu", "AD", "", "", "", "09:00 - 10:00", "", "", ""));
-
-        JadwalRVAdapter adapter1 = new JadwalRVAdapter(arrayList);
-        JadwalRVAdapter adapter2 = new JadwalRVAdapter(arrayList2);
-
-        recyclerView.setAdapter(adapter1);
-        recyclerView2.setAdapter(adapter2);
+        JadwalRVAdapter adapter = new JadwalRVAdapter(arrayList);
+        recyclerView.setAdapter(adapter);
 
         return view;
     }

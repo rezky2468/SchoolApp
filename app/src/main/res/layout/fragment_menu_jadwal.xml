@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorSurface"
+    android:orientation="vertical"
     tools:context=".User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,132 +19,45 @@
             android:paddingLeft="15dp"
             android:paddingRight="10dp">
 
-<!--            <ImageView-->
-<!--                android:id="@+id/menu_icon"-->
-<!--                android:layout_width="40dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:layout_alignParentStart="true"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:padding="5dp"-->
-<!--                android:src="@drawable/edit_icon"-->
-<!--                app:tint="@color/colorPrimaryIcon" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/muli_black"
+                android:text="Jadwal Pelajaran"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp" />
 
-<!--            <ImageView-->
-<!--                android:layout_width="40dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                app:tint="@color/colorPrimaryIcon"-->
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:padding="5dp"-->
-<!--                android:src="@drawable/settings_icon" />-->
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/muli_black"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="12sp" />
 
         </RelativeLayout>
-
-<!--        <TextView-->
-<!--            android:id="@+id/title"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:gravity="center"-->
-<!--            android:minHeight="?actionBarSize"-->
-<!--            android:padding="@dimen/appbar_padding"-->
-<!--            android:text="@string/app_name"-->
-<!--            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />-->
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/jadwal_tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            app:tabMaxWidth="0dp"
             app:tabGravity="fill"
-            app:tabMode="scrollable"/>
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <com.example.projectpkk.CustomViewPager
         android:id="@+id/jadwal_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_jadwal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:borderWidth="0dp"
-        android:layout_gravity="bottom|end"
-        android:tint="@color/colorSecondaryTwo"
-        android:backgroundTint="@color/colorSecondaryOne"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_calendar" />
-
-    <!-- APPBAR -->
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="?actionBarSize"-->
-<!--        android:paddingLeft="15dp"-->
-<!--        android:background="@color/colorPrimary"-->
-<!--        android:paddingRight="10dp">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/menu_icon"-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--            android:clickable="true"-->
-<!--            android:focusable="true"-->
-<!--            android:padding="5dp"-->
-<!--            android:src="@drawable/edit_icon"-->
-<!--            app:tint="@color/colorSurface" />-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            app:tint="@color/colorSurface"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--            android:clickable="true"-->
-<!--            android:focusable="true"-->
-<!--            android:padding="5dp"-->
-<!--            android:src="@drawable/settings_icon" />-->
-
-<!--    </RelativeLayout>-->
-
-
-
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <include layout="@layout/app_bar"/>-->
-
-<!--        <com.google.android.material.tabs.TabLayout-->
-<!--            android:id="@+id/tabLayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:minHeight="?actionBarSize"-->
-<!--            app:tabGravity="fill"-->
-<!--            app:tabIndicatorColor="@color/white"-->
-<!--            app:tabIndicatorHeight="40dp"-->
-<!--            app:tabBackground="@color/colorPrimary"-->
-<!--            app:tabMode="fixed"/>-->
-
-<!--        <androidx.viewpager.widget.ViewPager-->
-<!--            android:id="@+id/viewPager"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"/>-->
-
-<!--    </LinearLayout>-->
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

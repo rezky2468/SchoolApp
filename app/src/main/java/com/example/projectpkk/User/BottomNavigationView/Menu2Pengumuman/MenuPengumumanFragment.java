@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.projectpkk.HelperClasses.PengumumanAdapter.PengumumanHelperClass;
@@ -22,32 +21,36 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MenuPengumumanFragment extends Fragment {
 
     // Variables
     ListView pengumumanListView;
     ArrayList<PengumumanHelperClass> arrayList;
-    ImageView addNewPengumuman;
+    String judul, isi, tanggal1, tanggal2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_menu_pengumuman, container, false);
-
         pengumumanListView = view.findViewById(R.id.pengumuman_list_view);
-//        addNewPengumuman = view.findViewById(R.id.pengumuman_add);
         arrayList = new ArrayList<>();
 
-//        addNewPengumuman.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getContext(), AddNewPengumuman.class));
-//            }
-//        });
+//        Date c = Calendar.getInstance().getTime();
+//        SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("dd MMMM yyyy HH:mm:ss");
+//        SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("dd MMMM yyyy");
+//        String format1 = simpleDateFormat1.format(c);
+//        String format2 = simpleDateFormat2.format(c);
+//
+//        judul = "judul";
+//        isi = "isi2";
+//        tanggal1 = format1;
+//        tanggal2 = format2;
 
-        PengumumanAdapter pengumumanAdapter = new PengumumanAdapter(getContext(), arrayList);
+        final PengumumanAdapter pengumumanAdapter = new PengumumanAdapter(getContext(), arrayList);
 
         try {
             JSONObject jsonObject = new JSONObject(readPengumumanJSON());

@@ -1,11 +1,11 @@
 package com.example.projectpkk.HelperClasses.HomeAdapter;
 
-public class MostViewedHelperClass {
+public class BeritaHelperClass {
 
     int image;
     String title, desc;
 
-    public MostViewedHelperClass(int image, String title, String desc) {
+    public BeritaHelperClass(int image, String title, String desc) {
         this.image = image;
         this.title = title;
         this.desc = desc;

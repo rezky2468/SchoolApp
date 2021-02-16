@@ -60,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
         if (!validateField()) {
             return;
         }
+
         progressBar.setVisibility(View.VISIBLE);
 
         // Get data from fields
@@ -99,13 +100,13 @@ public class LoginActivity extends AppCompatActivity {
 
                         startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
 
-
-                        Toast.makeText(LoginActivity.this, _fullName + "\n" + _email + "\n" + _phoneNo + "\n" + _date, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(LoginActivity.this, _fullName + "\n" + _email + "\n" + _phoneNo + "\n" + _date, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Anda berhasil login!", Toast.LENGTH_SHORT).show();
                         progressBar.setVisibility(View.GONE);
 
                     } else {
                         progressBar.setVisibility(View.GONE);
-                        Toast.makeText(LoginActivity.this, "Kata sandi tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Kata sandi salah", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     progressBar.setVisibility(View.GONE);
@@ -198,6 +199,10 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
 //        }
+    }
+
+    public void callBackScreen(View view) {
+        super.onBackPressed();
     }
 
 }

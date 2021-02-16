@@ -2,15 +2,16 @@
 <resources>
     <!--    <color name="colorPrimary">#15bdd8</color>-->
     <!--    <color name="colorPrimaryDark">#03A9F4</color>-->
-<!--        <color name="colorAccent">#655C55</color>-->
+    <!--        <color name="colorAccent">#655C55</color>-->
 
-<!--    <color name="colorPrimary">#0336ff</color>-->
+    <!--    <color name="colorPrimary">#0336ff</color>-->
 
-<!--    <color name="colorSecondary">#ffde03</color>-->
-<!--    <color name="colorPrimaryVariant">#0035c9</color>-->
-<!--    <color name="colorSecondaryVariant">#ffc000</color>-->
-<!--    <color name="colorError">#b00020</color>-->
-<!--    <color name="colorAccent">#655C55</color>-->
+    <!--    <color name="colorSecondary">#ffde03</color>-->
+    <!--    <color name="colorPrimaryVariant">#0035c9</color>-->
+    <!--    <color name="colorSecondaryVariant">#ffc000</color>-->
+    <!--    <color name="colorError">#b00020</color>-->
+    <!--    <color name="colorAccent">#655C55</color>-->
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
 
     <color name="colorSurface">#111111</color>
     <color name="colorPrimary">#1b1b1b</color>
@@ -31,9 +32,9 @@
 
 
     <color name="colorPrimaryDark">#fff</color>
-<!--    <color name="colorPrimaryDark2">#8ebbf2</color>-->
-<!--    <color name="colorSecondaryOneText">#35b7ff</color>-->
-<!--    <color name="colorSecondaryTwo">#fcbad5</color>-->
+    <!--    <color name="colorPrimaryDark2">#8ebbf2</color>-->
+    <!--    <color name="colorSecondaryOneText">#35b7ff</color>-->
+    <!--    <color name="colorSecondaryTwo">#fcbad5</color>-->
     <color name="colorGrey">#d9dde9</color>
 
 
@@ -53,9 +54,6 @@
     <color name="lightBlack">#272727</color>
 
 
-    <color name="c1">#2a4043</color>
-    <color name="c2">#afb7c2</color>
-    <color name="c3">#f38b46</color>
 
 
     .

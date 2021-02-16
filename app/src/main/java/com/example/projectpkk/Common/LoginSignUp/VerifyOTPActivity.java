@@ -86,6 +86,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                     String code = phoneAuthCredential.getSmsCode();
                     if (code != null) {
                         pinFromUser.setText(code);
+//                        Toast.makeText(VerifyOTPActivity.this, "Berhasil", Toast.LENGTH_SHORT).show();
                         verifyCode(code);
                     }
                 }
@@ -111,13 +112,13 @@ public class VerifyOTPActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Verification completed successfully here Either store the data or do whatever desire
-//                            if (whatToDO.equals("updateData")) {
-//                                updateOldUserData();
+                            if (whatToDO.equals("updateData")) {
+                                updateOldUserData();
 //                            } else {
-                            storeNewUsersData();
-//                                startActivity(new Intent(getApplicationContext(), RetailerStartUpScreen.class));
-//                            }
-                            Toast.makeText(VerifyOTPActivity.this, "Verifikasi Berhasil!", Toast.LENGTH_SHORT).show();
+//                                storeNewUsersData();
+//                                Toast.makeText(VerifyOTPActivity.this, "Verifikasi Berhasil!", Toast.LENGTH_SHORT).show();
+//                                startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
+                            }
                         } else if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                             Toast.makeText(VerifyOTPActivity.this, "Verifikasi Gagal! Coba Lagi.", Toast.LENGTH_SHORT).show();
                         }
@@ -138,13 +139,10 @@ public class VerifyOTPActivity extends AppCompatActivity {
 
         FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
         DatabaseReference reference = rootNode.getReference("Users");
-
         UserHelperClass addNewUser = new UserHelperClass(fullName, username, email, password, gender, date, phoneNo);
-
         reference.child(phoneNo).setValue(addNewUser);
 
-
-//        DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
+        // DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
 
     }
 
@@ -154,7 +152,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
         String code = pinFromUser.getText().toString();
         if (!code.isEmpty()) {
             verifyCode(code);
-            startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
         }
 
     }
@@ -162,6 +160,5 @@ public class VerifyOTPActivity extends AppCompatActivity {
     public void closeScreen(View view) {
         startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
     }
-
 
 }

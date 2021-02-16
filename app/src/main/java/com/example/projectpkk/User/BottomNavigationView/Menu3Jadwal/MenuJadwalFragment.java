@@ -3,22 +3,25 @@ package com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.example.projectpkk.CustomViewPager;
 import com.example.projectpkk.HelperClasses.JadwalAdapter.JadwalAdapter;
 import com.example.projectpkk.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
+import java.text.SimpleDateFormat;
+
 public class MenuJadwalFragment extends Fragment {
 
     TabLayout tabLayout;
-    ViewPager viewPager;
-    FloatingActionButton floatingActionButton;
+    CustomViewPager viewPager;
+    TextView tanggal;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -27,21 +30,19 @@ public class MenuJadwalFragment extends Fragment {
 
         tabLayout = root.findViewById(R.id.jadwal_tab_layout);
         viewPager = root.findViewById(R.id.jadwal_view_pager);
-        floatingActionButton = root.findViewById(R.id.fab_jadwal);
+        tanggal = root.findViewById(R.id.tanggal);
 
-        tabLayout.addTab(tabLayout.newTab().setText("10 RPL"));
-        tabLayout.addTab(tabLayout.newTab().setText("10 TKJ"));
-        tabLayout.addTab(tabLayout.newTab().setText("10 PKM"));
-        tabLayout.addTab(tabLayout.newTab().setText("11 RPL"));
-        tabLayout.addTab(tabLayout.newTab().setText("11 TKJ"));
-        tabLayout.addTab(tabLayout.newTab().setText("11 PKM"));
-        tabLayout.addTab(tabLayout.newTab().setText("12 RPL"));
-        tabLayout.addTab(tabLayout.newTab().setText("12 TKJ"));
-        tabLayout.addTab(tabLayout.newTab().setText("12 PKM"));
+        long date = System.currentTimeMillis();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E, dd MMM yyyy");
+        String dateString = simpleDateFormat.format(date);
+        tanggal.setText(dateString);
+
+        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.rpl_short)));
+        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.tkj_short)));
+        tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.pkm_short)));
 
         final JadwalAdapter adapter = new JadwalAdapter(getChildFragmentManager(), getActivity(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
-
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -56,24 +57,6 @@ public class MenuJadwalFragment extends Fragment {
                         break;
                     case 2:
                         viewPager.setCurrentItem(2);
-                        break;
-                    case 3:
-                        viewPager.setCurrentItem(3);
-                        break;
-                    case 4:
-                        viewPager.setCurrentItem(4);
-                        break;
-                    case 5:
-                        viewPager.setCurrentItem(5);
-                        break;
-                    case 6:
-                        viewPager.setCurrentItem(6);
-                        break;
-                    case 7:
-                        viewPager.setCurrentItem(7);
-                        break;
-                    case 8:
-                        viewPager.setCurrentItem(8);
                         break;
                 }
             }

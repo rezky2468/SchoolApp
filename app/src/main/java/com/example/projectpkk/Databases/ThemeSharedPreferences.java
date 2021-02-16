@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 public class ThemeSharedPreferences {
 
     SharedPreferences themeSharedPrefrences;
-    SharedPreferences.Editor editor;
     Context context;
 
     public ThemeSharedPreferences(Context context) {
@@ -15,6 +14,7 @@ public class ThemeSharedPreferences {
     }
 
     public void setNightModeState(Boolean state) {
+        SharedPreferences.Editor editor = themeSharedPrefrences.edit();
         editor.putBoolean("NightMode", state);
         editor.commit();
     }

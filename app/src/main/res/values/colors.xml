@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--    <color name="colorPrimary">#15bdd8</color>-->
-    <!--    <color name="colorPrimaryDark">#03A9F4</color>-->
-<!--        <color name="colorAccent">#655C55</color>-->
-
-<!--    <color name="colorPrimary">#0336ff</color>-->
-
-<!--    <color name="colorSecondary">#ffde03</color>-->
-<!--    <color name="colorPrimaryVariant">#0035c9</color>-->
-<!--    <color name="colorSecondaryVariant">#ffc000</color>-->
-<!--    <color name="colorError">#b00020</color>-->
-<!--    <color name="colorAccent">#655C55</color>-->
-
 
     <color name="colorSurface">#fefeff</color>
     <color name="colorPrimary">#75a6eb</color>
     <color name="colorSecondaryOne">#feeaa3</color>
     <color name="colorSecondaryTwo">#e599b1</color>
+
+    <color name="colorPrimaryRed">#EB7575</color>
+    <color name="colorPrimaryDarkRed">#E64444</color>
 
     <color name="colorPrimaryIcon">#fefeff</color>
     <color name="colorSecondaryIcon">#75a6eb</color>
@@ -27,15 +18,10 @@
     <color name="colorOnPrimaryIcon">#5b5b5b</color>
     <color name="colorOnPrimaryText">#5b5b5b</color>
     <color name="colorOnSecondaryText">#5b5b5b</color>
-
     <color name="colorCard">#fefeff</color>
+    <color name="colorPrimaryDark">#4487E6</color>
 
-    <color name="colorPrimaryDark">#498BE8</color>
-<!--    <color name="colorPrimaryDark2">#8ebbf2</color>-->
-<!--    <color name="colorSecondaryOneText">#dec65b</color>-->
-<!--    <color name="colorSecondaryTwo">#fcbad5</color>-->
     <color name="colorGrey">#d9dde9</color>
-<!--    <color name="colorAccent">#feeaa3</color>-->
     <color name="colorAccent">#5b5b5b</color>
 
     <color name="tabsScrollColor">#8a140e</color>
@@ -47,14 +33,6 @@
     <color name="red">#FF0000</color>
     <color name="lightWhite">#f5f5f5</color>
     <color name="lightBlack">#272727</color>
-
-
-    <color name="c1">#2a4043</color>
-    <color name="c2">#afb7c2</color>
-    <color name="c3">#f38b46</color>
-
-
-    .
 
     <!--Dashboard Colors-->
 

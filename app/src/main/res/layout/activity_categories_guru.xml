@@ -37,22 +37,10 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/back_pressed"
-            android:text="@string/absen"
+            android:text="@string/guru"
             android:textColor="@color/colorPrimaryText"
             android:textSize="22sp"
             android:textStyle="bold" />
-
-<!--        <ImageView-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--            android:clickable="true"-->
-<!--            android:onClick="callSearchScreen"-->
-<!--            android:padding="5dp"-->
-<!--            android:src="@drawable/search_icon"-->
-<!--            app:tint="@color/colorPrimaryIcon" />-->
 
     </RelativeLayout>
 
@@ -71,7 +59,5 @@
             android:layout_height="match_parent"/>
 
     </RelativeLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

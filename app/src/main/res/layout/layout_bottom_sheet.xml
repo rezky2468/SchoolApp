@@ -4,7 +4,7 @@
     android:id="@+id/bottomSheetContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorSurface"
+    android:background="@drawable/bg_bottom_sheet"
     android:orientation="vertical">
 
     <TextView
@@ -15,13 +15,8 @@
         android:text="Data Guru"
         android:textColor="@color/colorOnPrimaryText"
         android:textSize="25sp"
+        android:fontFamily="@font/muli_black"
         android:textStyle="bold" />
-
-    <!--    <view-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="1dp"-->
-    <!--        android:layout_marginBottom="10dp"-->
-    <!--        android:background="@color/lightWhite"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,13 +32,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img1"
             app:riv_corner_radius="10dp" />
-
-        <!--        <ImageView-->
-        <!--            android:layout_width="100dp"-->
-        <!--            android:layout_height="100dp"-->
-        <!--            android:layout_margin="10dp"-->
-        <!--            android:src="@drawable/img1"-->
-        <!--            android:scaleType="centerCrop"/>-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -91,14 +79,7 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <!--    <view-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="1dp"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        android:layout_marginBottom="10dp"-->
-    <!--        android:background="@color/black"/>-->
-
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -177,21 +158,6 @@
             android:clickable="true"
             android:background="?attr/selectableItemBackground"/>
 
-
-
     </RelativeLayout>
-
-<!--    <Button-->
-<!--        android:id="@+id/buttonShare"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:layout_marginStart="40dp"-->
-<!--        android:layout_marginEnd="20dp"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:background="@drawable/background_button"-->
-<!--        android:text="Jadwal Mengajar"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/colorPrimary"/>-->
 
 </LinearLayout>

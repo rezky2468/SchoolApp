@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".UserDashboardActivity">
 
-    <!-- NAVIGATION BAR -->
+    <!-- NAVIGATION VIEW -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
@@ -22,75 +22,41 @@
         app:itemShapeFillColor="@color/white"
         app:itemTextColor="@color/colorOnPrimaryText"
         app:menu="@menu/main_menu" />
-
-    <!-- APP BAR AND CHIP NAVIGATION BAR -->
+    
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <!-- CHIP NAVIGATION BAR -->
+        <!-- CONTAINER -->
         <RelativeLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@color/colorSurface"
             app:layout_constraintBottom_toTopOf="@id/bottom_nav_menu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--        <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
-        <!--            android:id="@+id/bottom_nav_menu"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_alignParentBottom="true"-->
-        <!--            android:background="@color/colorSurface"-->
-        <!--            android:elevation="10dp"-->
-        <!--            app:cnb_iconSize="25dp"-->
-        <!--            app:cnb_menuResource="@menu/bottom_nav_menu"-->
-        <!--            app:cnb_orientationMode="horizontal"-->
-        <!--            app:cnb_unselectedColor="@color/colorPrimary"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/fragment_container" />-->
-
+        <!-- BOTTOM NAVIGATION VIEW -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorSurface"
+            android:elevation="10dp"
+            android:fitsSystemWindows="true"
+            app:itemIconTint="@color/bottom_nav_selector"
+            app:itemTextColor="@color/bottom_nav_selector"
+            app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_nav_menu"
-            android:elevation="10dp"
-            android:background="@color/colorSurface"
-            android:fitsSystemWindows="true"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintTop_toBottomOf="@id/fragment_container" />
+            app:layout_constraintTop_toBottomOf="@id/fragment_container"
+            app:menu="@menu/bottom_nav_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- FLOATING ACTION BUTTON -->
-    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent">-->
-
-
-    <!--        &lt;!&ndash;        <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:id="@+id/fab"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_gravity="bottom|end"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_margin="16dp"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:backgroundTint="@color/red"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:onClick="floatingActionButtonFunction"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:borderWidth="0dp"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:elevation="6dp"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:fabSize="normal"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:src="@drawable/map_icon"/>&ndash;&gt;-->
-
-    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>

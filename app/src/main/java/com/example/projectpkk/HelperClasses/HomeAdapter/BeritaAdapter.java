@@ -12,12 +12,12 @@ import com.example.projectpkk.R;
 
 import java.util.ArrayList;
 
-public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.MostViewedViewHolder> {
+public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.MostViewedViewHolder> {
 
-    ArrayList<MostViewedHelperClass> mostViewedLocations;
+    ArrayList<BeritaHelperClass> mostViewedLocations;
     private OnBeritaListener mOnberitaListener;
 
-    public MostViewedAdapter(ArrayList<MostViewedHelperClass> mostViewedLocations, OnBeritaListener onBeritaListener) {
+    public BeritaAdapter(ArrayList<BeritaHelperClass> mostViewedLocations, OnBeritaListener onBeritaListener) {
         this.mostViewedLocations = mostViewedLocations;
         this.mOnberitaListener = onBeritaListener;
     }
@@ -32,10 +32,10 @@ public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.Mo
 
     @Override
     public void onBindViewHolder(@NonNull MostViewedViewHolder holder, int position) {
-        MostViewedHelperClass mostViewedHelperClass = mostViewedLocations.get(position);
-        holder.image.setImageResource(mostViewedHelperClass.getImage());
-        holder.title.setText(mostViewedHelperClass.getTitle());
-        holder.desc.setText(mostViewedHelperClass.getDesc());
+        BeritaHelperClass beritaHelperClass = mostViewedLocations.get(position);
+        holder.image.setImageResource(beritaHelperClass.getImage());
+        holder.title.setText(beritaHelperClass.getTitle());
+        holder.desc.setText(beritaHelperClass.getDesc());
 
 
     }
@@ -43,6 +43,10 @@ public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.Mo
     @Override
     public int getItemCount() {
         return mostViewedLocations.size();
+    }
+
+    public interface OnBeritaListener {
+        void onBeritaClick(int position);
     }
 
     public static class MostViewedViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -69,10 +73,6 @@ public class MostViewedAdapter extends RecyclerView.Adapter<MostViewedAdapter.Mo
         public void onClick(View v) {
             onBeritaListener.onBeritaClick(getAdapterPosition());
         }
-    }
-
-    public interface OnBeritaListener {
-        void onBeritaClick(int position);
     }
 
 }

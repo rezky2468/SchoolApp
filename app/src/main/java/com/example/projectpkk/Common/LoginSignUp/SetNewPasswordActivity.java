@@ -132,4 +132,9 @@ public class SetNewPasswordActivity extends AppCompatActivity {
         }
 
     }
+
+    public void callBackScreen(View view) {
+        super.onBackPressed();
+    }
+
 }

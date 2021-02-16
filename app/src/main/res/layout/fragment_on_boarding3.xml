@@ -46,6 +46,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
@@ -85,7 +87,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="5dp"
-        android:text="@string/third_slide_desc"
+        android:text="@string/label_deskripsi_slide_3"
         android:textSize="16sp"
         android:textColor="@color/colorSecondaryTwo"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.projectpkk.R;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class SignUpSecondClassActivity extends AppCompatActivity {
@@ -62,7 +63,13 @@ public class SignUpSecondClassActivity extends AppCompatActivity {
         int month = datePicker.getMonth();
         int year = datePicker.getYear();
 
-        String _date = day + "/" + month + "/" + year;
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(year, month, day);
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMM yyyy");
+        String _date = simpleDateFormat.format(calendar.getTime());
+
+//        String _date = day + "/" + month + "/" + year;
 
         Intent intent2 = new Intent(getApplicationContext(), SignUpThirdClassActivity.class);
 
@@ -115,5 +122,9 @@ public class SignUpSecondClassActivity extends AppCompatActivity {
         } else {
             return true;
         }
+    }
+
+    public void callBackScreen(View view) {
+        super.onBackPressed();
     }
 }

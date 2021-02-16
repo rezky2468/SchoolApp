@@ -1,9 +1,9 @@
-package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home3Berita;
+package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home4Berita;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
+import android.text.Html;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -12,8 +12,6 @@ import android.widget.TextView;
 import com.example.projectpkk.R;
 
 public class BeritaActivity extends AppCompatActivity {
-
-
 
     private static final String TAG = "SomeActivity";
     TextView beritaJudul, beritaTanggal, beritaArtikel;
@@ -54,22 +52,19 @@ public class BeritaActivity extends AppCompatActivity {
         if (_index == 0) {
             beritaJudul.setText(judul[0]);
             beritaTanggal.setText(tanggal[0]);
-            beritaArtikel.setText(artikel[0]);
+            beritaArtikel.setText(Html.fromHtml(artikel[0]));
             beritaImage.setImageResource(R.drawable.berita1);
         } else if (_index == 1) {
             beritaJudul.setText(judul[1]);
             beritaTanggal.setText(tanggal[1]);
-            beritaArtikel.setText(artikel[1]);
+            beritaArtikel.setText(Html.fromHtml(artikel[1]));
             beritaImage.setImageResource(R.drawable.berita2);
         } else if (_index == 2) {
             beritaJudul.setText(judul[2]);
             beritaTanggal.setText(tanggal[2]);
-            beritaArtikel.setText(artikel[2]);
+            beritaArtikel.setText(Html.fromHtml(artikel[2]));
             beritaImage.setImageResource(R.drawable.berita3);
         }
-
-
-//        Log.d(TAG, "onCreate: called");
 
     }
 

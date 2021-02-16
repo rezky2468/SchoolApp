@@ -77,11 +77,12 @@
             android:layout_height="wrap_content"
             app:itemCount="6"
             app:itemWidth="45dp"
+            android:itemBackground="@color/colorSurface"
             app:itemHeight="45dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:lineColor="@color/colorPrimaryIcon"
-            android:itemBackground="@color/lightWhite"
+            android:textColor="@color/colorOnPrimaryText"
+            app:lineColor="@color/colorPrimaryText"
             style="@style/PinWidget.PinView"
             android:inputType="number"
             android:cursorVisible="true"
@@ -92,14 +93,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorSecondaryOne"
+            android:background="@drawable/bg_button1"
             android:text="@string/verify_code"
             android:onClick="verifyOTPScreen"
             android:layout_marginTop="30dp"
             android:textColor="@color/colorAccent"/>
 
-
-
-
     </LinearLayout>
+
 </ScrollView>

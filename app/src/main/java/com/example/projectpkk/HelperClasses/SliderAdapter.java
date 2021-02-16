@@ -1,7 +1,6 @@
 package com.example.projectpkk.HelperClasses;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,17 +30,17 @@ public class SliderAdapter extends PagerAdapter {
     };
 
     int headings[] = {
-            R.string.first_slide_title,
-            R.string.second_slide_title,
-            R.string.third_slide_title,
-            R.string.fourth_slide_name
+            R.string.label_judul_slide_1,
+            R.string.label_judul_slide_2,
+            R.string.label_judul_slide_3,
+            R.string.label_judul_slide_4
     };
 
     int descriptions[] = {
-            R.string.first_slide_desc,
-            R.string.second_slide_desc,
-            R.string.third_slide_desc,
-            R.string.fourth_slide_desc
+            R.string.label_deskripsi_slide_1,
+            R.string.label_deskripsi_slide_2,
+            R.string.label_deskripsi_slide_3,
+            R.string.label_deskripsi_slide_4
     };
 
 

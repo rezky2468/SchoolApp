@@ -1,17 +1,26 @@
 package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.projectpkk.HelperClasses.PengajarAdapter.PengajarAdapter;
 import com.example.projectpkk.HelperClasses.PengajarAdapter.PengajarHelperClass;
 import com.example.projectpkk.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,10 +32,7 @@ import java.util.ArrayList;
 
 public class GuruActivity extends AppCompatActivity {
 
-    private TextView mTextView;
     ListView myListView;
-    String[] names, descriptions;
-    ArrayList<PengajarHelperClass> pengajarArrayList;
     int[] fotos = {
             R.drawable.guru_anton,
             R.drawable.guru_asep_d_y,
@@ -71,7 +77,6 @@ public class GuruActivity extends AppCompatActivity {
             R.drawable.guru_uman
     };
 
-//    ListClicked listClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,75 +84,41 @@ public class GuruActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_categories_guru);
 
-//        Resources resources = getResources();
         myListView = findViewById(R.id.pengajar_list_view);
-//        mTextView = findViewById(R.id.text_view_button_clicked);
-//        pengajarArrayList = new ArrayList<>();
-//        images = resources.getStringArray(R.array.images);
-//        names = resources.getStringArray(R.array.names);
-//        descriptions = resources.getStringArray(R.array.descriptions);
-
 
         PengajarAdapter pengajarAdapter = new PengajarAdapter(this);
-
-//        try {
-//            JSONObject jsonObject = new JSONObject(readPengajarJSON());
-//            JSONArray jsonArray = jsonObject.getJSONArray("guru");
-////            Context context = null;
-////            Resources resources = getResources();
-//
-//            for (int i = 0; i < jsonArray.length(); i++) {
-//
-//                JSONObject _jsonObject = jsonArray.getJSONObject(i);
-//
-//                final String namaValue = _jsonObject.getString("nama");
-//                final String mapelValue = _jsonObject.getString("mapel");
-////                final String fotoValue = _jsonObject.getString("foto");
-//
-////                final int resourceId = resources.getIdentifier(fotoValue,"drawable", context.getPackageName());
-//
-////                Drawable drawable = resources.getDrawable(resourceId);
-//
-////                Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), resourceId);
-//
-//                PengajarHelperClass pengajarHelperClass = new PengajarHelperClass();
-//                pengajarHelperClass.setNama(namaValue);
-//                pengajarHelperClass.setMapel(mapelValue);
-////                pengajarHelperClass.setFoto(R.drawable.add_missing_place);
-//                pengajarArrayList.add(pengajarHelperClass);
-//
-//            }
-
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-
-
         myListView.setAdapter(pengajarAdapter);
+
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+//        DatabaseReference scoresRef = FirebaseDatabase.getInstance().getReference("guru");
+//        scoresRef.keepSynced(true);
+//        Query query = scoresRef;
+//        Query myGuru = FirebaseDatabase.getInstance().getReference("guru");
+//        myGuru.keepSynced(true);
+
+//        myGuru.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                for (DataSnapshot snap: dataSnapshot.getChildren()) {
+//                    Toast.makeText(getActivity(), snap.getKey(), Toast.LENGTH_SHORT).show();
+//                    Log.e(snap.getKey(),snap.getChildrenCount() + "");
+
+//                    final String namaValue = dataSnapshot.child(snap.getKey()).child("nama").getValue(String.class);
+//                    final String jabatanValue = dataSnapshot.child(snap.getKey()).child("jabatan").getValue(String.class);
+//                    final String ttlValue = dataSnapshot.child(snap.getKey()).child("ttl").getValue(String.class);
+//                    final String pendidikanValue = dataSnapshot.child(snap.getKey()).child("pendidikan").getValue(String.class);
+//                    final String mapelValue = dataSnapshot.child(snap.getKey()).child("mapel").getValue(String.class);
+//                    final String emailValue = dataSnapshot.child(snap.getKey()).child("email").getValue(String.class);
+//                    final String telpValue = dataSnapshot.child(snap.getKey()).child("telp").getValue(String.class);
 
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-//                startActivity(new Intent(getApplicationContext(), DataGuru.class));
-
                 try {
-//                    List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 
-//                    List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
                     JSONObject jsonObject = new JSONObject(readPengajarJSON());
                     JSONArray jsonArray = jsonObject.getJSONArray("guru");
-//                    Context context = null;
-//                    Resources resources = context.getResources();
-
-//                    for (int i = 0; i < jsonArray.length(); i++) {
-
-//                        HashMap<String, String> hm = new HashMap<String,String>();
-//                        hm.put("txt", "Country : " + countries[i]);
-//                        hm.put("cur","Currency : " + currency[i]);
-
                     JSONObject _jsonObject = jsonArray.getJSONObject(position);
-//                            Log.d("Details-->", _jsonObject.getString("nama"));
                     final String namaValue = _jsonObject.getString("nama");
                     final String jabatanValue = _jsonObject.getString("jabatan");
                     final String ttlValue = _jsonObject.getString("ttl");
@@ -155,22 +126,9 @@ public class GuruActivity extends AppCompatActivity {
                     final String mapelValue = _jsonObject.getString("mapel");
                     final String emailValue = _jsonObject.getString("email");
                     final String telpValue = _jsonObject.getString("telp");
-//                    final String fotoValue = _jsonObject.getString("foto");
-
-//                        final int resourceId = resources.getIdentifier(fotoValue, "drawable", context.getPackageName());
-
-                    // get drawable by resource id
-//                        Drawable drawable = resources.getDrawable(resourceId);
-
-                    // get bitmap by resource id
-//                        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), resourceId);
-
-//                        hm.put("flag", Integer.toString(resourceId) );
-//                        list.add(hm);
-
-//                        int foto = fotos[position];
 
                     Bundle bundle = new Bundle();
+                    bundle.putInt("dataId", position);
                     bundle.putString("dataNama", namaValue);
                     bundle.putString("dataJabatan", jabatanValue);
                     bundle.putString("dataTtl", ttlValue);
@@ -179,21 +137,61 @@ public class GuruActivity extends AppCompatActivity {
                     bundle.putString("dataEmail", emailValue);
                     bundle.putString("dataTelp", telpValue);
                     bundle.putInt("dataFoto", fotos[position]);
-//                        bundle.putSerializable("dataFoto", hm);
                     GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
                     bottomSheetDialog.setArguments(bundle);
                     bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
-//                    }
-
-//                    HashMap<String, String> hashMap = new HashMap<String, String>(position);
-
-
-//                    hashMap.put("flag", Integer.toString(resourceId));
-
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+//                        }
+
+//                    });
+//                }
+
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+
+
+//        PengajarAdapter pengajarAdapter = new PengajarAdapter(this);
+//        myListView.setAdapter(pengajarAdapter);
+//                myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+//                try {
+//
+//                    JSONObject jsonObject = new JSONObject(readPengajarJSON());
+//                    JSONArray jsonArray = jsonObject.getJSONArray("guru");
+//                    JSONObject _jsonObject = jsonArray.getJSONObject(position);
+//                    final String namaValue = _jsonObject.getString("nama");
+//                    final String jabatanValue = _jsonObject.getString("jabatan");
+//                    final String ttlValue = _jsonObject.getString("ttl");
+//                    final String pendidikanValue = _jsonObject.getString("pendidikan");
+//                    final String mapelValue = _jsonObject.getString("mapel");
+//                    final String emailValue = _jsonObject.getString("email");
+//                    final String telpValue = _jsonObject.getString("telp");
+
+//                    Bundle bundle = new Bundle();
+//                    bundle.putInt("dataId", position);
+//                    bundle.putString("dataNama", namaValue);
+//                    bundle.putString("dataJabatan", jabatanValue);
+//                    bundle.putString("dataTtl", ttlValue);
+//                    bundle.putString("dataPendidikan", pendidikanValue);
+//                    bundle.putString("dataMapel", mapelValue);
+//                    bundle.putString("dataEmail", emailValue);
+//                    bundle.putString("dataTelp", telpValue);
+//                    bundle.putInt("dataFoto", fotos[position]);
+//                    GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
+//                    bottomSheetDialog.setArguments(bundle);
+//                    bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
             }
         });
 
@@ -203,14 +201,6 @@ public class GuruActivity extends AppCompatActivity {
     public void callBackScreen(View view) {
         super.onBackPressed();
     }
-
-    public void callSearchScreen(View view) {
-//        startActivity(new Intent(getApplicationContext(), Search.class));
-//        ExampleBottomSheetDialog bottomSheetDialog = new ExampleBottomSheetDialog();
-//        bottomSheetDialog.setArguments(bundle);
-//        bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
-    }
-
 
     public String readPengajarJSON() {
         String json = null;
@@ -227,28 +217,5 @@ public class GuruActivity extends AppCompatActivity {
         }
         return json;
     }
-
-
-//    public interface ListClicked {
-//        void onListClicked(String nama, String jabatan, String ttl, String pendidikan, String mapel, String email, String telp);
-//    }
-//
-//        @Override
-//    public void onAttach(@NonNull Context context) {
-//        super.onAttach(context);
-//
-//        try {
-//            listClicked = (ListClicked) context;
-//        } catch (ClassCastException e) {
-//            throw new ClassCastException(context.toString()
-//                    + " must implement BottomSheetListener");
-//        }
-//
-//    }
-//
-//    @Override
-//    public void onButtonClicked() {
-////        mTextView.setText(text);
-//    }
 
 }

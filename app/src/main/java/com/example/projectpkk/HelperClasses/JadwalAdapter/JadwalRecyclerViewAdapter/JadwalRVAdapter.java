@@ -34,12 +34,10 @@ public class JadwalRVAdapter extends RecyclerView.Adapter<JadwalRVAdapter.Jadwal
         holder.hari.setText(jadwalHelperClass.getHari());
         holder.jadwal1.setText(jadwalHelperClass.getJadwal1());
         holder.jadwal2.setText(jadwalHelperClass.getJadwal2());
-        holder.jadwal4.setText(jadwalHelperClass.getJadwal4());
         holder.jadwal3.setText(jadwalHelperClass.getJadwal3());
         holder.jam1.setText(jadwalHelperClass.getJam1());
         holder.jam2.setText(jadwalHelperClass.getJam2());
         holder.jam3.setText(jadwalHelperClass.getJam3());
-        holder.jam4.setText(jadwalHelperClass.getJam4());
     }
 
     @Override
@@ -60,11 +58,9 @@ public class JadwalRVAdapter extends RecyclerView.Adapter<JadwalRVAdapter.Jadwal
             jadwal1 = itemView.findViewById(R.id.jadwal_mapel1);
             jadwal2 = itemView.findViewById(R.id.jadwal_mapel2);
             jadwal3 = itemView.findViewById(R.id.jadwal_mapel3);
-            jadwal4 = itemView.findViewById(R.id.jadwal_mapel4);
             jam1 = itemView.findViewById(R.id.jadwal_jam1);
             jam2 = itemView.findViewById(R.id.jadwal_jam2);
             jam3 = itemView.findViewById(R.id.jadwal_jam3);
-            jam4 = itemView.findViewById(R.id.jadwal_jam4);
 
         }
     }

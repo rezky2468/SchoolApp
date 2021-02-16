@@ -6,19 +6,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.NavigationView.TentangActivity"></activity>
+        <activity android:name=".User.NavigationView.TentangActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".Common.LoginSignUp.RetailerDashboardActivity" />
-        <activity android:name=".User.BottomNavigationView.Menu1Home.Home2Jurusan.JurusanDetailActivity" />
         <activity android:name=".Admin.AddNewPengumumanActivity" />
         <activity android:name=".User.BottomNavigationView.Menu2Pengumuman.PengumumanDetailActivity" />
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home2Jurusan.JurusanActivity" />
-        <activity android:name=".User.BottomNavigationView.Menu1Home.Home3Berita.BeritaActivity" />
+        <activity android:name=".User.BottomNavigationView.Menu1Home.Home4Berita.BeritaActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.JadwalMengajarGuruActivity" />
         <activity android:name=".Common.SearchActivity" />
@@ -26,11 +24,8 @@
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories3Event.EventActivity" />
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories2Ekskul.EkskulActivity" />
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.GuruActivity" />
-        <activity android:name=".Common.LoginSignUp.Profile" />
-        <activity android:name=".User.SchoolMap" />
         <activity android:name=".Common.LoginSignUp.ForgetPasswordSuccessMessageActivity" />
         <activity android:name=".Common.LoginSignUp.SetNewPasswordActivity" />
-        <activity android:name=".Common.LoginSignUp.MakeSelectionActivity" />
         <activity android:name=".Common.LoginSignUp.ForgetPasswordActivity" />
         <activity android:name=".Common.LoginSignUp.VerifyOTPActivity" />
         <activity android:name=".Common.LoginSignUp.SignUpThirdClassActivity" />
@@ -38,7 +33,6 @@
         <activity android:name=".Common.LoginSignUp.SignUpActivity" />
         <activity android:name=".Common.LoginSignUp.LoginActivity" />
         <activity android:name=".Common.LoginSignUp.RetailerStartUpScreenActivity" />
-        <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.AllCategoriesActivity" />
         <activity android:name=".Common.OnBoarding.OnBoardingActivity" />
         <activity android:name=".UserDashboardActivity" />
         <activity android:name=".Common.SplashScreenActivity">

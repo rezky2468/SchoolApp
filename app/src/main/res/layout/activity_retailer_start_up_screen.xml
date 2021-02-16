@@ -52,10 +52,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="@string/login"
+                android:background="@drawable/bg_button2"
                 android:onClick="callLoginScreen"
                 android:textColor="@color/colorPrimaryText"
-                android:background="@color/colorPrimary"
+                android:text="@string/masuk"
                 android:transitionName="transition_login"/>
 
 
@@ -67,8 +67,8 @@
                 android:textColor="@color/colorPrimaryText"
                 android:layout_weight="1"
                 android:onClick="callSignUpScreen"
-                android:background="@color/colorPrimary"
-                android:text="@string/sign_up"
+                android:background="@drawable/bg_button2"
+                android:text="@string/daftar"
                 android:transitionName="transition_sign_up"/>
 
         </LinearLayout>
@@ -80,7 +80,7 @@
             android:layout_weight="1"
             android:layout_marginTop="20dp"
             android:background="#00000000"
-            android:text="@string/how_we_work" />
+            android:text="@string/mari_bergabung" />
 
     </LinearLayout>
 

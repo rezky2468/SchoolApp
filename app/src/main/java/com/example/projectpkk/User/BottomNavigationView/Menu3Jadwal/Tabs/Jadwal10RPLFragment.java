@@ -27,19 +27,18 @@ public class Jadwal10RPLFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_jadwal10_r_p_l, container, false);
 
-        RecyclerView recyclerView = root.findViewById(R.id.rv_jadwal_10_r_p_l);
+        RecyclerView recyclerView = root.findViewById(R.id.rv_jadwal_10_rpl);
 
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.VERTICAL, false));
 
         final ArrayList<JadwalHelperClass> arrayList = new ArrayList<>();
-        arrayList.add(new JadwalHelperClass("Senin", "PAI", "", "", "", "10:00 - 11:00", "", "", ""));
-        arrayList.add(new JadwalHelperClass("Selasa", "SENI", "PENJASKES", "", "", "08:00 - 09:00", "09:00 - 10:00", "", ""));
-        arrayList.add(new JadwalHelperClass("Rabu", "KOMJARDAS", "SEJARAH", "", "", "09:00 - 10:00", "10:00 - 11:00", "", ""));
-        arrayList.add(new JadwalHelperClass("Kamis", "PKN", "B.INDONESIA", "DDG", "SISKOMDIG", "07:00 - 08:00", "08:00 - 09:00", "09:00 - 10:00", "10:00 - 11:00"));
-        arrayList.add(new JadwalHelperClass("Jumat", "MTK", "FISIKA", "B.SUNDA", "", "07:00 - 08:00", "08:00 - 09:00", "09:00 - 10:00", ""));
-        arrayList.add(new JadwalHelperClass("Sabtu", "PEMDAS", "KIMIA", "SISKOM", "", "07:00 - 08:00", "08:00 - 09:00", "09:00 - 10:00", ""));
-
+        arrayList.add(new JadwalHelperClass(getString(R.string.senin), getString(R.string.pai), getString(R.string.simkomdig), getString(R.string.fisika), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
+        arrayList.add(new JadwalHelperClass(getString(R.string.selasa), getString(R.string.b_indonesia), getString(R.string.desain_grafis), getString(R.string.jardas), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
+        arrayList.add(new JadwalHelperClass(getString(R.string.rabu), getString(R.string.pkn), getString(R.string.sejarah), getString(R.string.bk), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
+        arrayList.add(new JadwalHelperClass(getString(R.string.kamis), getString(R.string.matematika), getString(R.string.pjok), getString(R.string.kimia), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
+        arrayList.add(new JadwalHelperClass(getString(R.string.jumat), getString(R.string.b_inggris), getString(R.string.b_sunda), getString(R.string.siskom), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
+        arrayList.add(new JadwalHelperClass(getString(R.string.sabtu), getString(R.string.seni), getString(R.string.pemdas), "",getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
 
         JadwalRVAdapter adapter = new JadwalRVAdapter(arrayList);
         recyclerView.setAdapter(adapter);

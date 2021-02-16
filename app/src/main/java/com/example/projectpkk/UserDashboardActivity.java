@@ -9,58 +9,34 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.widget.ImageView;
 
 import com.example.projectpkk.Databases.SessionManager;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.AllCategoriesActivity;
-import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuPengumumanFragment;
-import com.example.projectpkk.Common.LoginSignUp.SignUpActivity;
-import com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment;
-import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;
-import com.example.projectpkk.Common.LoginSignUp.LoginActivity;
-import com.example.projectpkk.Common.LoginSignUp.RetailerStartUpScreenActivity;
-import com.example.projectpkk.Common.SearchActivity;
+import com.example.projectpkk.Databases.UserHelperClass;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.MenuHomeFragment;
+import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuPengumumanFragment;
+import com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment;
+import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileNoAccountFragment;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.GuruActivity;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories4Denah.DenahActivity;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories2Ekskul.EkskulActivity;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories3Event.EventActivity;
 import com.example.projectpkk.User.NavigationView.TentangActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-//import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class UserDashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     // Variables
     static final float END_SCALE = 0.7f;
-
-    private GradientDrawable gradient1, gradient2, gradient3, gradient4;
-    ImageView menuIcon;
     ConstraintLayout contentView;
-
-//    ChipNavigationBar chipNavigationBar;
-
     BottomNavigationView bottomNavigationView;
-
-//    Boolean isNavBarOpen = false;
 
     // Drawer Menu
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-
-    SharedPreferences darkModeSharedPreferences;
-
-    Animation animation;
-    Fragment fm;
 
     final Fragment fragment1 = new MenuHomeFragment();
     final Fragment fragment2 = new MenuPengumumanFragment();
@@ -75,47 +51,19 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_user_dashboard);
 
+//        int theme = getThemeFromPreferences(R.style.AppTheme_RED);
+//        setTheme(theme);
 
-
-
-//        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(int i) {
-//                switch (i) {
-//                    case R.id.bottom_nav_home:
-//                        fragmentManager.beginTransaction().hide(active).show(fragment1).commit();
-//                        active = fragment1;
-//                        break;
-//                    case R.id.bottom_nav_pengumuman:
-//                        fragmentManager.beginTransaction().hide(active).show(fragment2).commit();
-//                        active = fragment2;
-//                        break;
-//                    case R.id.bottom_nav_jadwal:
-//                        fragmentManager.beginTransaction().hide(active).show(fragment3).commit();
-//                        active = fragment3;
-//                        break;
-//                    case R.id.bottom_nav_profile:
-//                        fragmentManager.beginTransaction().hide(active).show(fragment4).commit();
-//                        active = fragment4;
-//                        break;
-//                }
-//            }
-//        });
+//        FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
+//        DatabaseReference reference = rootNode.getReference("Users");
+//        UserHelperClass addNewUser = new UserHelperClass("Asep Surya", "asep123", "asep123@gmail.com", "123", "Laki-laki", "28/12/2002", "+6280000000000");
+//        reference.child("+6280000000000").setValue(addNewUser);
 
         // Hooks
         contentView = findViewById(R.id.content);
-
-        // Menu Hooks
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
-//        menuIcon = findViewById(R.id.menu_icon);
-
-//        chipNavigationBar = findViewById(R.id.bottom_nav_menu);
         bottomNavigationView = findViewById(R.id.bottom_nav_menu);
-//        chipNavigationBar.setItemSelected(R.id.bottom_nav_home, true);
-//        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MenuDashboardFragment()).commit();
-
-//        bottomMenu();
 
         final FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().add(R.id.fragment_container, fragment5, "5").hide(fragment5).commit();
@@ -150,6 +98,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                             active = fragment5;
                         }
                         return true;
+
                 }
                 return false;
             }
@@ -157,77 +106,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         navigationDrawer();
 
-
-//        SharedPreferences.Editor editor = darkModeSharedPreferences.edit();
-//        darkModeSharedPreferences = getSharedPreferences("isDarkModeOn", MODE_PRIVATE);
-//        final boolean isDarkModeOn = darkModeSharedPreferences.getBoolean("darkModeOn", true);
-
-        // When user reopens the app after applying dark/light mode
-//        if (isDarkModeOn) {
-//            SharedPreferences.Editor editor = darkModeSharedPreferences.edit();
-//            editor.putBoolean("darkModeOn", false);
-//            editor.commit();
-//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//        } else {
-//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//        }
-
-//        // When user taps the enable/disable dark mode button
-//        if (isDarkModeOn) {
-//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//            editor.putBoolean("isDarkModeOn", false);
-//            editor.apply();
-//        } else {
-//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//            editor.putBoolean("isDarkModeOn", true);
-//            editor.apply();
-//        }
-
-
-//        Button toggle = findViewById(R.id.toggle);
-//        toggle.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//            }
-//        });
-
-
     }
 
-
-//    private void bottomMenu() {
-//        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(int i) {
-//                Fragment fragment = null;
-//                switch (i) {
-//                    case R.id.bottom_nav_home:
-////                        fragment = new MenuDashboardFragment();
-////                        break;
-//                    case R.id.bottom_nav_pengumuman:
-////                        fragment = new MenuPengumumanFragment();
-////                        break;
-//                    case R.id.bottom_nav_jadwal:
-////                        fragment = new MenuJadwalFragment();
-////                          fragment = new FragmentAbsenSiswa();
-////                        break;
-//                    case R.id.bottom_nav_profile:
-//                        SessionManager sessionManager = new SessionManager(getApplicationContext());
-//                        if (sessionManager.checkLogin()) {
-//                            fragment = new MenuProfileFragment();
-//                            break;
-//                        } else {
-//                            fragment = new MenuProfileNoAccount();
-//                            break;
-//                        }
-//                }
-////                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
-//            }
-//        });
-//    }
-
-//     Navigation Drawer Functions
+    //     Navigation Drawer Functions
     private void animateNavigationDrawer() {
 
 //        drawerLayout.setScrimColor(getResources().getColor(R.color.colorPrimary));
@@ -281,32 +162,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-//            case R.id.nav_home:
-//                Fragment fragment = new MenuDashboardFragment();
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
-//                chipNavigationBar.setItemEnabled(1, true);
-//                chipNavigationBar.setItemSelected(R.id.bottom_nav_home, true);
-//                drawerLayout.closeDrawer(GravityCompat.START);
-//                break;
-//            case R.id.nav_all_categories:
-//                startActivity(new Intent(getApplicationContext(), AllCategories.class));
-//                drawerLayout.closeDrawer(GravityCompat.START);
-//                break;
-            case R.id.nav_login:
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-                drawerLayout.closeDrawer(GravityCompat.START);
-                break;
-            case R.id.nav_profile:
-                Fragment fragment2 = new MenuProfileFragment();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment2).commit();
-//                chipNavigationBar.setItemEnabled(1, true);
-//                chipNavigationBar.setItemSelected(R.id.bottom_nav_profile, true);
-                drawerLayout.closeDrawer(GravityCompat.START);
-                break;
-            case R.id.nav_logout:
-                startActivity(new Intent(getApplicationContext(), SignUpActivity.class));
-                drawerLayout.closeDrawer(GravityCompat.START);
-                break;
             case R.id.nav_tentang:
                 startActivity(new Intent(getApplicationContext(), TentangActivity.class));
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -314,55 +169,17 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             case R.id.nav_share:
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String shareBody = "Your body here";
-                String shareSub = "Your subject here";
+                String shareBody = "Proyek PKK membuat aplikasi info SMK BPPI";
+                String shareSub = "Aplikasi SMK BPPI";
                 intent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 intent.putExtra(Intent.EXTRA_SUBJECT, shareSub);
                 startActivity(Intent.createChooser(intent, "Share using"));
                 drawerLayout.closeDrawer(GravityCompat.START);
                 break;
+//            case R.id.nav_theme:
+//                startActivity(new Intent(getApplicationContext(), ThemeActivity.class));
         }
         return true;
-    }
-
-
-//     Normal Functions
-    public void callSideBar(View view) {
-        if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            drawerLayout.openDrawer(GravityCompat.START);
-//            navigationView.setCheckedItem(R.id.nav_home);
-        }
-    }
-
-    public void callRetailerScreens(View view) {
-        startActivity(new Intent(getApplicationContext(), RetailerStartUpScreenActivity.class));
-    }
-
-    public void callSearchScreen(View view) {
-        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
-    }
-
-    public void callCategoriesAbsen(View view) {
-        startActivity(new Intent(getApplicationContext(), GuruActivity.class));
-    }
-
-    public void callCategoriesEkskul(View view) {
-        startActivity(new Intent(getApplicationContext(), EkskulActivity.class));
-    }
-
-    public void callCategoriesEvent(View view) {
-        startActivity(new Intent(getApplicationContext(), EventActivity.class));
-    }
-
-    public void callCategoriesAdministrasi(View view) {
-        startActivity(new Intent(getApplicationContext(), DenahActivity.class));
-    }
-
-    public void viewAllCategories(View view) {
-        Intent intent = new Intent(getApplicationContext(), AllCategoriesActivity.class);
-        startActivity(intent);
     }
 
     @Override
@@ -373,6 +190,5 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             super.onBackPressed();
         }
     }
-
 
 }

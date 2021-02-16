@@ -157,4 +157,8 @@ public class SignUpActivity extends AppCompatActivity {
         }
 
     }
+
+    public void callBackScreen(View view) {
+        super.onBackPressed();
+    }
 }

@@ -3,22 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".User.BottomNavigationView.Menu3Jadwal.Tabs.Jadwal10PKMFragment"
     android:orientation="vertical"
-    android:background="@color/colorSurface"
-    android:padding="10dp">
+    android:background="@color/colorSurface">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10 PKM"
-        android:fontFamily="@font/muli_black"
-        android:textColor="@color/colorOnPrimaryText"
-        android:textSize="40sp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_jadwal_10_p_k_m"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_jadwal_10_pkm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
 
 </LinearLayout>

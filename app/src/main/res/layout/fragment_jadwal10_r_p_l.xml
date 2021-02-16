@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:background="@color/colorSurface"
-    tools:context=".User.BottomNavigationView.Menu3Jadwal.Tabs.Jadwal10RPLFragment"
-    android:padding="10dp">
+    android:orientation="vertical"
+    tools:context=".User.BottomNavigationView.Menu3Jadwal.Tabs.Jadwal10RPLFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10 RPL"
-        android:fontFamily="@font/muli_black"
-        android:textColor="@color/colorOnPrimaryText"
-        android:textSize="40sp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_jadwal_10_r_p_l"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_jadwal_10_rpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
 
 </LinearLayout>

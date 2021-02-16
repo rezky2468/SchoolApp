@@ -4,10 +4,10 @@
     android:layout_width="150dp"
     android:layout_height="300dp"
     android:layout_margin="10dp"
-    app:cardCornerRadius="7dp"
-    app:cardElevation="8dp"
     android:clickable="true"
-    android:foreground="?attr/selectableItemBackground">
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,8 +18,8 @@
             android:id="@+id/featured_image"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:src="@drawable/img1"
             android:scaleType="centerCrop"
+            android:src="@drawable/jurusan1"
             app:riv_corner_radius_top_left="7dp"
             app:riv_corner_radius_top_right="7dp" />
 
@@ -59,37 +59,34 @@
             </LinearLayout>
 
 
-<!--            <RatingBar-->
-<!--                android:id="@+id/rating_bar"-->
-<!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/featured_title"-->
-<!--                android:rating="4.5" />-->
+            <!--            <RatingBar-->
+            <!--                android:id="@+id/rating_bar"-->
+            <!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/featured_title"-->
+            <!--                android:rating="4.5" />-->
 
             <TextView
                 android:id="@+id/featured_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorOnSecondaryText"
                 android:layout_below="@id/title_prodi"
-                android:text="lorem ipsum dolor sit amet" />
+                android:text="lorem ipsum dolor sit amet"
+                android:textColor="@color/colorOnSecondaryText" />
 
         </LinearLayout>
 
-<!--        <Button-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:clickable="true"-->
-<!--            android:textColor="@color/transparent"-->
-<!--            android:padding="-15dp"-->
-<!--            android:text="test"-->
-<!--            android:background="?attr/selectableItemBackground"/>-->
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:clickable="true"-->
+        <!--            android:textColor="@color/transparent"-->
+        <!--            android:padding="-15dp"-->
+        <!--            android:text="test"-->
+        <!--            android:background="?attr/selectableItemBackground"/>-->
 
     </RelativeLayout>
-
-
-
 
 
 </androidx.cardview.widget.CardView>

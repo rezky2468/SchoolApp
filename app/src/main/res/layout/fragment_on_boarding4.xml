@@ -36,20 +36,6 @@
         app:layout_constraintVertical_bias="0" />
 
     <TextView
-        android:id="@+id/skip4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="30dp"
-        android:text="@string/skip_btn"
-        android:textColor="@color/colorSurface"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,7 +71,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="5dp"
-        android:text="@string/fourth_slide_desc"
+        android:text="@string/label_deskripsi_slide_4"
         android:textSize="16sp"
         android:textColor="@color/colorSurface"
         app:layout_constraintBottom_toBottomOf="parent"

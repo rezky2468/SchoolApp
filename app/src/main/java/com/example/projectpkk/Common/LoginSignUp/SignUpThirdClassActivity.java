@@ -13,9 +13,14 @@ import android.provider.Settings;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
+import com.example.projectpkk.Databases.UserHelperClass;
 import com.example.projectpkk.R;
+import com.example.projectpkk.UserDashboardActivity;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
 
 public class SignUpThirdClassActivity extends AppCompatActivity {
@@ -71,22 +76,32 @@ public class SignUpThirdClassActivity extends AppCompatActivity {
         String _getUserEnteredPhoneNumber = signUpPhoneNumber.getEditText().getText().toString().trim(); // Get Phone Number
         String _phoneNo = "+" + countryCodePicker.getFullNumber() + _getUserEnteredPhoneNumber;
 
-        Intent intent3 = new Intent(getApplicationContext(), VerifyOTPActivity.class);
 
-        // Pass all fields to the next activity
-        intent3.putExtra("fullName", _fullName);
-        intent3.putExtra("username", _username);
-        intent3.putExtra("email", _email);
-        intent3.putExtra("password", _password);
-        intent3.putExtra("gender", _gender);
-        intent3.putExtra("date", _date);
-        intent3.putExtra("phoneNo", _phoneNo);
+        FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
+        DatabaseReference reference = rootNode.getReference("Users");
+        UserHelperClass addNewUser = new UserHelperClass(_fullName, _username, _email, _password, _gender, _date, _phoneNo);
+        reference.child(_phoneNo).setValue(addNewUser);
 
-        // Add Transition
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        Toast.makeText(this, "Berhasil membuat akun! Silahkan login kembali", Toast.LENGTH_SHORT).show();
+
+
+//        Intent intent3 = new Intent(getApplicationContext(), VerifyOTPActivity.class);
+
+//         Pass all fields to the next activity
+//        intent3.putExtra("fullName", _fullName);
+//        intent3.putExtra("username", _username);
+//        intent3.putExtra("email", _email);
+//        intent3.putExtra("password", _password);
+//        intent3.putExtra("gender", _gender);
+//        intent3.putExtra("date", _date);
+//        intent3.putExtra("phoneNo", _phoneNo);
+
+//         Add Transition
 //        Pair[] pairs = new Pair[1];
 //        pairs[0] = new Pair<View, String>(scrollView, "transition_OTP_screen");
 
-        startActivity(intent3);
+//        startActivity(intent3);
     }
 
     public void callLoginScreen(View view) {
@@ -123,7 +138,6 @@ public class SignUpThirdClassActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         startActivity(new Intent(getApplicationContext(), RetailerStartUpScreenActivity.class));
-                        ;
                         finish();
                     }
                 });
@@ -142,5 +156,9 @@ public class SignUpThirdClassActivity extends AppCompatActivity {
             signUpPhoneNumber.setErrorEnabled(false);
             return true;
         }
+    }
+
+    public void callBackScreen(View view) {
+        super.onBackPressed();
     }
 }

@@ -13,12 +13,12 @@ import com.example.projectpkk.R;
 
 import java.util.ArrayList;
 
-public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder> {
+public class JurusanAdapter extends RecyclerView.Adapter<JurusanAdapter.FeaturedViewHolder> {
 
-    ArrayList<FeaturedHelperClass> featuredLocations;
+    ArrayList<JurusanHelperClass> featuredLocations;
     private OnJurusanListener mOnJurusanListener;
 
-    public FeaturedAdapter(ArrayList<FeaturedHelperClass> featuredLocations, OnJurusanListener onNoteListener) {
+    public JurusanAdapter(ArrayList<JurusanHelperClass> featuredLocations, OnJurusanListener onNoteListener) {
         this.featuredLocations = featuredLocations;
         this.mOnJurusanListener = onNoteListener;
     }
@@ -33,17 +33,21 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
 
     @Override
     public void onBindViewHolder(@NonNull FeaturedViewHolder holder, int position) {
-        final FeaturedHelperClass featuredHelperClass = featuredLocations.get(position);
-        holder.image.setImageResource(featuredHelperClass.getImage());
-        holder.icon.setImageResource(featuredHelperClass.getIcon());
-        holder.title.setText(featuredHelperClass.getTitle());
-        holder.desc.setText(featuredHelperClass.getDescription());
+        final JurusanHelperClass jurusanHelperClass = featuredLocations.get(position);
+        holder.image.setImageResource(jurusanHelperClass.getImage());
+        holder.icon.setImageResource(jurusanHelperClass.getIcon());
+        holder.title.setText(jurusanHelperClass.getTitle());
+        holder.desc.setText(jurusanHelperClass.getDescription());
 
     }
 
     @Override
     public int getItemCount() {
         return featuredLocations.size();
+    }
+
+    public interface OnJurusanListener {
+        void onJurusanClick(int position);
     }
 
     public static class FeaturedViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -70,9 +74,5 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
         public void onClick(View v) {
             onJurusanListener.onJurusanClick(getAdapterPosition());
         }
-    }
-
-    public interface OnJurusanListener {
-        void onJurusanClick(int position);
     }
 }

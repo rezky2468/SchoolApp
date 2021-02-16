@@ -2,9 +2,11 @@ package com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.projectpkk.R;
@@ -20,6 +22,7 @@ public class PengumumanDetailActivity extends AppCompatActivity {
 
     // Variables
     TextView pengumumanDetailTitle, pengumumanDetailDate, pengumumanDetailDesc;
+    ImageView share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class PengumumanDetailActivity extends AppCompatActivity {
         pengumumanDetailTitle = findViewById(R.id.pengumuman_detail_title);
         pengumumanDetailDate = findViewById(R.id.pengumuman_detail_date);
         pengumumanDetailDesc = findViewById(R.id.pengumuman_detail_desc);
+        share = findViewById(R.id.pengumuman_share);
 
         int index = getIntent().getIntExtra("com.example.projectpkk.ITEM_INDEX", -1);
 
@@ -53,6 +57,19 @@ public class PengumumanDetailActivity extends AppCompatActivity {
                 pengumumanDetailDate.setText(tanggalValue);
                 pengumumanDetailDesc.setText(isiValue);
             }
+
+            share.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("text/plain");
+                    String shareSubject = judulValue;
+                    String shareBody = tanggalValue + " - " + isiValue;
+                    intent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                    intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+                    startActivity(Intent.createChooser(intent, "Bagikan pengumuman dengan"));
+                }
+            });
 
         } catch (JSONException e) {
             e.printStackTrace();

@@ -1,6 +1,7 @@
 package com.example.projectpkk.Common;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,7 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.projectpkk.Common.OnBoarding.OnBoardingActivity;
+import com.example.projectpkk.Databases.ThemeSharedPreferences;
 import com.example.projectpkk.R;
+import com.example.projectpkk.UserDashboardActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -51,8 +54,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
                 boolean isFirstTime = onBoardingScreen.getBoolean("firstTime", true);
 
-
-
                 if (isFirstTime) {
                     SharedPreferences.Editor editor = onBoardingScreen.edit();
                     editor.putBoolean("firstTime", false);
@@ -61,13 +62,19 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else {
-                    Intent intent = new Intent(getApplicationContext(), OnBoardingActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), UserDashboardActivity.class);
                     startActivity(intent);
                     finish();
                 }
 
-
             }
         }, SPLASH_TIMER);
+
+        final ThemeSharedPreferences themeSharedPreferences = new ThemeSharedPreferences(this);
+        if (themeSharedPreferences.loadNightModeState()) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }

@@ -2,12 +2,12 @@ package com.example.projectpkk.HelperClasses.HomeAdapter;
 
 import android.widget.Button;
 
-public class FeaturedHelperClass {
+public class JurusanHelperClass {
 
     int image, icon;
     String title, description;
 
-    public FeaturedHelperClass(int image, int icon, String title, String description) {
+    public JurusanHelperClass(int image, int icon, String title, String description) {
         this.image = image;
         this.icon = icon;
         this.title = title;

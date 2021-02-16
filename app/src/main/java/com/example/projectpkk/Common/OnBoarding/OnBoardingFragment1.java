@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.projectpkk.R;
@@ -21,7 +20,6 @@ public class OnBoardingFragment1 extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_on_boarding1, container, false);
 
         TextView button = view.findViewById(R.id.skip1);
-//        button = view.findViewById(R.id.skip1);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,8 +23,4 @@ public class DenahActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    public void callSearchScreen(View view) {
-        startActivity(new Intent(getApplicationContext(), SearchActivity.class));
-    }
-
 }

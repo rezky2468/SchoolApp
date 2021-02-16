@@ -22,21 +22,13 @@ public class OnBoardingFragment4 extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_on_boarding4, container, false);
 
-        TextView button = view.findViewById(R.id.skip4);
         FloatingActionButton welcome = view.findViewById(R.id.welcome);
-//        button = view.findViewById(R.id.skip4);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), UserDashboardActivity.class));
-            }
-        });
 
         welcome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), UserDashboardActivity.class));
+                getActivity().finish();
             }
         });
 
