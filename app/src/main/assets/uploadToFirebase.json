@@ -1,0 +1,943 @@
+{
+  "Users": {
+    "+6281220911003": {
+      "date": "18 Mar 2006",
+      "email": "muhidinahmad@gmail.com",
+      "fullName": "Ahmad Muhidin",
+      "gender": "Laki-Laki",
+      "password": "123",
+      "phoneNo": "+6281220911003",
+      "username": "ahmadin74"
+    }
+  },
+  "guru": [
+    {
+      "email": "antonjaenudin5@gmail.com",
+      "foto": "guru_anton",
+      "jabatan": "Kepala Sekolah",
+      "mapel": "Fisika",
+      "nama": "Anton Jaenudin, Sp.D",
+      "pendidikan": "S1 Geografi",
+      "telp": "+6288801855938",
+      "ttl": "Bandung, 5 Agustus 1963"
+    },
+    {
+      "email": "asepdy@gmail.com",
+      "foto": "guru_asep_d_y",
+      "jabatan": "Wakasek Kurikulum, Kaprodi RPL",
+      "mapel": "Produktif RPL",
+      "nama": "Asep Dimyati Yusup, St",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6285294416324",
+      "ttl": "Bandung, 5 September 1985"
+    },
+    {
+      "email": "wahyutaufix17@gmail.com",
+      "foto": "guru_wahyu",
+      "jabatan": "Wakasek Kesiswaan",
+      "mapel": "Matematika",
+      "nama": "Wahyu Taufix, S.Pd",
+      "pendidikan": "S1 Pendidikan Matematika",
+      "telp": "+6285721288814",
+      "ttl": "Bandung, 18 Januari 1986"
+    },
+    {
+      "email": "telimardiani5@gmail.com",
+      "foto": "guru_teli",
+      "jabatan": "Wakasek Sarana Prasarana",
+      "mapel": "Bahasa Inggris",
+      "nama": "Teli Mardiani, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "telp": "+6281320027536",
+      "ttl": "Bandung, 31 Mei 1985"
+    },
+    {
+      "email": "sigidpurwanto33@gmail.com",
+      "foto": "guru_sigid",
+      "jabatan": "Wakasek HUBIN, Staf BKK",
+      "mapel": "Produktif TIK",
+      "nama": "Sigid Purwanto, S.Pd",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6285317122050",
+      "ttl": "Karanganyar, 5 Desember 1970"
+    },
+    {
+      "email": "indra.sn300688@gmail.com",
+      "foto": "guru_indra",
+      "jabatan": "Kaprodi TKJ, Staf Kurikulum",
+      "mapel": "Produktif TKJ",
+      "nama": "Indra Setia Nugraha, St",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6282126360972",
+      "ttl": "Purwakarta, 30 Juni 1988"
+    },
+    {
+      "email": "adrianidevi64@gmail.com",
+      "foto": "guru_devi",
+      "jabatan": "Kaprodi Perbankan",
+      "mapel": "Produktif Perbankan",
+      "nama": "Devi Adriani, S.Pd",
+      "pendidikan": "S1 Pendidikan Ekonomi Akuntansi",
+      "telp": "+6285220302463",
+      "ttl": "Bandung, 22 September 1991"
+    },
+    {
+      "email": "-",
+      "foto": "guru_abin",
+      "jabatan": "-",
+      "mapel": "PKN",
+      "nama": "Drs. Abin Saepudin",
+      "pendidikan": "S1 Pendidikan Kewarganegaraan",
+      "telp": "+6285223194218",
+      "ttl": "Bandung, 5 September 1958"
+    },
+    {
+      "email": "robiahiis@gmail.com",
+      "foto": "guru_iis",
+      "jabatan": "-",
+      "mapel": "PABP",
+      "nama": "Iis Robiah, S.Ag",
+      "pendidikan": "S1 Pendidikan Agama Islam",
+      "telp": "+6285314081815",
+      "ttl": "Jakarta, 1 September 1971"
+    },
+    {
+      "email": "asepyusufbppi@gmail.com",
+      "foto": "guru_asep_y",
+      "jabatan": "Pembina Ekskul Seni",
+      "mapel": "Seni Budaya",
+      "nama": "Asep Yusup Hambara Sukendar, S.Sn",
+      "pendidikan": "S1 Pendidikan Seni Tari",
+      "telp": "+6281320519794",
+      "ttl": "Tasikmalaya, 13 September 1972"
+    },
+    {
+      "email": "egidodig@gmail.com",
+      "foto": "guru_egi",
+      "jabatan": "Kepala Lab TKJ, Pembina Ekskul",
+      "mapel": "Produktif TKJ",
+      "nama": "Egi Dodi Gunadi, St",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6281312681947",
+      "ttl": "Bandung, 16 Februari 1981"
+    },
+    {
+      "email": "encekamil94@gmail.com",
+      "foto": "img1",
+      "jabatan": "-",
+      "mapel": "PJOK",
+      "nama": "Ence Kamil, S.Si",
+      "pendidikan": "S1 Ilmu Keolahragaan",
+      "telp": "+6281312668020",
+      "ttl": "Ciamis, 4 Juli 1984"
+    },
+    {
+      "email": "merlianamega89@gmail.com",
+      "foto": "guru_mega",
+      "jabatan": "Wali Kelas",
+      "mapel": "Produktif TIK",
+      "nama": "Mega Merliana, S.Ds, S.Kom",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6285294785608",
+      "ttl": "Bandung, 26 Maret 1989"
+    },
+    {
+      "email": "nurwita4@gmail.com",
+      "foto": "guru_nurwita",
+      "jabatan": "Wali Kelas",
+      "mapel": "Bahasa Inggris",
+      "nama": "Nurwita, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "telp": "+6285846877764",
+      "ttl": "Bandung, 5 Juli 1987"
+    },
+    {
+      "email": "iwansetia234@gmail.com",
+      "foto": "img1",
+      "jabatan": "-",
+      "mapel": "Produktif TKJ",
+      "nama": "Iwan Setiawan, S.Sos.i, S.Kom",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6285320246003",
+      "ttl": "Bandung, 22 Maret 1980"
+    },
+    {
+      "email": "rina.erwina29@gmail.com",
+      "foto": "guru_rina",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "mapel": "Produktif RPL",
+      "nama": "Rina Erwina, St",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6283829744455",
+      "ttl": "Bandung, 29 November 1990"
+    },
+    {
+      "email": "wahyudiwahyudi005@gmail.com",
+      "foto": "guru_wahyudi",
+      "jabatan": "Wali Kelas",
+      "mapel": "Matematika",
+      "nama": "Wahyudi, S.Pd",
+      "pendidikan": "S1 Pendidikan Matematika",
+      "telp": "+6285795521252",
+      "ttl": "Bandung, 2 April 1976"
+    },
+    {
+      "email": "likuapple92@gmail.com",
+      "foto": "guru_liku",
+      "jabatan": "Wali Kelas",
+      "mapel": "Produktif Perbankan",
+      "nama": "Liku Vici Indriani, Se",
+      "pendidikan": "S1 Ekonomi Manajemen",
+      "telp": "+6282121434343",
+      "ttl": "Bandung, 31 Juli 1982"
+    },
+    {
+      "email": "soviatyindira@gmail.com",
+      "foto": "guru_indira",
+      "jabatan": "Pembina Ekskul",
+      "mapel": "Ilmu Pengetahuan Alam",
+      "nama": "Indira Soviaty Ganiwa Putri, S.Si",
+      "pendidikan": "S1 Biologi",
+      "telp": "+6283156685741",
+      "ttl": "Bandung, 12 Januari 1991"
+    },
+    {
+      "email": "fitriayulianadamayanti@gmail.com",
+      "foto": "guru_fitria",
+      "jabatan": "Staf Kesiswaan, Wali Kelas",
+      "mapel": "Bahasa Indonesia",
+      "nama": "Fitria Yuliana Damayanti, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Indonesia",
+      "telp": "+6282214004313",
+      "ttl": "Bandung, 14 Januari 1992"
+    },
+    {
+      "email": "irfannurafandi@gmail.com",
+      "foto": "img1",
+      "jabatan": "Operator Sekolah",
+      "mapel": "Produktif TIK",
+      "nama": "Irpan Nurapandi, S.Kom",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6282315970813",
+      "ttl": "Tasikmalaya, 17 Juli 1988"
+    },
+    {
+      "email": "pravitaamallia@gmail.com",
+      "foto": "guru_pravita",
+      "jabatan": "Wali Kelas",
+      "mapel": "Bahasa Inggris",
+      "nama": "Pravita Devi Amalia, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Inggris",
+      "telp": "+6289610103011",
+      "ttl": "Bandung, 20 Maret 1985"
+    },
+    {
+      "email": "eka.mardiana 99@gmail.com",
+      "foto": "guru_eka",
+      "jabatan": "-",
+      "mapel": "Matematika",
+      "nama": "Eka Mardiana, S.Pd",
+      "pendidikan": "Pendidikan Matematika",
+      "telp": "+6282126288778",
+      "ttl": "Purbalingga, 14 Maret 1992"
+    },
+    {
+      "email": "irmasumarni24@gmail.com",
+      "foto": "guru_irma",
+      "jabatan": "Wali Kelas",
+      "mapel": "PKN",
+      "nama": "Irma Sumarni, S.Pd",
+      "pendidikan": "S1 Pendidikan PKN",
+      "telp": "+6285862244451",
+      "ttl": "Bandung, 23 November 1984"
+    },
+    {
+      "email": "rinishoffaaulia@gmail.com",
+      "foto": "guru_rini",
+      "jabatan": "Pembina Ekskul",
+      "mapel": "Fisika",
+      "nama": "Rini Shoffa Aulia, S.Pd",
+      "pendidikan": "Pendidikan Fisika",
+      "telp": "+628996831063",
+      "ttl": "Bandung, 19 September 1994"
+    },
+    {
+      "email": "ismap002@gmail.com",
+      "foto": "guru_isma",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "mapel": "PJOK",
+      "nama": "Isma Purnamasari, S.Pd",
+      "pendidikan": "S1 PJOK",
+      "telp": "+6283822118049",
+      "ttl": "Bandung, 7 Agustus 1994"
+    },
+    {
+      "email": "19airodiah@gmail.com",
+      "foto": "guru_ai",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "mapel": "PABP",
+      "nama": "Ai Rodiah, S.Pd.i",
+      "pendidikan": "S1 Pendidikan Agama Islam",
+      "telp": "+6285220302463",
+      "ttl": "Bandung, 2 Agustus 1977"
+    },
+    {
+      "email": "yogieprandywargina@gmail.com",
+      "foto": "guru_yogie",
+      "jabatan": "-",
+      "mapel": "Produktif TKJ",
+      "nama": "Yogie Prandi Wargina, S.Tr.Kom",
+      "pendidikan": "S1 Manajemen Informatika",
+      "telp": "+6285759059443",
+      "ttl": "Bandung, 12 Juli 1994"
+    },
+    {
+      "email": "Odihs0208@gmail.com",
+      "foto": "guru_odih",
+      "jabatan": "Koordinator BK",
+      "mapel": "BP/BK",
+      "nama": "Odih Syarifudin, S.Ps.I",
+      "pendidikan": "S1 Psikologi",
+      "telp": "+628814557368",
+      "ttl": "Bandung, 2 Agustus 1992"
+    },
+    {
+      "email": "Fajaroktavian58@gmail.com",
+      "foto": "guru_fajar",
+      "jabatan": "Wali Kelas, Pembina Ekskul",
+      "mapel": "Produktif TIK",
+      "nama": "Fajar Oktavian Nugraha, S.Pd",
+      "pendidikan": "S1 Ilmu Komputer",
+      "telp": "+6285722584681",
+      "ttl": "Bandung, 5 Oktober 1996"
+    },
+    {
+      "email": "nirwan.setia87@gmail.com",
+      "foto": "guru_nirwan",
+      "jabatan": "-",
+      "mapel": "Sejarah Indonesia",
+      "nama": "Nirwan Setia Dharmadi, S.Pd, M.M.Pd",
+      "pendidikan": "S1 Manajemen Pendidikan",
+      "telp": "'082127431945",
+      "ttl": "Bandung, 9 Juli 1987"
+    },
+    {
+      "email": "rahmanaira2010@gmail.com",
+      "foto": "guru_neni",
+      "jabatan": "Wali Kelas",
+      "mapel": "Bahasa Jepang",
+      "nama": "Neni Rosmayani, S.S",
+      "pendidikan": "S1 Bahasa Jepang",
+      "telp": "+628817899711",
+      "ttl": "Bandung, 23 Agustus 1982"
+    },
+    {
+      "email": "kikipadila7@gmail.com",
+      "foto": "guru_kiki",
+      "jabatan": "Wali Kelas",
+      "mapel": "Bahasa Sunda",
+      "nama": "Kiki Padila, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Daerah",
+      "telp": "+6289657235698",
+      "ttl": "Bandung, 13 Oktober 1993"
+    },
+    {
+      "email": "lisda.nurhayti28@gmail.com",
+      "foto": "guru_lisda",
+      "jabatan": "",
+      "mapel": "Bahasa Indonesia",
+      "nama": "Lisda Nurhayati, S.Pd",
+      "pendidikan": "S1 Pendidikan Bahasa Indonesia",
+      "telp": "+6283820561075",
+      "ttl": "Ciamis, 28 Mei 1996"
+    },
+    {
+      "email": "hani.kustyanti1996@gmail.com",
+      "foto": "guru_hani",
+      "jabatan": "Wali Kelas",
+      "mapel": "Produktif Perbankan",
+      "nama": "Hani Kusyanti Kusnadi, S.Pd",
+      "pendidikan": "S1 Pendidikan Ekonomi",
+      "telp": "+6288809405477",
+      "ttl": "Bandung, 8 Juli 1996"
+    },
+    {
+      "email": "sobar.bubat@gmail.com",
+      "foto": "guru_m_sobar",
+      "jabatan": "-",
+      "mapel": "Produktif TKJ",
+      "nama": "M. Sobar, St",
+      "pendidikan": "S1 Pendidikan Teknik Elektro",
+      "telp": "+6282116188931",
+      "ttl": "Bandung, 24 Juni 1982"
+    },
+    {
+      "email": "shintakhodijah8@gmail.com",
+      "foto": "guru_sinta",
+      "jabatan": "Wali Kelas",
+      "mapel": "Kimia",
+      "nama": "Sinta Hodliah, S.Pd",
+      "pendidikan": "S1 Pendidikan Kimia",
+      "telp": "+6282215780234",
+      "ttl": "Bandung, 8 Februari 1996"
+    },
+    {
+      "email": "firmana37@gmail.com",
+      "foto": "guru_andiyanto",
+      "jabatan": "-",
+      "mapel": "Produktif TKJ",
+      "nama": "Andiyanto, S.Kom",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+6288801855938",
+      "ttl": "26 Juni 1997"
+    },
+    {
+      "email": "pnjalam@gmail.com",
+      "foto": "guru_guruh",
+      "jabatan": "-",
+      "mapel": "Produktif TKJ",
+      "nama": "Guruh Panji Alam, S.Kom",
+      "pendidikan": "S1 Teknik Informatika",
+      "telp": "+62895333861499",
+      "ttl": "Bandung, 25 Juni 1997"
+    },
+    {
+      "email": "handimulyadi5@gmail.com",
+      "foto": "guru_handi",
+      "jabatan": "-",
+      "mapel": "BP/BK",
+      "nama": "Handi Mulyadi, S.Pd",
+      "pendidikan": "S1 Bimbingan Konseling",
+      "telp": "+62895346085313",
+      "ttl": "Bandung, 17 September 1996"
+    },
+    {
+      "email": "-",
+      "foto": "guru_uman",
+      "jabatan": "DKM, Pembina Ekskul",
+      "mapel": "Murotal Alquran",
+      "nama": "Uman Priatna, S.Pd.I",
+      "pendidikan": "S1 Ilmu Tarbiyah",
+      "telp": "-",
+      "ttl": "Bandung, 30 Juni 1962"
+    }
+  ],
+  "pengumuman": {
+    "1614156499206": {
+      "isi": "I see no misuse of asynchronous API calls here, and keeping the call to setAdapter outside of onDataChange is actually more idiomatic as it consumes fewer resources. Can you explain why you think this is a duplicate of the question you linked",
+      "judul": "pengumuman hasil dari persiapan untuk menjadi lebih dinamis ",
+      "tanggal": "24 Februari 2021"
+    },
+    "1614160048222": {
+      "isi": "Assalamualaikum wr.wb.\nMengingat tgl 1 Maret akan d adakan TO, dan kartu d TU msh banyak mohon d ingatkan kembali oleh walikls kls 12, bahwasannya kartu TO paling lambat diselesaikn sabtu tgl 27 Februari\nTerimakasih \nWassalam",
+      "judul": "Syarat TO",
+      "tanggal": "24 Februari 2021"
+    }
+  },
+  "jadwal-pelajaran": {
+    "10-rpl": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "SIMKOMDIG",
+        "mapel-3": "FISIKA",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "D. GRAFIS",
+        "mapel-3": "JARDAS",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "SEJARAH",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "KIMIA",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "B.SUNDA",
+        "mapel-3": "SISKOM",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "SENI BUDAYA",
+        "mapel-2": "PEMDAS",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "10-tkj": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "SIMKOMDIG",
+        "mapel-3": "FISIKA",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "D. GRAFIS",
+        "mapel-3": "JARDAS",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "SEJARAH",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "KIMIA",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "B.SUNDA",
+        "mapel-3": "SISKOM",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "SENI BUDAYA",
+        "mapel-2": "PEMDAS",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "10-pkm": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "SIMKOMDIG",
+        "mapel-3": "E-BISNIS",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "SPREADSHEET",
+        "mapel-3": "ADMUM",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "SEJARAH",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "E-PROFESI",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "B.SUNDA",
+        "mapel-3": "IPA",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "SENI BUDAYA",
+        "mapel-2": "AKUNDAS",
+        "mapel-3": "BANKDAS",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Sabtu"
+      }
+    },
+    "11-rpl": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "PPL",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "WEB",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "PBO",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "BD",
+        "mapel-2": "PKK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "11-tkj": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "ASJ",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "AIJ",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "WAN",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "TLJ",
+        "mapel-2": "PKK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "11-pkm": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "PAJAK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B.INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "BK",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "09:15 - 10:15",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "LLPKM",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "PJOK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B. INGGRIS",
+        "mapel-2": "APKM",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "KOMPAK",
+        "mapel-2": "PKK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "12-rpl": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "BD",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B. INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "PBO",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "WEB",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "PKN",
+        "mapel-2": "BK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "12-tkj": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "AIJ",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B. INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "ASJ",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "TLJ",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B.INGGRIS",
+        "mapel-2": "",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "PKK",
+        "mapel-2": "BK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    },
+    "12-pkm": {
+      "1-senin": {
+        "mapel-1": "PAI",
+        "mapel-2": "APKM",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Senin"
+      },
+      "2-selasa": {
+        "mapel-1": "B. INDONESIA",
+        "mapel-2": "B. JEPANG",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Selasa"
+      },
+      "3-rabu": {
+        "mapel-1": "PKN",
+        "mapel-2": "LLPKM",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Rabu"
+      },
+      "4-kamis": {
+        "mapel-1": "MATEMATIKA",
+        "mapel-2": "KOMPAK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Kamis"
+      },
+      "5-jumat": {
+        "mapel-1": "B. INGGRIS",
+        "mapel-2": "PKAS",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Jumat"
+      },
+      "6-sabtu": {
+        "mapel-1": "PKK",
+        "mapel-2": "BK",
+        "mapel-3": "",
+        "jam-1": "07:15 - 08:15",
+        "jam-2": "08:15 - 09:15",
+        "jam-3": "",
+        "hari": "Sabtu"
+      }
+    }
+  }
+}

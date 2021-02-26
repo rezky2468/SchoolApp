@@ -1,0 +1,620 @@
+{
+  "jadwal-pelajaran": {
+    "kelas-10": {
+      "rpl": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": [{
+              "mapel-1": "PAI",
+              "mapel-2": "SIMKOMDIG",
+              "mapel-3": "FISIKA"
+            }],
+            "jam-pelajaran": [{
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }]
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "D. GRAFIS",
+              "mapel-3": "JARDAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "SEJARAH",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK",
+              "mapel-3": "KIMIA"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS",
+              "mapel-2": "B.SUNDA",
+              "mapel-3": "SISKOM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "SENI BUDAYA",
+              "mapel-2": "PEMDAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "tkj": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "SIMKOMDIG",
+              "mapel-3": "FISIKA"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "D. GRAFIS",
+              "mapel-3": "JARDAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "SEJARAH",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK",
+              "mapel-3": "KIMIA"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS",
+              "mapel-2": "B.SUNDA",
+              "mapel-3": "SISKOM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "SENI BUDAYA",
+              "mapel-2": "PEMDAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "pkm": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "SIMKOMDIG",
+              "mapel-3": "E-BISNIS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "SPREADSHEET",
+              "mapel-3": "ADMUM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "SEJARAH",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK",
+              "mapel-3": "E-PROFESI"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS",
+              "mapel-2": "B.SUNDA",
+              "mapel-3": "IPA"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "SENI BUDAYA",
+              "mapel-2": "AKUNDAS",
+              "mapel-3": "BANKDAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          }
+        }
+      }
+    },
+    "kelas-11": {
+      "rpl": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "PPL"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "B. JEPANG",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "WEB"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS",
+              "mapel-2": "PBO"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "BD",
+              "mapel-2": "PKK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "tkj": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "ASJ"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "B. JEPANG",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "AIJ"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS",
+              "mapel-2": "WAN"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "TLJ",
+              "mapel-2": "PKK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "pkm": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "PAJAK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INDONESIA",
+              "mapel-2": "B. JEPANG",
+              "mapel-3": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15",
+              "jam-3": "09:15 - 10:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "LLPKM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "PJOK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B. INGGRIS",
+              "mapel-2": "APKM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "KOMPAK",
+              "mapel-2": "PKK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      }
+    },
+    "kelas-12": {
+      "rpl": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "BD"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B. INDONESIA",
+              "mapel-2": "B. JEPANG"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "PBO"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "WEB"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "tkj": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "AIJ"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B. INDONESIA",
+              "mapel-2": "B. JEPANG"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "ASJ"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "TLJ"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B.INGGRIS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKK",
+              "mapel-2": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      },
+      "pkm": {
+        "hari": {
+          "senin": {
+            "mata-pelajaran": {
+              "mapel-1": "PAI",
+              "mapel-2": "APKM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "selasa": {
+            "mata-pelajaran": {
+              "mapel-1": "B. INDONESIA",
+              "mapel-2": "B. JEPANG"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "rabu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKN",
+              "mapel-2": "LLPKM"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "kamis": {
+            "mata-pelajaran": {
+              "mapel-1": "MATEMATIKA",
+              "mapel-2": "KOMPAK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "jumat": {
+            "mata-pelajaran": {
+              "mapel-1": "B. INGGRIS",
+              "mapel-2": "PKAS"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          },
+          "sabtu": {
+            "mata-pelajaran": {
+              "mapel-1": "PKK",
+              "mapel-2": "BK"
+            },
+            "jam-pelajaran": {
+              "jam-1": "07:15 - 08:15",
+              "jam-2": "08:15 - 09:15"
+            }
+          }
+        }
+      }
+    }
+  }
+}
