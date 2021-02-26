@@ -21,36 +21,38 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.projectpkk.Common.LoginSignUp.LoginActivity;
 import com.example.projectpkk.Common.LoginSignUp.RetailerStartUpScreenActivity;
 import com.example.projectpkk.Databases.SessionManager;
 import com.example.projectpkk.Databases.UserHelperClass;
+import com.example.projectpkk.NotifikasiActivity;
 import com.example.projectpkk.R;
 import com.example.projectpkk.UserDashboardActivity;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
+
 public class MenuProfileFragment extends Fragment {
 
-    Button logout;
-    TextView fullName, username, email, phone, dob;
+    Button logoutBtn;
+    TextView fullNameTV, usernameTV, emailTV, phoneTV, dobTV;
     ImageView editProfile;
     String _fullName, _username, _email, _phone, _dob, _password, _gender;
     String newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender;
-    EditText fullNameBox, usernameBox, emailBox, phoneBox, dateBox;
+    EditText fullNameET, usernameET, emailET, phoneET, dateET;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_menu_profile, container, false);
 
-        fullName = view.findViewById(R.id.profile_full_name);
-        username = view.findViewById(R.id.profile_username);
-        email = view.findViewById(R.id.profile_email);
-        phone = view.findViewById(R.id.profile_phone);
-        dob = view.findViewById(R.id.profile_dob);
-        logout = view.findViewById(R.id.profile_logout);
+        fullNameTV = view.findViewById(R.id.profile_full_name);
+        usernameTV = view.findViewById(R.id.profile_username);
+        emailTV = view.findViewById(R.id.profile_email);
+        phoneTV = view.findViewById(R.id.profile_phone);
+        dobTV = view.findViewById(R.id.profile_dob);
+        logoutBtn = view.findViewById(R.id.profile_logout);
         editProfile = view.findViewById(R.id.profile_edit);
 
         SessionManager sessionManager = new SessionManager(getActivity());
@@ -64,11 +66,19 @@ public class MenuProfileFragment extends Fragment {
         _phone = hashMap.get(SessionManager.KEY_PHONENUMBER);
         _dob = hashMap.get(SessionManager.KEY_DATE);
 
-        fullName.setText(_fullName);
-        username.setText(_username);
-        email.setText(_email);
-        phone.setText(_phone);
-        dob.setText(_dob);
+        fullNameTV.setText(_fullName);
+        usernameTV.setText(_username);
+        emailTV.setText(_email);
+        phoneTV.setText(_phone);
+        dobTV.setText(_dob);
+
+        TextView textView = view.findViewById(R.id.list_activity);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), NotifikasiActivity.class));
+            }
+        });
 
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +89,7 @@ public class MenuProfileFragment extends Fragment {
             }
         });
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showLogoutDialog();
@@ -98,41 +108,41 @@ public class MenuProfileFragment extends Fragment {
         layout.setOrientation(LinearLayout.VERTICAL);
 
         // Add a TextView here for the "Title" label, as noted in the comments
-        fullNameBox = new EditText(context);
-        fullNameBox.setHint("Nama Lengkap");
-        fullNameBox.setHintTextColor(getResources().getColor(R.color.colorGrey));
-        fullNameBox.setText(_fullName);
-        fullNameBox.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
-        layout.addView(fullNameBox); // Notice this is an add method
+        fullNameET = new EditText(context);
+        fullNameET.setHint("Nama Lengkap");
+        fullNameET.setHintTextColor(getResources().getColor(R.color.colorGrey));
+        fullNameET.setText(_fullName);
+        fullNameET.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
+        layout.addView(fullNameET); // Notice this is an add method
 
         // Add another TextView here for the "Description" label
-        usernameBox = new EditText(context);
-        usernameBox.setHint("Username");
-        usernameBox.setHintTextColor(getResources().getColor(R.color.colorGrey));
-        usernameBox.setText(_username);
-        usernameBox.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
-        layout.addView(usernameBox); // Another add method
+        usernameET = new EditText(context);
+        usernameET.setHint("Username");
+        usernameET.setHintTextColor(getResources().getColor(R.color.colorGrey));
+        usernameET.setText(_username);
+        usernameET.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
+        layout.addView(usernameET); // Another add method
 
-        emailBox = new EditText(context);
-        emailBox.setHint("Email");
-        emailBox.setHintTextColor(getResources().getColor(R.color.colorGrey));
-        emailBox.setText(_email);
-        emailBox.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
-        layout.addView(emailBox); // Another add method
+        emailET = new EditText(context);
+        emailET.setHint("Email");
+        emailET.setHintTextColor(getResources().getColor(R.color.colorGrey));
+        emailET.setText(_email);
+        emailET.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
+        layout.addView(emailET); // Another add method
 
-        phoneBox = new EditText(context);
-        phoneBox.setHint("Nomor Telepon");
-        phoneBox.setHintTextColor(getResources().getColor(R.color.colorGrey));
-        phoneBox.setText(_phone);
-        phoneBox.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
-        layout.addView(phoneBox); // Another add method
+        phoneET = new EditText(context);
+        phoneET.setHint("Nomor Telepon");
+        phoneET.setHintTextColor(getResources().getColor(R.color.colorGrey));
+        phoneET.setText(_phone);
+        phoneET.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
+        layout.addView(phoneET); // Another add method
 
-        dateBox = new EditText(context);
-        dateBox.setHint("Tanggal Lahir");
-        dateBox.setHintTextColor(getResources().getColor(R.color.colorGrey));
-        dateBox.setText(_dob);
-        dateBox.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
-        layout.addView(dateBox); // Another add method
+        dateET = new EditText(context);
+        dateET.setHint("Tanggal Lahir");
+        dateET.setHintTextColor(getResources().getColor(R.color.colorGrey));
+        dateET.setText(_dob);
+        dateET.setTextColor(getResources().getColor(R.color.colorOnPrimaryText));
+        layout.addView(dateET); // Another add method
 
         builder.setView(layout); // Again this is a set method, not add
 
@@ -141,13 +151,13 @@ public class MenuProfileFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        newFullName = fullNameBox.getText().toString().trim();
-                        newUserName = usernameBox.getText().toString().trim();
-                        newEmail = emailBox.getText().toString().trim();
+                        newFullName = fullNameET.getText().toString().trim();
+                        newUserName = usernameET.getText().toString().trim();
+                        newEmail = emailET.getText().toString().trim();
                         newPassword = _password;
                         newGender = _gender;
-                        newDate = dateBox.getText().toString().trim();
-                        newPhone = phoneBox.getText().toString().trim();
+                        newDate = dateET.getText().toString().trim();
+                        newPhone = phoneET.getText().toString().trim();
 
                         FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
                         DatabaseReference reference = rootNode.getReference("Users");
@@ -157,15 +167,14 @@ public class MenuProfileFragment extends Fragment {
                         SessionManager sessionManager = new SessionManager(getActivity());
                         sessionManager.createLoginSession(newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender);
 
-                        fullName.setText(newFullName);
-                        username.setText(newUserName);
-                        email.setText(newEmail);
-                        phone.setText(newPhone);
-                        dob.setText(newDate);
+                        fullNameTV.setText(newFullName);
+                        usernameTV.setText(newUserName);
+                        emailTV.setText(newEmail);
+                        phoneTV.setText(newPhone);
+                        dobTV.setText(newDate);
 
                         startActivity(new Intent(getActivity(), UserDashboardActivity.class));
                         Toast.makeText(getActivity(), "Profil berhasil diubah!", Toast.LENGTH_SHORT).show();
-
                     }
                 })
                 .setNegativeButton("Batal", new DialogInterface.OnClickListener() {

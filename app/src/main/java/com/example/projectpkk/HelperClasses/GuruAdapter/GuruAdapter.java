@@ -1,10 +1,9 @@
-package com.example.projectpkk.HelperClasses.PengajarAdapter;
+package com.example.projectpkk.HelperClasses.GuruAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -12,16 +11,17 @@ import com.example.projectpkk.R;
 
 import java.util.ArrayList;
 
-public class PengajarAdapter extends BaseAdapter {
+public class GuruAdapter extends BaseAdapter {
 
     LayoutInflater mInflater;
     Context context;
     TextView namaTextView, jabatanTextView, ttlTextView, pendidikanTextView, mapelTextView, emailTextView, telpTextView;
     de.hdodenhof.circleimageview.CircleImageView fotoCircleImageView;
-    ArrayList<PengajarHelperClass> pengajarArrayList;
+    ArrayList<GuruHelperClass> arrayList;
 
-    public PengajarAdapter(Context context) {
+    public GuruAdapter(Context context, ArrayList arrayList) {
         this.context = context;
+        this.arrayList = arrayList;
 //        this.pengajarArrayList = arrayList;
 //        this.context = context;
 //        this.arrayList = arrayList;
@@ -164,12 +164,12 @@ public class PengajarAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return names.length;
+        return arrayList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return names[position];
+        return arrayList.get(position);
     }
 
     @Override
@@ -180,17 +180,8 @@ public class PengajarAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-//        View view = convertView;
-
-//        if (view == null) {
-            mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = mInflater.inflate(R.layout.layout_list_view_pengajar, null);
-//            LayoutInflater.from(context).inflate(R.layout.layout_list_view_pengajar, parent, false);
-//        }
-
-//        PengajarHelperClass pengajarHelperClass = arrayList.get(position);
-
-//        PengajarHelperClass pengajarHelperClass = getItem(position);
+        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = mInflater.inflate(R.layout.layout_list_view_pengajar, null);
 
 //        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //        View view = mInflater.inflate(R.layout.layout_list_view_pengajar, null);
@@ -202,10 +193,8 @@ public class PengajarAdapter extends BaseAdapter {
         int image = images[position];
 
         fotoCircleImageView.setImageResource(image);
-//        namaTextView.setText(pengajarArrayList.get(position).getNama());
-        namaTextView.setText(names[position]);
-//        mapelTextView.setText(pengajarArrayList.get(position).getMapel());
-        mapelTextView.setText(descriptions[position]);
+        namaTextView.setText(arrayList.get(position).getNama());
+        mapelTextView.setText(arrayList.get(position).getMapel());
 
         return view;
     }

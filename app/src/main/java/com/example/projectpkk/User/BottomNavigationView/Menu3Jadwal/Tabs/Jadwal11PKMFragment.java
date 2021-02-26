@@ -2,6 +2,7 @@ package com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.Tabs;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,30 +14,60 @@ import android.view.ViewGroup;
 import com.example.projectpkk.HelperClasses.JadwalAdapter.JadwalRecyclerViewAdapter.JadwalHelperClass;
 import com.example.projectpkk.HelperClasses.JadwalAdapter.JadwalRecyclerViewAdapter.JadwalRVAdapter;
 import com.example.projectpkk.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class Jadwal11PKMFragment extends Fragment {
 
+    RecyclerView recyclerView;
+    String hari, mapel1, mapel2, mapel3, jam1, jam2, jam3;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_jadwal11_p_k_m, container, false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.rv_jadwal_11_pkm);
+        recyclerView = view.findViewById(R.id.rv_jadwal_11_pkm);
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.VERTICAL, false));
 
-        final ArrayList<JadwalHelperClass> arrayList = new ArrayList<>();
-        arrayList.add(new JadwalHelperClass(getString(R.string.senin), getString(R.string.pai), getString(R.string.pajak), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
-        arrayList.add(new JadwalHelperClass(getString(R.string.selasa), getString(R.string.b_indonesia), getString(R.string.b_jepang), getString(R.string.bk), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
-        arrayList.add(new JadwalHelperClass(getString(R.string.rabu), getString(R.string.pkn), getString(R.string.llpkm), getString(R.string.llpkm), getString(R.string.jam_ke1), getString(R.string.jam_ke2), getString(R.string.jam_ke3)));
-        arrayList.add(new JadwalHelperClass(getString(R.string.kamis), getString(R.string.matematika), getString(R.string.pjok), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
-        arrayList.add(new JadwalHelperClass(getString(R.string.jumat), getString(R.string.b_inggris), getString(R.string.apkm), "", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
-        arrayList.add(new JadwalHelperClass(getString(R.string.sabtu), getString(R.string.kompak), getString(R.string.pkk),"", getString(R.string.jam_ke1), getString(R.string.jam_ke2), ""));
+        Query query = FirebaseDatabase.getInstance().getReference("jadwal-pelajaran").child("11-pkm");
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-        JadwalRVAdapter adapter = new JadwalRVAdapter(arrayList);
-        recyclerView.setAdapter(adapter);
+                final ArrayList<JadwalHelperClass> arrayList = new ArrayList<>();
+
+                for (DataSnapshot data : dataSnapshot.getChildren()) {
+
+                    hari = data.child("hari").getValue(String.class);
+                    mapel1 = data.child("mapel-1").getValue(String.class);
+                    mapel2 = data.child("mapel-2").getValue(String.class);
+                    mapel3 = data.child("mapel-3").getValue(String.class);
+                    jam1 = data.child("jam-1").getValue(String.class);
+                    jam2 = data.child("jam-2").getValue(String.class);
+                    jam3 = data.child("jam-3").getValue(String.class);
+
+                    arrayList.add(new JadwalHelperClass(hari, mapel1, mapel2, mapel3, jam1, jam2, jam3));
+
+                }
+
+                JadwalRVAdapter adapter = new JadwalRVAdapter(arrayList);
+                adapter.notifyDataSetChanged();
+                recyclerView.setAdapter(adapter);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         return view;
     }

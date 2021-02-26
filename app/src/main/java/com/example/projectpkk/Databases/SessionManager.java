@@ -28,17 +28,17 @@ public class SessionManager {
         editor = userSessions.edit();
     }
 
-    public void createLoginSession(String fullName, String username, String email, String phoneNo, String password, String date, String gender) {
+    public void createLoginSession(String fullName, String username, String email, String password, String gender, String date, String phoneNo) {
 
         editor.putBoolean(IS_LOGIN, true);
 
         editor.putString(KEY_FULLNAME, fullName);
         editor.putString(KEY_USERNAME, username);
         editor.putString(KEY_EMAIL, email);
-        editor.putString(KEY_PHONENUMBER, phoneNo);
         editor.putString(KEY_PASSWORD, password);
-        editor.putString(KEY_DATE, date);
         editor.putString(KEY_GENDER, gender);
+        editor.putString(KEY_DATE, date);
+        editor.putString(KEY_PHONENUMBER, phoneNo);
 
         editor.commit();
 

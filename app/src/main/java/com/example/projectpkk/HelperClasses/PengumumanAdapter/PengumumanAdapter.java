@@ -24,45 +24,6 @@ public class PengumumanAdapter extends BaseAdapter {
         this.arrayList = arrayList;
     }
 
-    String[] titles = {
-            "Pengumuman 1",
-            "Pengumuman 2",
-            "Pengumuman 3",
-            "Pengumuman 4",
-            "Pengumuman 5",
-            "Pengumuman 6",
-            "Pengumuman 7",
-            "Pengumuman 8",
-            "Pengumuman 9",
-            "Pengumuman 10"
-    };
-
-    String[] dates = {
-            "31 Januari 2019",
-            "31 Januari 2020",
-            "31 Januari 2021",
-            "31 Januari 2022",
-            "31 Januari 2023",
-            "31 Januari 2024",
-            "31 Januari 2025",
-            "31 Januari 2026",
-            "31 Januari 2027",
-            "31 Januari 2028"
-    };
-
-    String[] descriptions = {
-            "Description 1 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 2 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 3 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 4 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 5 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 6 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 7 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 8 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 9 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet...",
-            "Description 10 lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet..."
-    };
-
     @Override
     public int getCount() {
         return arrayList.size();

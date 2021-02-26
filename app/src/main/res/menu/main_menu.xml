@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="Tentang">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_visi"
+                    android:icon="@drawable/ic_check"
+                    android:title="Visi"/>
+
+                <item
+                    android:id="@+id/nav_misi"
+                    android:icon="@drawable/ic_check"
+                    android:title="Misi"/>
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Galeri">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_foto"
+                    android:icon="@drawable/ic_photo"
+                    android:title="Foto"/>
+
+                <item
+                    android:id="@+id/nav_video"
+                    android:icon="@drawable/ic_video"
+                    android:title="Video Pembelajaran"/>
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
     <group android:checkableBehavior="none">
 
         <item
@@ -11,10 +57,10 @@
             android:id="@+id/nav_share"
             android:icon="@drawable/menu_share_icon"
             android:title="@string/nav_bagikan" />
-<!--        <item-->
-<!--            android:id="@+id/nav_theme"-->
-<!--            android:icon="@drawable/nav_theme"-->
-<!--            android:title="@string/nav_theme" />-->
+        <!--        <item-->
+        <!--            android:id="@+id/nav_theme"-->
+        <!--            android:icon="@drawable/nav_theme"-->
+        <!--            android:title="@string/nav_theme" />-->
 
     </group>
 

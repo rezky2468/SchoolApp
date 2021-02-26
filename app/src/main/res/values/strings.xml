@@ -7,7 +7,7 @@
     <string name="night_mode">Mode Gelap</string>
 
     <!-- TODO: Strings for Navigation View -->
-    <string name="nav_tentang">Tentang</string>
+    <string name="nav_tentang">Tentang Aplikasi</string>
     <string name="nav_bagikan">Bagikan</string>
     <string name="nav_theme">Tema</string>
     <string name="tentang_aplikasi">
@@ -43,7 +43,7 @@
     <string name="app_name">SMK BPPI</string>
     <string name="logo_name">SMK BPPI</string>
     <string name="slogan_name">Bersih Hijau Berkarakter</string>
-    <string name="powered_by">Powered By 12 RPL 1 2019–2020</string>
+    <string name="powered_by">Powered By 12 RPL 1 2020-2021</string>
 
     <!-- TODO: Strings for OnBoarding Screen -->
 

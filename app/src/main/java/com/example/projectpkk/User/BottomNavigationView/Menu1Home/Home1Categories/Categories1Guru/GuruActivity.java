@@ -2,22 +2,19 @@ package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categori
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.projectpkk.HelperClasses.PengajarAdapter.PengajarAdapter;
-import com.example.projectpkk.HelperClasses.PengajarAdapter.PengajarHelperClass;
+import com.example.projectpkk.HelperClasses.GuruAdapter.GuruAdapter;
+import com.example.projectpkk.HelperClasses.GuruAdapter.GuruHelperClass;
 import com.example.projectpkk.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
@@ -32,7 +29,12 @@ import java.util.ArrayList;
 
 public class GuruActivity extends AppCompatActivity {
 
-    ListView myListView;
+    ListView listView;
+    SwipeRefreshLayout swipeRefreshLayout;
+    ArrayList<GuruHelperClass> arrayList;
+    GuruAdapter guruAdapter;
+    String nama, jabatan, ttl, pendidikan, mapel, email, telp;
+
     int[] fotos = {
             R.drawable.guru_anton,
             R.drawable.guru_asep_d_y,
@@ -84,10 +86,85 @@ public class GuruActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_categories_guru);
 
-        myListView = findViewById(R.id.pengajar_list_view);
+        listView = findViewById(R.id.pengajar_list_view);
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_guru);
+        arrayList = new ArrayList<>();
+        guruAdapter = new GuruAdapter(this, arrayList);
 
-        PengajarAdapter pengajarAdapter = new PengajarAdapter(this);
-        myListView.setAdapter(pengajarAdapter);
+        Query query = FirebaseDatabase.getInstance().getReference("guru");
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (int i = 0; i < dataSnapshot.getChildrenCount(); i++) {
+                    GuruHelperClass guruHelperClass = new GuruHelperClass();
+                    String nama = dataSnapshot.child(String.valueOf(i)).child("nama").getValue(String.class);
+                    String mapel = dataSnapshot.child(String.valueOf(i)).child("mapel").getValue(String.class);
+                    guruHelperClass.setNama(nama);
+                    guruHelperClass.setMapel(mapel);
+                    arrayList.add(guruHelperClass);
+                }
+                guruAdapter.notifyDataSetChanged();
+                listView.setAdapter(guruAdapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                guruAdapter.notifyDataSetChanged();
+                listView.setAdapter(guruAdapter);
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                Query _query = FirebaseDatabase.getInstance().getReference("guru");
+                _query.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        for (int i = position; i < dataSnapshot.getChildrenCount(); i++) {
+                        String _nama = dataSnapshot.child(String.valueOf(position)).child("nama").getValue(String.class);
+                        String _jabatan = dataSnapshot.child(String.valueOf(position)).child("jabatan").getValue(String.class);
+                        String _ttl = dataSnapshot.child(String.valueOf(position)).child("ttl").getValue(String.class);
+                        String _pendidikan = dataSnapshot.child(String.valueOf(position)).child("pendidikan").getValue(String.class);
+                        String _mapel = dataSnapshot.child(String.valueOf(position)).child("mapel").getValue(String.class);
+                        String _email = dataSnapshot.child(String.valueOf(position)).child("email").getValue(String.class);
+                        String _telp = dataSnapshot.child(String.valueOf(position)).child("telp").getValue(String.class);
+
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("dataId", position);
+                        bundle.putString("dataNama", _nama);
+                        bundle.putString("dataJabatan", _jabatan);
+                        bundle.putString("dataTtl", _ttl);
+                        bundle.putString("dataPendidikan", _pendidikan);
+                        bundle.putString("dataMapel", _mapel);
+                        bundle.putString("dataEmail", _email);
+                        bundle.putString("dataTelp", _telp);
+                        bundle.putInt("dataFoto", fotos[position]);
+                        GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
+                        bottomSheetDialog.setArguments(bundle);
+                        bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
+
+//                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+            }
+        });
+
 
 //        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 //        DatabaseReference scoresRef = FirebaseDatabase.getInstance().getReference("guru");
@@ -111,38 +188,41 @@ public class GuruActivity extends AppCompatActivity {
 //                    final String emailValue = dataSnapshot.child(snap.getKey()).child("email").getValue(String.class);
 //                    final String telpValue = dataSnapshot.child(snap.getKey()).child("telp").getValue(String.class);
 
-        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                try {
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
 
-                    JSONObject jsonObject = new JSONObject(readPengajarJSON());
-                    JSONArray jsonArray = jsonObject.getJSONArray("guru");
-                    JSONObject _jsonObject = jsonArray.getJSONObject(position);
-                    final String namaValue = _jsonObject.getString("nama");
-                    final String jabatanValue = _jsonObject.getString("jabatan");
-                    final String ttlValue = _jsonObject.getString("ttl");
-                    final String pendidikanValue = _jsonObject.getString("pendidikan");
-                    final String mapelValue = _jsonObject.getString("mapel");
-                    final String emailValue = _jsonObject.getString("email");
-                    final String telpValue = _jsonObject.getString("telp");
 
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("dataId", position);
-                    bundle.putString("dataNama", namaValue);
-                    bundle.putString("dataJabatan", jabatanValue);
-                    bundle.putString("dataTtl", ttlValue);
-                    bundle.putString("dataPendidikan", pendidikanValue);
-                    bundle.putString("dataMapel", mapelValue);
-                    bundle.putString("dataEmail", emailValue);
-                    bundle.putString("dataTelp", telpValue);
-                    bundle.putInt("dataFoto", fotos[position]);
-                    GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
-                    bottomSheetDialog.setArguments(bundle);
-                    bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+//                try {
+
+//                    JSONObject jsonObject = new JSONObject(readPengajarJSON());
+//                    JSONArray jsonArray = jsonObject.getJSONArray("guru");
+//                    JSONObject _jsonObject = jsonArray.getJSONObject(position);
+//                    final String namaValue = _jsonObject.getString("nama");
+//                    final String jabatanValue = _jsonObject.getString("jabatan");
+//                    final String ttlValue = _jsonObject.getString("ttl");
+//                    final String pendidikanValue = _jsonObject.getString("pendidikan");
+//                    final String mapelValue = _jsonObject.getString("mapel");
+//                    final String emailValue = _jsonObject.getString("email");
+//                    final String telpValue = _jsonObject.getString("telp");
+//
+//                    Bundle bundle = new Bundle();
+//                    bundle.putInt("dataId", position);
+//                    bundle.putString("dataNama", namaValue);
+//                    bundle.putString("dataJabatan", jabatanValue);
+//                    bundle.putString("dataTtl", ttlValue);
+//                    bundle.putString("dataPendidikan", pendidikanValue);
+//                    bundle.putString("dataMapel", mapelValue);
+//                    bundle.putString("dataEmail", emailValue);
+//                    bundle.putString("dataTelp", telpValue);
+//                    bundle.putInt("dataFoto", fotos[position]);
+//                    GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
+//                    bottomSheetDialog.setArguments(bundle);
+//                    bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
 //                        }
 
 //                    });
@@ -192,8 +272,8 @@ public class GuruActivity extends AppCompatActivity {
 //                } catch (JSONException e) {
 //                    e.printStackTrace();
 //                }
-            }
-        });
+//            }
+//        });
 
 
     }

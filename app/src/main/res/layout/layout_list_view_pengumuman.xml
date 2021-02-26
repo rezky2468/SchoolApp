@@ -9,10 +9,12 @@
         <TextView
             android:id="@+id/pengumuman_title"
             android:layout_width="wrap_content"
+            android:ellipsize="end"
             android:layout_height="wrap_content"
             android:text="This is title"
             android:textColor="@color/colorOnPrimaryText"
             android:textSize="18sp"
+            android:maxLength="50"
             android:textStyle="bold" />
 
         <TextView
@@ -22,7 +24,6 @@
             android:text="31 Januari 2010"
             android:textSize="10sp"
             android:layout_below="@id/pengumuman_title"
-            android:textStyle="italic"
             android:textColor="@color/colorOnSecondaryText"/>
 
         <TextView

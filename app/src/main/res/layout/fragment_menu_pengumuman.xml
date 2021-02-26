@@ -29,9 +29,35 @@
             android:textColor="@color/colorPrimaryText"
             android:textSize="20sp"/>
 
+        <ImageView
+            android:id="@+id/refresh_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tambah_pengumuman"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="7dp"
+            android:src="@drawable/ic_refresh"
+            app:tint="@color/colorPrimaryIcon" />
+
+        <ImageView
+            android:id="@+id/tambah_pengumuman"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="7dp"
+            android:src="@drawable/add_missing_place_icon"
+            app:tint="@color/colorPrimaryIcon" />
+
+
     </RelativeLayout>
 
-    <RelativeLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_pengumuman"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,8 +68,9 @@
         <ListView
             android:id="@+id/pengumuman_list_view"
             android:layout_width="match_parent"
+            android:scrollbars="none"
             android:layout_height="match_parent" />
 
-    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NotifikasiActivity"></activity>
+        <activity android:name=".User.NavigationView.ListViewDetailActivity" />
+        <activity android:name=".User.ListViewActivity" />
         <activity android:name=".User.NavigationView.TentangActivity" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".Admin.AddNewPengumumanActivity" />
@@ -46,6 +49,19 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".FirebaseCloudMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
     </application>
 
 </manifest>

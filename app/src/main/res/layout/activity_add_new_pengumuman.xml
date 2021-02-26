@@ -20,6 +20,7 @@
         app:layout_constraintBottom_toTopOf="@id/add_new_pengumuman_container">
 
         <ImageView
+            android:id="@+id/pengumuman_tambah_back_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_centerVertical="true"
@@ -49,7 +50,7 @@
             android:padding="15dp">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/pengumuman_judul"
+                android:id="@+id/pengumuman_tambah_judul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Judul Pengumuman"
@@ -66,22 +67,14 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLength="50"
                     android:textColor="@color/colorOnPrimaryText"
                     android:inputType="text"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <DatePicker
-                android:id="@+id/age_picker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:calendarTextColor="@color/colorOnPrimaryText"
-                android:calendarViewShown="false"
-                android:datePickerMode="spinner"
-                android:spinnersShown="true" />
-
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/pengumuman_isi"
+                android:id="@+id/pengumuman_tambah_isi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -104,6 +97,14 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <Button
+                android:id="@+id/pengumuman_tambah_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button1"
+                android:text="Upload Pengumuman"
+                android:textColor="@color/colorOnPrimaryText"/>
 
         </LinearLayout>
 

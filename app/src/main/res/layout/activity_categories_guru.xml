@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/relativeLayout2">
+        app:layout_constraintBottom_toTopOf="@id/swipe_refresh_guru">
 
         <ImageView
             android:id="@+id/back_pressed"
@@ -27,7 +27,7 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="callBackScreen"
-            android:padding="5dp"
+            android:padding="7dp"
             android:src="@drawable/general_back_button"
             app:tint="@color/colorPrimaryIcon" />
 
@@ -42,10 +42,21 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="7dp"
+            android:src="@drawable/ic_refresh"
+            app:tint="@color/colorPrimaryIcon" />
+
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_guru"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,6 +69,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

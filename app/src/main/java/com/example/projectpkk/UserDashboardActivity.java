@@ -51,6 +51,8 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_user_dashboard);
 
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
 //        int theme = getThemeFromPreferences(R.style.AppTheme_RED);
 //        setTheme(theme);
 
@@ -154,7 +156,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             navigationView.bringToFront();
             navigationView.setNavigationItemSelectedListener(this);
 //            navigationView.setCheckedItem(R.id.nav_home);
-            animateNavigationDrawer();
+//            animateNavigationDrawer();
         }
     }
 

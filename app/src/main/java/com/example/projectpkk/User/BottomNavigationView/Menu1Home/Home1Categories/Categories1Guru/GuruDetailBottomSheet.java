@@ -18,6 +18,7 @@ import androidx.annotation.Nullable;
 
 import com.example.projectpkk.Common.LoginSignUp.LoginActivity;
 import com.example.projectpkk.Databases.SessionManager;
+import com.example.projectpkk.GuruHelperClasss;
 import com.example.projectpkk.R;
 import com.example.projectpkk.UserDashboardActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
@@ -214,6 +215,12 @@ public class GuruDetailBottomSheet extends BottomSheetDialogFragment {
 //                Toast.makeText(LoginActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
 //            }
 //        });
+
+//        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+//        DatabaseReference databaseReference = firebaseDatabase.getReference("guru");
+//        GuruHelperClasss guruHelperClasss = new GuruHelperClasss("nama", "jabatan", "ttl", "pendidikan", "mapel", "email", "telp", "foto");
+//        databaseReference.child("41").setValue(guruHelperClasss);
+
         return view;
     }
 
