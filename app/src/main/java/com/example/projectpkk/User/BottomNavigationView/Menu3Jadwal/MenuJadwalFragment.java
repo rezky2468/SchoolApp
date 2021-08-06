@@ -1,18 +1,17 @@
 package com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
 import com.example.projectpkk.CustomViewPager;
 import com.example.projectpkk.HelperClasses.JadwalAdapter.JadwalAdapter;
 import com.example.projectpkk.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 import java.text.SimpleDateFormat;
@@ -21,7 +20,7 @@ public class MenuJadwalFragment extends Fragment {
 
     TabLayout tabLayout;
     CustomViewPager viewPager;
-    TextView tanggal;
+    TextView tanggal, edit;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,6 +30,7 @@ public class MenuJadwalFragment extends Fragment {
         tabLayout = root.findViewById(R.id.jadwal_tab_layout);
         viewPager = root.findViewById(R.id.jadwal_view_pager);
         tanggal = root.findViewById(R.id.tanggal);
+        edit = root.findViewById(R.id.jadwal_edit);
 
         long date = System.currentTimeMillis();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("E, dd MMM yyyy");
@@ -69,6 +69,13 @@ public class MenuJadwalFragment extends Fragment {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
+            }
+        });
+
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), JadwalEditActivity.class));
             }
         });
 

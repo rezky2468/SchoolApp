@@ -21,6 +21,7 @@ public class SessionManager {
     public static final String KEY_PASSWORD = "password";
     public static final String KEY_DATE = "date";
     public static final String KEY_GENDER = "gender";
+    public static final String KEY_LEVEL = "level";
 
     public SessionManager(Context _context) {
         context = _context;
@@ -28,7 +29,7 @@ public class SessionManager {
         editor = userSessions.edit();
     }
 
-    public void createLoginSession(String fullName, String username, String email, String password, String gender, String date, String phoneNo) {
+    public void createLoginSession(String fullName, String username, String email, String password, String gender, String date, String phoneNo, String level) {
 
         editor.putBoolean(IS_LOGIN, true);
 
@@ -39,6 +40,7 @@ public class SessionManager {
         editor.putString(KEY_GENDER, gender);
         editor.putString(KEY_DATE, date);
         editor.putString(KEY_PHONENUMBER, phoneNo);
+        editor.putString(KEY_LEVEL, level);
 
         editor.commit();
 
@@ -46,7 +48,6 @@ public class SessionManager {
 
     public HashMap<String, String> getUsersDetailFromSession() {
         HashMap<String, String> userData = new HashMap<String, String>();
-
         userData.put(KEY_FULLNAME, userSessions.getString(KEY_FULLNAME, null));
         userData.put(KEY_USERNAME, userSessions.getString(KEY_USERNAME, null));
         userData.put(KEY_EMAIL, userSessions.getString(KEY_EMAIL, null));
@@ -54,9 +55,8 @@ public class SessionManager {
         userData.put(KEY_PASSWORD, userSessions.getString(KEY_PASSWORD, null));
         userData.put(KEY_DATE, userSessions.getString(KEY_DATE, null));
         userData.put(KEY_GENDER, userSessions.getString(KEY_GENDER, null));
-
+        userData.put(KEY_LEVEL, userSessions.getString(KEY_LEVEL, null));
         return userData;
-
     }
 
     public boolean checkLogin() {

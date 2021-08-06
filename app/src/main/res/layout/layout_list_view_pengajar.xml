@@ -14,20 +14,20 @@
         android:layout_height="50dp"
         android:layout_marginRight="15dp"
         android:src="@drawable/img1"
-        android:focusable="false"
-        app:civ_border_color="@color/colorSecondaryOne"
-        app:civ_border_width="1dp" />
+        android:focusable="false"/>
 
     <TextView
         android:id="@+id/pengajar_name"
         android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:maxLines="1"
         android:focusable="false"
         android:layout_toRightOf="@id/pengajar_image"
         android:text="Nama Guru"
         android:textColor="@color/colorOnPrimaryText"
-        android:textSize="14dp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
@@ -35,10 +35,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:focusable="false"
+        android:ellipsize="end"
+        android:maxLines="1"
         android:layout_below="@id/pengajar_name"
         android:layout_toRightOf="@id/pengajar_image"
         android:text="Ini adalah guru mapel.."
         android:textColor="@color/colorOnSecondaryText"
-        android:textSize="12dp" />
+        android:textSize="14sp" />
 
 </RelativeLayout>

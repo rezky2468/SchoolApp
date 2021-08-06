@@ -20,6 +20,7 @@
             android:paddingRight="10dp">
 
             <TextView
+                android:id="@+id/label_jadwal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -28,6 +29,17 @@
                 android:text="Jadwal Pelajaran"
                 android:textColor="@color/colorPrimaryText"
                 android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/jadwal_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/label_jadwal"
+                android:text="Edit"
+                android:textColor="#76FF03"
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/tanggal"
@@ -59,5 +71,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </LinearLayout>

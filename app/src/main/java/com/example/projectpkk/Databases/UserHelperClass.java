@@ -2,9 +2,9 @@ package com.example.projectpkk.Databases;
 
 public class UserHelperClass {
 
-    String fullName, username, email, password, gender, date, phoneNo;
+    String fullName, username, email, password, gender, date, phoneNo, level;
 
-    public UserHelperClass(String fullName, String username, String email, String password, String gender, String date, String phoneNo) {
+    public UserHelperClass(String fullName, String username, String email, String password, String gender, String date, String phoneNo, String level) {
         this.fullName = fullName;
         this.username = username;
         this.email = email;
@@ -12,6 +12,7 @@ public class UserHelperClass {
         this.gender = gender;
         this.date = date;
         this.phoneNo = phoneNo;
+        this.level = level;
     }
 
     public String getFullName() {
@@ -68,5 +69,13 @@ public class UserHelperClass {
 
     public void setPhoneNo(String phoneNo) {
         this.phoneNo = phoneNo;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 }

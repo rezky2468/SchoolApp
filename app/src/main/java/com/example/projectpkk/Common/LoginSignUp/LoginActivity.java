@@ -15,11 +15,13 @@ import android.widget.Toast;
 
 import com.example.projectpkk.Databases.CheckInternet;
 import com.example.projectpkk.Databases.SessionManager;
+import com.example.projectpkk.Databases.UserHelperClass;
 import com.example.projectpkk.R;
 import com.example.projectpkk.UserDashboardActivity;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
@@ -30,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
     CountryCodePicker countryCodePicker;
     TextInputLayout phoneNumber, password;
     RelativeLayout progressBar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,11 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.login_password);
         progressBar = findViewById(R.id.progress_bar);
 
+
+//        FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
+//        DatabaseReference reference = rootNode.getReference("Users");
+//        UserHelperClass addNewUser = new UserHelperClass("Administrator", "admin123", "admin123@gmail.com", "123", "Laki-laki", "24 April 1999", "+6280000000000");
+//        reference.child("+6280000000000").setValue(addNewUser);
 
     }
 
@@ -72,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
         final String _completePhoneNumber = "+" + countryCodePicker.getFullNumber() + _phoneNumber;
 
         // Check weather user exists or not in database
-        Query checkUser = FirebaseDatabase.getInstance().getReference("Users").orderByChild("phoneNo").equalTo(_completePhoneNumber);
+        Query checkUser = FirebaseDatabase.getInstance().getReference("akun-user").child(_completePhoneNumber);
 
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -81,28 +87,30 @@ public class LoginActivity extends AppCompatActivity {
                     phoneNumber.setError(null);
                     phoneNumber.setErrorEnabled(false);
 
-                    String systemPassword = dataSnapshot.child(_completePhoneNumber).child("password").getValue(String.class);
+                    String systemPassword = dataSnapshot.child("password").getValue(String.class);
                     if (systemPassword.equals(_password)) {
                         phoneNumber.setError(null);
                         phoneNumber.setErrorEnabled(false);
 
-                        String _fullName = dataSnapshot.child(_completePhoneNumber).child("fullName").getValue(String.class);
-                        String _username = dataSnapshot.child(_completePhoneNumber).child("username").getValue(String.class);
-                        String _email = dataSnapshot.child(_completePhoneNumber).child("email").getValue(String.class);
-                        String _gender = dataSnapshot.child(_completePhoneNumber).child("gender").getValue(String.class);
-                        String _date = dataSnapshot.child(_completePhoneNumber).child("date").getValue(String.class);
-                        String _phoneNo = dataSnapshot.child(_completePhoneNumber).child("phoneNo").getValue(String.class);
-                        String _password = dataSnapshot.child(_completePhoneNumber).child("password").getValue(String.class);
+                        String _fullName = dataSnapshot.child("fullName").getValue(String.class);
+                        String _username = dataSnapshot.child("username").getValue(String.class);
+                        String _email = dataSnapshot.child("email").getValue(String.class);
+                        String _gender = dataSnapshot.child("gender").getValue(String.class);
+                        String _date = dataSnapshot.child("date").getValue(String.class);
+                        String _phoneNo = dataSnapshot.child("phoneNo").getValue(String.class);
+                        String _password = dataSnapshot.child("password").getValue(String.class);
+                        String _level = dataSnapshot.child("level").getValue(String.class);
 
                         // Create a Session
                         SessionManager sessionManager = new SessionManager(LoginActivity.this);
-                        sessionManager.createLoginSession(_fullName, _username, _email, _phoneNo, _password, _date, _gender);
+                        sessionManager.createLoginSession(_fullName, _username, _email, _password, _phoneNo, _date, _gender, _level);
 
                         startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
 
 //                        Toast.makeText(LoginActivity.this, _fullName + "\n" + _email + "\n" + _phoneNo + "\n" + _date, Toast.LENGTH_SHORT).show();
                         Toast.makeText(LoginActivity.this, "Anda berhasil login!", Toast.LENGTH_SHORT).show();
                         progressBar.setVisibility(View.GONE);
+                        finish();
 
                     } else {
                         progressBar.setVisibility(View.GONE);
@@ -120,6 +128,8 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        
 
     }
 

@@ -20,14 +20,14 @@
 
         <ImageView
             android:id="@+id/back_pressed"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
             android:onClick="callBackScreen"
-            android:padding="7dp"
+            android:padding="3dp"
             android:src="@drawable/general_back_button"
             app:tint="@color/colorPrimaryIcon" />
 
@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
+            android:fontFamily="@font/montserrat_bold"
             android:layout_toRightOf="@id/back_pressed"
             android:text="@string/guru"
             android:textColor="@color/colorPrimaryText"

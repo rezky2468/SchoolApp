@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorSurface"
     android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
     android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/pengumuman_title"
             android:layout_width="wrap_content"
-            android:ellipsize="end"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
             android:text="This is title"
             android:textColor="@color/colorOnPrimaryText"
-            android:textSize="18sp"
-            android:maxLength="50"
-            android:textStyle="bold" />
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/pengumuman_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:text="31 Januari 2010"
-            android:textSize="10sp"
-            android:layout_below="@id/pengumuman_title"
-            android:textColor="@color/colorOnSecondaryText"/>
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorOnSecondaryText"
+            android:textSize="12sp"/>
 
-        <TextView
-            android:id="@+id/pengumuman_desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pengumuman_date"
-            android:maxLength="150"
-            android:maxLines="2"
-            android:text="This is description about the announcement. You can type a little bit here. Just a little but for testing... This is description about the announcement. You can type a little bit here. Just a little but for testing..."
-            android:textColor="@color/colorOnPrimaryText"
-            android:textSize="12sp"
-            android:ellipsize="end"/>
+    </RelativeLayout>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/pengumuman_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="2"
+        android:text="This is description about the announcement. You can type a little bit here. Just a little but for testing... This is description about the announcement. You can type a little bit here. Just a little but for testing..."
+        android:textColor="@color/colorOnPrimaryText"
+        android:textSize="14sp" />
+
+</LinearLayout>

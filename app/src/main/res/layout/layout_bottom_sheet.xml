@@ -10,12 +10,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_black"
         android:gravity="center"
         android:padding="18dp"
         android:text="Data Guru"
         android:textColor="@color/colorOnPrimaryText"
         android:textSize="25sp"
-        android:fontFamily="@font/muli_black"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -26,57 +26,72 @@
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/data_guru_foto"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/img1"
             app:riv_corner_radius="10dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="horizontal">
 
-            <TextView
-                android:id="@+id/data_guru_nama"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nama Lengkap"
-                android:textColor="@color/colorOnPrimaryText"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/data_guru_jabatan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorOnSecondaryText"
-                android:text="Jabatan"/>
+                <TextView
+                    android:id="@+id/data_guru_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:textColor="@color/colorOnPrimaryText"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/data_guru_tanggal_lahir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorOnSecondaryText"
-                android:text="Tanggal Lahir"/>
+                <TextView
+                    android:id="@+id/data_guru_jenis_kelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/colorOnSecondaryText" />
 
-            <TextView
-                android:id="@+id/data_guru_pendidikan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorOnSecondaryText"
-                android:text="Pendidikan"/>
+                <TextView
+                    android:id="@+id/data_guru_jabatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jabatan"
+                    android:textColor="@color/colorOnSecondaryText" />
 
-            <TextView
-                android:id="@+id/data_guru_mapel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorOnSecondaryText"
-                android:text="Mapel"/>
+                <TextView
+                    android:id="@+id/data_guru_tempat_tanggal_lahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat, Tanggal Lahir"
+                    android:textColor="@color/colorOnSecondaryText" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/data_guru_pendidikan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan"
+                    android:textColor="@color/colorOnSecondaryText" />
+
+                <TextView
+                    android:id="@+id/data_guru_mapel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapel"
+                    android:textColor="@color/colorOnSecondaryText" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
 
     </LinearLayout>
 
@@ -93,9 +108,9 @@
             android:id="@+id/icon_email_guru"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
             android:contentDescription="@string/app_name"
-            android:layout_centerVertical="true"
             android:src="@drawable/email_icon"
             app:tint="@color/colorSecondaryIcon" />
 
@@ -103,9 +118,9 @@
             android:id="@+id/data_guru_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
-            android:layout_centerVertical="true"
             android:layout_toRightOf="@id/icon_email_guru"
             android:text="admin123@gmail.com"
             android:textColor="@color/colorOnPrimaryText"
@@ -115,8 +130,8 @@
             android:id="@+id/btn_email_guru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground"/>
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
 
 
     </RelativeLayout>
@@ -125,16 +140,16 @@
         android:id="@+id/notlpguru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:gravity="center_vertical"
-        android:padding="12dp"
-        android:layout_marginBottom="15dp">
+        android:padding="12dp">
 
         <ImageView
             android:id="@+id/icontlpguru"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginStart="10dp"
             android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/field_phone__number_icon"
             app:tint="@color/colorSecondaryIcon" />
@@ -143,11 +158,11 @@
             android:id="@+id/data_guru_telp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="25dp"
-            android:text="+62 895 9345 9556"
-            android:layout_centerVertical="true"
             android:layout_toRightOf="@id/icontlpguru"
+            android:text="+62 895 9345 9556"
             android:textColor="@color/colorOnPrimaryText"
             android:textSize="15sp" />
 
@@ -155,8 +170,8 @@
             android:id="@+id/btntelpguru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:background="?attr/selectableItemBackground"/>
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
 
     </RelativeLayout>
 

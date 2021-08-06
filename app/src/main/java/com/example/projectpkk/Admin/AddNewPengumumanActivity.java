@@ -1,8 +1,5 @@
 package com.example.projectpkk.Admin;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +10,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.projectpkk.HelperClasses.PengumumanAdapter.PengumumanTambahHelperClass;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.projectpkk.HelperClasses.PengumumanAdapter.PengumumanHelperClass;
 import com.example.projectpkk.R;
 import com.example.projectpkk.UserDashboardActivity;
 import com.google.android.material.textfield.TextInputLayout;
@@ -40,8 +40,6 @@ public class AddNewPengumumanActivity extends AppCompatActivity {
         isiET = findViewById(R.id.pengumuman_tambah_isi);
         saveBtn = findViewById(R.id.pengumuman_tambah_save_btn);
 
-
-
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,9 +50,6 @@ public class AddNewPengumumanActivity extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(AddNewPengumumanActivity.this, R.style.AlertDialog);
                 builder.setMessage("Semua data sudah benar?")
@@ -73,11 +68,11 @@ public class AddNewPengumumanActivity extends AppCompatActivity {
 
                                 FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
                                 DatabaseReference databaseReference = firebaseDatabase.getReference("pengumuman");
-                                PengumumanTambahHelperClass pengumumanTambahHelperClass = new PengumumanTambahHelperClass(judul, isi, tanggal);
+                                PengumumanHelperClass pengumumanTambahHelperClass = new PengumumanHelperClass(timeStampString, judul, tanggal, isi);
                                 databaseReference.child(timeStampString).setValue(pengumumanTambahHelperClass);
 
                                 startActivity(new Intent(getApplicationContext(), UserDashboardActivity.class));
-                                Toast.makeText(getApplicationContext(), "Judul: " + judul + "\nIsi: " + tanggal + "\nTanggal: " + tanggal, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Pengumuman berhasil ditambahkan!", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {

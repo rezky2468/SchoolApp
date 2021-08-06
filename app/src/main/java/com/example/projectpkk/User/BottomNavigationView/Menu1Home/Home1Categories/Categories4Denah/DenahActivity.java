@@ -2,12 +2,10 @@ package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categori
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.example.projectpkk.Common.SearchActivity;
 import com.example.projectpkk.R;
 
 public class DenahActivity extends AppCompatActivity {

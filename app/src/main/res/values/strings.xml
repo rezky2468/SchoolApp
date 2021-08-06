@@ -797,8 +797,8 @@
 
     <!-- General Strings -->
     <string name="retailer_heading">Grow\nYour Skill</string>
-    <string name="retailer_tag_line">Kita bakal bantu kalian buat ngembangin skill kalian!</string>
-    <string name="masuk">Masuk</string>
+    <string name="retailer_tag_line">Login sekarang juga agar kamu bisa menggunakan semua fitur yang ada</string>
+    <string name="masuk">Login</string>
     <string name="daftar">Daftar</string>
     <string name="mari_bergabung">Mari Bergabung</string>
     <string name="ingat_saya">Ingat Saya?</string>
@@ -835,5 +835,16 @@
     <string name="new_password">Password Baru</string>
     <string name="confirm_password">Konfirmasi Password</string>
     <string name="verify_code">Kode Verifikasi</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

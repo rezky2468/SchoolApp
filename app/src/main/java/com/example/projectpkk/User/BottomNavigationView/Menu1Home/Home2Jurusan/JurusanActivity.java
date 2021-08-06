@@ -1,7 +1,5 @@
 package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home2Jurusan;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -9,6 +7,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projectpkk.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -39,7 +39,7 @@ public class JurusanActivity extends AppCompatActivity {
             jurusanArtikel.setText(Html.fromHtml(getString(R.string.artikelJurusanRPL)));
             jurusanNamaKaprodi.setText("Asep Dimyati Yusup, St");
             jurusanImage.setImageResource(R.drawable.jurusan1);
-            jurusanFotoKaprodi.setImageResource(R.drawable.guru_asep_d_y);
+            jurusanFotoKaprodi.setImageResource(R.drawable.guru_asep_d);
             fabShareJurusan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

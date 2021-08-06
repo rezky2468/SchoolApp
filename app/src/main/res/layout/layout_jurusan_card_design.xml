@@ -59,13 +59,6 @@
             </LinearLayout>
 
 
-            <!--            <RatingBar-->
-            <!--                android:id="@+id/rating_bar"-->
-            <!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_below="@id/featured_title"-->
-            <!--                android:rating="4.5" />-->
 
             <TextView
                 android:id="@+id/featured_desc"

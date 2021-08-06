@@ -1,5 +1,11 @@
 package com.example.projectpkk;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -8,24 +14,18 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-
 import com.example.projectpkk.Databases.SessionManager;
-import com.example.projectpkk.Databases.UserHelperClass;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.MenuHomeFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuPengumumanFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment;
-import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;;
+import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileNoAccountFragment;
+import com.example.projectpkk.User.NavigationView.FotoActivity;
 import com.example.projectpkk.User.NavigationView.TentangActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
+;
 
 public class UserDashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -164,6 +164,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
+            case R.id.nav_foto:
+                startActivity(new Intent(getApplicationContext(), FotoActivity.class));
+                drawerLayout.closeDrawer(GravityCompat.START);
+                break;
             case R.id.nav_tentang:
                 startActivity(new Intent(getApplicationContext(), TentangActivity.class));
                 drawerLayout.closeDrawer(GravityCompat.START);

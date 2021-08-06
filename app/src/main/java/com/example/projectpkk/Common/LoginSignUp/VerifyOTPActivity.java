@@ -1,14 +1,15 @@
 package com.example.projectpkk.Common.LoginSignUp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.chaos.view.PinView;
 import com.example.projectpkk.Databases.UserHelperClass;
@@ -91,7 +92,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 phoneNo,        // Phone number to verify
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
-                TaskExecutors.MAIN_THREAD,               // Activity (for callback binding)
+                (Activity) TaskExecutors.MAIN_THREAD,               // Activity (for callback binding)
                 mCallbacks);        // OnVerificationStateChangedCallbacks
 
     }
@@ -138,8 +139,8 @@ public class VerifyOTPActivity extends AppCompatActivity {
     private void storeNewUsersData() {
 
         FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
-        DatabaseReference reference = rootNode.getReference("Users");
-        UserHelperClass addNewUser = new UserHelperClass(fullName, username, email, password, gender, date, phoneNo);
+        DatabaseReference reference = rootNode.getReference("akun-user");
+        UserHelperClass addNewUser = new UserHelperClass(fullName, username, email, password, gender, date, phoneNo, "user");
         reference.child(phoneNo).setValue(addNewUser);
 
         // DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();

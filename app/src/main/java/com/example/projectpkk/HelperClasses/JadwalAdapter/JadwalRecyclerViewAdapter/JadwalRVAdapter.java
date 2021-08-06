@@ -23,7 +23,7 @@ public class JadwalRVAdapter extends RecyclerView.Adapter<JadwalRVAdapter.Jadwal
     @NonNull
     @Override
     public JadwalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_jadwal_hari, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_recycler_jadwal_hari, parent, false);
         JadwalViewHolder jadwalViewHolder = new JadwalViewHolder(view);
         return jadwalViewHolder;
     }

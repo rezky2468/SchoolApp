@@ -6,18 +6,36 @@
     android:background="@color/colorSurface"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/jadwal_hari"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="40dp"
-        android:fontFamily="@font/baloo"
-        android:text="Senin"
-        android:textAlignment="center"
-        android:textColor="@color/colorSecondaryTwo"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jadwal_hari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="Senin"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondaryTwo"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/edit_icon"
+            app:tint="@color/colorSecondaryTwo" />
+
+    </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

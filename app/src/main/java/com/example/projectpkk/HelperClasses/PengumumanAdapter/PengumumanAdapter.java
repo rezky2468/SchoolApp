@@ -22,6 +22,7 @@ public class PengumumanAdapter extends BaseAdapter {
     public PengumumanAdapter(Context context, ArrayList arrayList) {
         this.context = context;
         this.arrayList = arrayList;
+//        arrayList.clear();
     }
 
     @Override

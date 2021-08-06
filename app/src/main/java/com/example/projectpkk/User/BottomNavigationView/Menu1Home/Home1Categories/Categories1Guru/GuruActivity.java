@@ -1,31 +1,32 @@
 package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.example.projectpkk.HelperClasses.GuruAdapter.GuruAdapter;
 import com.example.projectpkk.HelperClasses.GuruAdapter.GuruHelperClass;
+import com.example.projectpkk.Parcelable.Guru;
 import com.example.projectpkk.R;
+import com.example.projectpkk.TeacherModel;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
+
+//import com.example.projectpkk.contoh;
 
 public class GuruActivity extends AppCompatActivity {
 
@@ -34,50 +35,6 @@ public class GuruActivity extends AppCompatActivity {
     ArrayList<GuruHelperClass> arrayList;
     GuruAdapter guruAdapter;
     String nama, jabatan, ttl, pendidikan, mapel, email, telp;
-
-    int[] fotos = {
-            R.drawable.guru_anton,
-            R.drawable.guru_asep_d_y,
-            R.drawable.guru_wahyu,
-            R.drawable.guru_teli,
-            R.drawable.guru_sigid,
-            R.drawable.guru_indra,
-            R.drawable.guru_devi,
-            R.drawable.guru_abin,
-            R.drawable.guru_iis,
-            R.drawable.guru_asep_y,
-            R.drawable.guru_egi,
-            R.drawable.no_photo,
-            R.drawable.guru_mega,
-            R.drawable.guru_nurwita,
-            R.drawable.no_photo,
-            R.drawable.guru_rina,
-            R.drawable.guru_wahyudi,
-            R.drawable.guru_liku,
-            R.drawable.guru_indira,
-            R.drawable.guru_fitria,
-            R.drawable.no_photo,
-            R.drawable.guru_pravita,
-            R.drawable.guru_eka,
-            R.drawable.guru_irma,
-            R.drawable.guru_rini,
-            R.drawable.guru_isma,
-            R.drawable.guru_ai,
-            R.drawable.guru_yogie,
-            R.drawable.guru_odih,
-            R.drawable.guru_fajar,
-            R.drawable.guru_nirwan,
-            R.drawable.guru_neni,
-            R.drawable.guru_kiki,
-            R.drawable.guru_lisda,
-            R.drawable.guru_hani,
-            R.drawable.guru_m_sobar,
-            R.drawable.guru_sinta,
-            R.drawable.guru_andiyanto,
-            R.drawable.guru_guruh,
-            R.drawable.guru_handi,
-            R.drawable.guru_uman
-    };
 
 
     @Override
@@ -91,20 +48,27 @@ public class GuruActivity extends AppCompatActivity {
         arrayList = new ArrayList<>();
         guruAdapter = new GuruAdapter(this, arrayList);
 
-        Query query = FirebaseDatabase.getInstance().getReference("guru");
-        query.addValueEventListener(new ValueEventListener() {
+
+        final List<TeacherModel> teacherList = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference("akun-guru").orderByChild("nama").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (int i = 0; i < dataSnapshot.getChildrenCount(); i++) {
-                    GuruHelperClass guruHelperClass = new GuruHelperClass();
-                    String nama = dataSnapshot.child(String.valueOf(i)).child("nama").getValue(String.class);
-                    String mapel = dataSnapshot.child(String.valueOf(i)).child("mapel").getValue(String.class);
-                    guruHelperClass.setNama(nama);
-                    guruHelperClass.setMapel(mapel);
-                    arrayList.add(guruHelperClass);
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot data : dataSnapshot.getChildren()) {
+                        GuruHelperClass guruHelperClass = new GuruHelperClass();
+                        String foto = data.child("gambar").getValue(String.class);
+                        String nama = data.child("nama").getValue(String.class);
+                        String mapel = data.child("mapel").getValue(String.class);
+                        guruHelperClass.setGambar(foto);
+                        guruHelperClass.setNama(nama);
+                        guruHelperClass.setMapel(mapel);
+                        arrayList.add(guruHelperClass);
+//                        TeacherModel teacher = data.getValue(TeacherModel.class);
+//                        teacherList.add(teacher);
+                    }
+                    guruAdapter.notifyDataSetChanged();
+                    listView.setAdapter(guruAdapter);
                 }
-                guruAdapter.notifyDataSetChanged();
-                listView.setAdapter(guruAdapter);
             }
 
             @Override
@@ -112,6 +76,50 @@ public class GuruActivity extends AppCompatActivity {
 
             }
         });
+
+//        final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("akun-guru");
+//        Query query = FirebaseDatabase.getInstance().getReference("akun-guru").orderByChild("nama");
+//        query.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                for (int i = 0; i < dataSnapshot.getChildrenCount(); i++) {
+//                    GuruHelperClass guruHelperClass = new GuruHelperClass();
+//                    String nama = dataSnapshot.child(String.valueOf(i)).child("nama").getValue(String.class);
+//                    String mapel = dataSnapshot.child(String.valueOf(i)).child("mapel").getValue(String.class);
+//                    guruHelperClass.setNama(nama);
+//                    guruHelperClass.setMapel(mapel);
+//                    arrayList.add(guruHelperClass);
+//                }
+//                guruAdapter.notifyDataSetChanged();
+//                listView.setAdapter(guruAdapter);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+
+//        databaseReference.orderByChild("nama").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                for (DataSnapshot data : dataSnapshot.getChildren()) {
+//                    GuruHelperClass guruHelperClass = new GuruHelperClass();
+//                    String nama = data.child("nama").getValue(String.class);
+//                    String mapel = data.child("mapel").getValue(String.class);
+//                    guruHelperClass.setNama(nama);
+//                    guruHelperClass.setMapel(mapel);
+//                    arrayList.add(guruHelperClass);
+//                }
+//                guruAdapter.notifyDataSetChanged();
+//                listView.setAdapter(guruAdapter);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -126,35 +134,52 @@ public class GuruActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
 
-                Query _query = FirebaseDatabase.getInstance().getReference("guru");
+                Query _query = FirebaseDatabase.getInstance().getReference("akun-guru").orderByChild("nama");
                 _query.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                        for (int i = position; i < dataSnapshot.getChildrenCount(); i++) {
-                        String _nama = dataSnapshot.child(String.valueOf(position)).child("nama").getValue(String.class);
-                        String _jabatan = dataSnapshot.child(String.valueOf(position)).child("jabatan").getValue(String.class);
-                        String _ttl = dataSnapshot.child(String.valueOf(position)).child("ttl").getValue(String.class);
-                        String _pendidikan = dataSnapshot.child(String.valueOf(position)).child("pendidikan").getValue(String.class);
-                        String _mapel = dataSnapshot.child(String.valueOf(position)).child("mapel").getValue(String.class);
-                        String _email = dataSnapshot.child(String.valueOf(position)).child("email").getValue(String.class);
-                        String _telp = dataSnapshot.child(String.valueOf(position)).child("telp").getValue(String.class);
+                        Guru guru = null;
+                        ArrayList<Guru> arrayList = new ArrayList();
+                        for (DataSnapshot data : dataSnapshot.getChildren()) {
+                            String _nip = data.child("username").getValue().toString();
+                            String _nama = data.child("nama").getValue().toString();
+                            String _jenis_kelamin = data.child("jenis-kelamin").getValue().toString();
+                            String _username = data.child("username").getValue().toString();
+                            String _password = data.child("password").getValue().toString();
+                            String _jabatan = data.child("jabatan").getValue().toString();
+                            String _mapel = data.child("mapel").getValue().toString();
+                            String _pendidikan = data.child("pendidikan").getValue().toString();
+                            String _tempat_lahir = data.child("tempat-lahir").getValue().toString();
+                            String _tanggal_lahir = data.child("tanggal-lahir").getValue().toString();
+                            String _email = data.child("email").getValue().toString();
+                            String _no_telp = data.child("no-telp").getValue().toString();
+                            String _gambar = data.child("gambar").getValue().toString();
+                            String _level = data.child("level").getValue().toString();
 
+                            guru = new Guru(_nip, _nama, _jenis_kelamin, _username, _password, _jabatan, _mapel, _pendidikan, _tempat_lahir, _tanggal_lahir, _email, _no_telp, _gambar, _level);
+//                            Intent intent = new Intent(getApplicationContext(), GuruDetailBottomSheet.class);
+//                            intent.putExtra("GURU", guru);
+//                            startActivity(intent);
+
+                            arrayList.add(guru);
+
+                        }
                         Bundle bundle = new Bundle();
-                        bundle.putInt("dataId", position);
-                        bundle.putString("dataNama", _nama);
-                        bundle.putString("dataJabatan", _jabatan);
-                        bundle.putString("dataTtl", _ttl);
-                        bundle.putString("dataPendidikan", _pendidikan);
-                        bundle.putString("dataMapel", _mapel);
-                        bundle.putString("dataEmail", _email);
-                        bundle.putString("dataTelp", _telp);
-                        bundle.putInt("dataFoto", fotos[position]);
+                        bundle.putParcelable("GURU", arrayList.get(position));
+//                            bundle.putInt("dataId", position);
+//                            bundle.putString("dataNama", _nama);
+//                            bundle.putString("dataJabatan", _jabatan);
+//                            bundle.putString("dataTtl", _ttl);
+//                            bundle.putString("dataPendidikan", _pendidikan);
+//                            bundle.putString("dataMapel", _mapel);
+//                            bundle.putString("dataEmail", _email);
+//                            bundle.putString("dataTelp", _telp);
+//                            bundle.putInt("dataFoto", fotos[position]);
                         GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
                         bottomSheetDialog.setArguments(bundle);
                         bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
-
-//                        }
                     }
+//                    }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
@@ -163,7 +188,56 @@ public class GuruActivity extends AppCompatActivity {
                 });
 
             }
+//        });
+
+//                contoh.teacherList = teacherList;
+
+//                Object data = parent.getItemAtPosition(position);
+//            }
         });
+
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+//
+//                Query _query = FirebaseDatabase.getInstance().getReference("akun-guru");
+//                _query.addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+////                        for (int i = position; i < dataSnapshot.getChildrenCount(); i++) {
+//                        String _nama = dataSnapshot.child(String.valueOf(position)).child("nama").getValue(String.class);
+//                        String _jabatan = dataSnapshot.child(String.valueOf(position)).child("jabatan").getValue(String.class);
+//                        String _ttl = dataSnapshot.child(String.valueOf(position)).child("ttl").getValue(String.class);
+//                        String _pendidikan = dataSnapshot.child(String.valueOf(position)).child("pendidikan").getValue(String.class);
+//                        String _mapel = dataSnapshot.child(String.valueOf(position)).child("mapel").getValue(String.class);
+//                        String _email = dataSnapshot.child(String.valueOf(position)).child("email").getValue(String.class);
+//                        String _telp = dataSnapshot.child(String.valueOf(position)).child("telp").getValue(String.class);
+//
+//                        Bundle bundle = new Bundle();
+//                        bundle.putInt("dataId", position);
+//                        bundle.putString("dataNama", _nama);
+//                        bundle.putString("dataJabatan", _jabatan);
+//                        bundle.putString("dataTtl", _ttl);
+//                        bundle.putString("dataPendidikan", _pendidikan);
+//                        bundle.putString("dataMapel", _mapel);
+//                        bundle.putString("dataEmail", _email);
+//                        bundle.putString("dataTelp", _telp);
+//                        bundle.putInt("dataFoto", fotos[position]);
+//                        GuruDetailBottomSheet bottomSheetDialog = new GuruDetailBottomSheet();
+//                        bottomSheetDialog.setArguments(bundle);
+//                        bottomSheetDialog.show(getSupportFragmentManager(), "exampleBottomSheet");
+//
+////                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//                });
+//
+//            }
+//        });
 
 
 //        FirebaseDatabase.getInstance().setPersistenceEnabled(true);

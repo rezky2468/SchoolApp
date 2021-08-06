@@ -2,12 +2,17 @@ package com.example.projectpkk.HelperClasses.PengumumanAdapter;
 
 public class PengumumanTambahHelperClass {
 
-    String judul, isi, tanggal;
+    String timestamp, judul, isi, tanggal;
 
-    public PengumumanTambahHelperClass(String judul, String isi, String tanggal) {
+    public PengumumanTambahHelperClass(String timestamp, String judul, String isi, String tanggal) {
+        this.timestamp = timestamp;
         this.judul = judul;
         this.isi = isi;
         this.tanggal = tanggal;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
     }
 
     public String getJudul() {

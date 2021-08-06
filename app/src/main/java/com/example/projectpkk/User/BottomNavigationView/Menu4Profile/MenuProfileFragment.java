@@ -6,10 +6,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.fragment.app.Fragment;
-
 import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,13 +17,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+
 import com.example.projectpkk.Common.LoginSignUp.RetailerStartUpScreenActivity;
 import com.example.projectpkk.Databases.SessionManager;
 import com.example.projectpkk.Databases.UserHelperClass;
 import com.example.projectpkk.NotifikasiActivity;
 import com.example.projectpkk.R;
 import com.example.projectpkk.UserDashboardActivity;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -38,8 +36,8 @@ public class MenuProfileFragment extends Fragment {
     Button logoutBtn;
     TextView fullNameTV, usernameTV, emailTV, phoneTV, dobTV;
     ImageView editProfile;
-    String _fullName, _username, _email, _phone, _dob, _password, _gender;
-    String newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender;
+    String _fullName, _username, _email, _phone, _dob, _password, _gender, _level;
+    String newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender, newLevel;
     EditText fullNameET, usernameET, emailET, phoneET, dateET;
 
     @Override
@@ -65,6 +63,7 @@ public class MenuProfileFragment extends Fragment {
         _gender = hashMap.get(SessionManager.KEY_GENDER);
         _phone = hashMap.get(SessionManager.KEY_PHONENUMBER);
         _dob = hashMap.get(SessionManager.KEY_DATE);
+        _level = hashMap.get(SessionManager.KEY_LEVEL);
 
         fullNameTV.setText(_fullName);
         usernameTV.setText(_username);
@@ -158,14 +157,15 @@ public class MenuProfileFragment extends Fragment {
                         newGender = _gender;
                         newDate = dateET.getText().toString().trim();
                         newPhone = phoneET.getText().toString().trim();
+                        newLevel = _level;
 
                         FirebaseDatabase rootNode = FirebaseDatabase.getInstance();
                         DatabaseReference reference = rootNode.getReference("Users");
-                        UserHelperClass editProfil = new UserHelperClass(newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender);
+                        UserHelperClass editProfil = new UserHelperClass(newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender, "user");
                         reference.child(newPhone).setValue(editProfil);
 
                         SessionManager sessionManager = new SessionManager(getActivity());
-                        sessionManager.createLoginSession(newFullName, newUserName, newEmail, newPhone, newDate, newPassword, newGender);
+                        sessionManager.createLoginSession(newFullName, newUserName, newEmail, newPassword, newPhone, newDate, newGender, newLevel);
 
                         fullNameTV.setText(newFullName);
                         usernameTV.setText(newUserName);

@@ -19,13 +19,13 @@
 
         <ImageView
             android:id="@+id/back_pressed"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:onClick="callBackScreen"
-            android:padding="5dp"
+            android:padding="3dp"
             android:src="@drawable/general_back_button"
             app:tint="@color/colorPrimaryIcon" />
 
@@ -35,6 +35,7 @@
             android:textStyle="bold"
             android:textSize="22sp"
             android:text="Ekskul"
+            android:fontFamily="@font/montserrat_bold"
             android:textColor="@color/colorPrimaryText"
             android:layout_toRightOf="@id/back_pressed"
             android:layout_centerVertical="true"
@@ -46,6 +47,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/colorSecondaryOne"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,231 +57,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="20dp"
-            android:background="@color/colorSurface"
             android:orientation="vertical"
             android:paddingTop="20dp">
 
-            <androidx.cardview.widget.CardView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ekskul_recycler"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-                
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Futsal"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:paddingHorizontal="20dp"
-                        android:src="@drawable/ekskul_futsal"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-                
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Voli"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ekskul_voli"
-                        android:paddingHorizontal="20dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pramuka"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:paddingHorizontal="20dp"
-                        android:src="@drawable/ekskul_pramuka"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="PMR"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ekskul_pmr"
-                        android:paddingHorizontal="20dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AndroIT"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ekskul_androit"
-                        android:paddingHorizontal="20dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/colorSecondaryOne"
-                app:cardCornerRadius="20dp"
-                android:layout_marginBottom="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Paduan Suara"
-                        android:textStyle="bold"
-                        android:textSize="30sp"
-                        android:fontFamily="@font/baloo"
-                        android:textColor="@color/colorSecondaryTwo"
-                        android:padding="25dp"
-                        android:textAlignment="center"/>
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:paddingHorizontal="20dp"
-                        android:src="@drawable/ekskul_paduan_suara"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        app:tint="@color/colorSecondaryTwo" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
