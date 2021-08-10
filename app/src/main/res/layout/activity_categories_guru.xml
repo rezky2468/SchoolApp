@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="32dp"
             android:fontFamily="@font/montserrat_bold"
             android:layout_toRightOf="@id/back_pressed"
             android:text="@string/guru"
@@ -44,14 +44,16 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/teacher_add_image_view_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:onClick="callAddNewTeacher"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:padding="7dp"
-            android:src="@drawable/ic_refresh"
+            android:padding="3dp"
+            android:src="@drawable/add_missing_place_icon"
             app:tint="@color/colorPrimaryIcon" />
 
     </RelativeLayout>

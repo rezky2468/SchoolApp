@@ -2,30 +2,43 @@ package com.example.projectpkk.HelperClasses.GuruAdapter;
 
 public class GuruHelperClass {
 
-    String nip, nama, jenis_kelamin, username, password, jabatan, mapel, pendidikan, tempat_lahir, tanggal_lahir, email, no_telp, gambar, level;
+    private String nip;
+    private String name;
+    private String gender;
+    private String username;
+    private String password;
+    private String job_title;
+    private String mapel;
+    private String pendidikan;
+    private String tempat_lahir;
+    private String tanggal_lahir;
+    private String email;
+    private String no_telp;
+    private String gambar;
+    private String level;
 
     public String getNip() {
         return nip;
     }
 
-    public String getNama() {
-        return nama;
+    public String getName() {
+        return name;
     }
 
     public void setNip(String nip) {
         this.nip = nip;
     }
 
-    public String getJenis_kelamin() {
-        return jenis_kelamin;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setJenis_kelamin(String jenis_kelamin) {
-        this.jenis_kelamin = jenis_kelamin;
+    public String getGender() {
+        return gender;
     }
 
-    public String getJabatan() {
-        return jabatan;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getMapel() {
@@ -64,8 +77,8 @@ public class GuruHelperClass {
         return tanggal_lahir;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public String getJob_title() {
+        return job_title;
     }
 
     public void setTanggal_lahir(String tanggal_lahir) {
@@ -108,8 +121,8 @@ public class GuruHelperClass {
         this.level = level;
     }
 
-    public void setJabatan(String jabatan) {
-        this.jabatan = jabatan;
+    public void setJob_title(String job_title) {
+        this.job_title = job_title;
     }
 
     public void setMapel(String mapel) {

@@ -39,7 +39,7 @@ public class JurusanActivity extends AppCompatActivity {
             jurusanArtikel.setText(Html.fromHtml(getString(R.string.artikelJurusanRPL)));
             jurusanNamaKaprodi.setText("Asep Dimyati Yusup, St");
             jurusanImage.setImageResource(R.drawable.jurusan1);
-            jurusanFotoKaprodi.setImageResource(R.drawable.guru_asep_d);
+//            jurusanFotoKaprodi.setImageResource(R.drawable.guru_asep_d);
             fabShareJurusan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -57,7 +57,7 @@ public class JurusanActivity extends AppCompatActivity {
             jurusanArtikel.setText(Html.fromHtml(getString(R.string.artikelJurusanTKJ)));
             jurusanNamaKaprodi.setText("Indra Setia Nugraha, St");
             jurusanImage.setImageResource(R.drawable.jurusan2);
-            jurusanFotoKaprodi.setImageResource(R.drawable.guru_indra);
+//            jurusanFotoKaprodi.setImageResource(R.drawable.guru_indra);
             fabShareJurusan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -75,7 +75,7 @@ public class JurusanActivity extends AppCompatActivity {
             jurusanArtikel.setText(Html.fromHtml(getString(R.string.artikelJurusanPBK)));
             jurusanNamaKaprodi.setText("Devi Adriani, S.Pd");
             jurusanImage.setImageResource(R.drawable.jurusan3);
-            jurusanFotoKaprodi.setImageResource(R.drawable.guru_devi);
+//            jurusanFotoKaprodi.setImageResource(R.drawable.guru_devi);
             fabShareJurusan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

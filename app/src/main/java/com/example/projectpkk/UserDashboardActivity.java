@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +19,7 @@ import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuPeng
 import com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileNoAccountFragment;
-import com.example.projectpkk.User.NavigationView.FotoActivity;
+import com.example.projectpkk.User.NavigationView.GaleriFoto.FotoActivity;
 import com.example.projectpkk.User.NavigationView.TentangActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -48,7 +47,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_user_dashboard);
 
 //        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
@@ -107,6 +106,8 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         });
 
         navigationDrawer();
+
+//        StatusBarUtil.setTransparent(UserDashboardActivity.class);
 
     }
 

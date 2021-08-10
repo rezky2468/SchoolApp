@@ -4,9 +4,14 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimaryText</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionBarSize">50.0dip</item>
+
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+
     </style>
 
     <!-- Menu Style -->

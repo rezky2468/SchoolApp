@@ -1,8 +1,8 @@
 package com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -40,7 +40,7 @@ public class GuruActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_categories_guru);
 
         listView = findViewById(R.id.pengajar_list_view);
@@ -60,7 +60,7 @@ public class GuruActivity extends AppCompatActivity {
                         String nama = data.child("nama").getValue(String.class);
                         String mapel = data.child("mapel").getValue(String.class);
                         guruHelperClass.setGambar(foto);
-                        guruHelperClass.setNama(nama);
+                        guruHelperClass.setName(nama);
                         guruHelperClass.setMapel(mapel);
                         arrayList.add(guruHelperClass);
 //                        TeacherModel teacher = data.getValue(TeacherModel.class);
@@ -354,6 +354,10 @@ public class GuruActivity extends AppCompatActivity {
 
     public void callBackScreen(View view) {
         super.onBackPressed();
+    }
+
+    public void callAddNewTeacher(View view) {
+        startActivity(new Intent(getApplicationContext(), AddTeacherActivity.class));
     }
 
     public String readPengajarJSON() {

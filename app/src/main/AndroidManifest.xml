@@ -5,13 +5,17 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".User.NavigationView.GaleriFoto.GaleriFotoSmk.Global"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.NavigationView.FotoActivity"></activity>
+        <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.TeacherActivity"></activity>
+        <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.AddTeacherActivity" />
+        <activity android:name=".User.NavigationView.GaleriFoto.GaleriFotoSmk.GaleriFotoAddActivity" />
+        <activity android:name=".User.NavigationView.GaleriFoto.FotoActivity" />
         <activity android:name=".User.LoginSiswaActivity" />
         <activity android:name=".User.BottomNavigationView.Menu3Jadwal.JadwalEditActivity" />
         <activity android:name=".NotifikasiActivity" />

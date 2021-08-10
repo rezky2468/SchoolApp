@@ -80,6 +80,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/other"
                     android:textColor="@color/colorPrimaryText" />
+
             </RadioGroup>
 
             <View

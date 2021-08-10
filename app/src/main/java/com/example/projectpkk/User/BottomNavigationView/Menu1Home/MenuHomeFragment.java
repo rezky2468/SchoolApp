@@ -21,7 +21,7 @@ import com.example.projectpkk.HelperClasses.HomeAdapter.BeritaHelperClass;
 import com.example.projectpkk.HelperClasses.HomeAdapter.JurusanAdapter;
 import com.example.projectpkk.HelperClasses.HomeAdapter.JurusanHelperClass;
 import com.example.projectpkk.R;
-import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.GuruActivity;
+import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.TeacherActivity;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories2Ekskul.EkskulActivity;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories3Event.EventActivity;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.Home1Categories.Categories4Denah.DenahActivity;
@@ -91,7 +91,7 @@ public class MenuHomeFragment extends Fragment implements JurusanAdapter.OnJurus
                 HashMap<String, String> hashMap = sessionManager.getUsersDetailFromSession();
                 String level = hashMap.get(SessionManager.KEY_LEVEL);
                 if (sessionManager.checkLogin() && (level.equals("siswa") || level.equals("guru") || level.equals("admin"))) {
-                    startActivity(new Intent(getActivity(), GuruActivity.class));
+                    startActivity(new Intent(getActivity(), TeacherActivity.class));
                 } else {
                     Toast.makeText(getActivity(), "Kamu harus login terlebih dahulu", Toast.LENGTH_SHORT).show();
                 }

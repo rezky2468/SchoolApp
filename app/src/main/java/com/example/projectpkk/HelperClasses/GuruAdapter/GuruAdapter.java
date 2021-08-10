@@ -58,15 +58,11 @@ public class GuruAdapter extends BaseAdapter {
         namaTextView = view.findViewById(R.id.pengajar_name);
         mapelTextView = view.findViewById(R.id.pengajar_mapel);
 
-//        int image = images[position];
-//        int image = Integer.valueOf(arrayList.get(position).getGambar());
-        int id = context.getResources().getIdentifier(arrayList.get(position).getGambar(), "drawable", context.getPackageName());
-//        String gambar = arrayList.get(position).getGambar();
-//        int image = Integer.parseInt(arrayList.get(position).getGambar());
+//        int id = context.getResources().getIdentifier(arrayList.get(position).getGambar(), "drawable", context.getPackageName());
 
 //        fotoCircleImageView.setImageResource(image);
-        fotoCircleImageView.setImageResource(id);
-        namaTextView.setText(arrayList.get(position).getNama());
+//        fotoCircleImageView.setImageResource(id);
+        namaTextView.setText(arrayList.get(position).getName());
         mapelTextView.setText(arrayList.get(position).getMapel());
 
         return view;
