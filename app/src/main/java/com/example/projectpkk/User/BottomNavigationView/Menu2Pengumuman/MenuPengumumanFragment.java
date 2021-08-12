@@ -53,7 +53,7 @@ public class MenuPengumumanFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_menu_pengumuman, container, false);
         pengumumanListView = view.findViewById(R.id.pengumuman_list_view);
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_pengumuman);
-        tambahPengumumanIV = view.findViewById(R.id.tambah_pengumuman);
+        tambahPengumumanIV = view.findViewById(R.id.announcement_add_image_view);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("pengumuman");
 

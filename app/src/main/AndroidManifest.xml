@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.TeacherActivity"></activity>
+        <activity android:name=".User.BottomNavigationView.Menu2Pengumuman.AnnouncementDetailActivity"></activity>
+        <activity android:name=".User.BottomNavigationView.Menu2Pengumuman.AddAnnouncementActivity" />
+        <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.TeacherActivity" />
         <activity android:name=".User.BottomNavigationView.Menu1Home.Home1Categories.Categories1Guru.AddTeacherActivity" />
         <activity android:name=".User.NavigationView.GaleriFoto.GaleriFotoSmk.GaleriFotoAddActivity" />
         <activity android:name=".User.NavigationView.GaleriFoto.FotoActivity" />

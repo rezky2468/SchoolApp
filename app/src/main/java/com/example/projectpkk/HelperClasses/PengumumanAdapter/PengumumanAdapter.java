@@ -50,9 +50,9 @@ public class PengumumanAdapter extends BaseAdapter {
 //        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //        View view = layoutInflater.inflate(R.layout.layout_list_view_pengumuman, null);
 
-        titleTextView = convertView.findViewById(R.id.pengumuman_title);
-        dateTextView = convertView.findViewById(R.id.pengumuman_date);
-        descTextView = convertView.findViewById(R.id.pengumuman_desc);
+        titleTextView = convertView.findViewById(R.id.announcement_title);
+        dateTextView = convertView.findViewById(R.id.announcement_date);
+        descTextView = convertView.findViewById(R.id.announcement_content);
 
 //        String title = titles[position];
 //        String date = dates[position];

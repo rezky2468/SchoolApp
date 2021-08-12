@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.example.projectpkk.Databases.SessionManager;
 import com.example.projectpkk.User.BottomNavigationView.Menu1Home.MenuHomeFragment;
-import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuPengumumanFragment;
+import com.example.projectpkk.User.BottomNavigationView.Menu2Pengumuman.MenuAnnouncementFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu3Jadwal.MenuJadwalFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileFragment;
 import com.example.projectpkk.User.BottomNavigationView.Menu4Profile.MenuProfileNoAccountFragment;
@@ -38,7 +38,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     NavigationView navigationView;
 
     final Fragment fragment1 = new MenuHomeFragment();
-    final Fragment fragment2 = new MenuPengumumanFragment();
+    final Fragment fragment2 = new MenuAnnouncementFragment();
     final Fragment fragment3 = new MenuJadwalFragment();
     final Fragment fragment4 = new MenuProfileFragment();
     final Fragment fragment5 = new MenuProfileNoAccountFragment();
